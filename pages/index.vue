@@ -1,9 +1,10 @@
 <template>
-  <div class="container">
+  <div class="container mx-auto text-center">
     <div>
-      <Logo />
-      <h3 class="text-primary text-3xl">thinking out loud</h3>
-      <div class="links"></div>
+      <div class="flex justify-center">
+        <logo />
+      </div>
+      <p class="title">thinking out loud</p>
     </div>
   </div>
 </template>
@@ -12,17 +13,14 @@
 export default {}
 </script>
 
-<style>
-.container {
-  margin: 0 auto;
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
+<style lang="scss" scoped>
+@import '../styles/_config.scss';
 
-.links {
-  padding-top: 15px;
+.title {
+  color: $c-tertiary;
+  font-family: $ff-sans;
+  @apply font-semibold;
+  @apply text-3xl;
+  letter-spacing: 1px;
 }
 </style>

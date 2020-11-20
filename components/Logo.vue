@@ -4,8 +4,7 @@
 
 <style lang="scss" module>
 .logo {
-  width: 150px;
-  @apply mx-auto;
+  width: 200px;
   animation: 1s appear;
 }
 @keyframes appear {
