@@ -4,7 +4,7 @@
 
 <style lang="scss" module>
 .logo {
-  width: 200px;
+  width: 150px;
   @apply mx-auto;
   animation: 1s appear;
 }
