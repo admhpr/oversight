@@ -21,9 +21,12 @@
       </li>
     </ul>
 
-    <div v-if="displayRange.end <= filteredList.length" class="pagination">
-      <button class="button--load-more" type="button" @click="loadMore">
-        Load More
+    <div
+      v-if="displayRange.end <= filteredList.length"
+      class="flex justify-center"
+    >
+      <button class="title text-2xl underline" type="button" @click="loadMore">
+        more ➾
       </button>
     </div>
   </div>

@@ -1,11 +1,16 @@
 <template>
   <section>
     <time>{{ formatPublishDate }}</time>
-    <h2>
-      <a :href="path">{{ title }}</a>
-    </h2>
-    <p v-if="desc">{{ desc }}</p>
-    <nuxt-link :to="path">Read More</nuxt-link>
+    <article class="p-8">
+      <h2 class="title">
+        <a :href="path">{{ title.toLowerCase() }}</a>
+      </h2>
+      <p v-if="desc" class="mb-10">{{ desc }}</p>
+      <div class="flex justify-end">
+        <nuxt-link class="subtitle underline" :to="path"> read ❒ </nuxt-link>
+      </div>
+    </article>
+    <hr />
   </section>
 </template>
 

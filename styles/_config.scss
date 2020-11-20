@@ -27,3 +27,11 @@ $ff-serif: 'PT Serif', serif;
   @apply text-3xl;
   letter-spacing: 1px;
 }
+
+.subtitle {
+  color: $c-secondary;
+  font-family: $ff-sans;
+  @apply font-semibold;
+  @apply text-2xl;
+  letter-spacing: 1px;
+}

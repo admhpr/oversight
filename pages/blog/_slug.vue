@@ -1,8 +1,8 @@
 <template>
   <main>
     <article class="content">
-      <p class="blog-publish-date">{{ formatPublishDate }}</p>
-      <h1 class="blog-title">{{ page.title }}</h1>
+      <p>{{ formatPublishDate }}</p>
+      <h1 class="title">{{ page.title.toLowerCase() }}</h1>
       <nuxt-content :document="page" />
     </article>
   </main>
@@ -32,17 +32,7 @@ export default {
 
 <style lang="scss">
 @import '../../styles/_config.scss';
-.blog-publish-date {
-  @apply mt-12;
-  font-family: $ff-sans;
-}
-.blog-title {
-  font-family: $ff-sans;
-  color: $c-secondary;
-  @apply font-bold;
-  @apply text-5xl;
-  @apply mb-4;
-}
+
 .content {
   @apply mx-auto;
   @apply px-8;
@@ -60,7 +50,7 @@ export default {
     @apply mt-5 mb-5;
     @apply pb-3;
     border-bottom: 1px solid $c-border;
-    @apply text-4xl;
+    @apply text-2xl;
     line-height: 1.3;
   }
   p,
