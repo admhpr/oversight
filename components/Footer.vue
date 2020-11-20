@@ -42,7 +42,7 @@ export default {
   @apply text-lg;
   @apply mt-12;
   @apply p-8;
-  border-top: 2px solid $c-secondary;
+  border-top: 2px solid $c-tertiary;
 }
 .brand-logo {
   width: 32px;

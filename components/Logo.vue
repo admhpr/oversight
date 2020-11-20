@@ -4,7 +4,7 @@
 
 <style lang="scss" module>
 .logo {
-  width: 200px;
+  max-width: 150px !important;
   animation: 1s appear;
 }
 @keyframes appear {

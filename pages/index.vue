@@ -15,12 +15,4 @@ export default {}
 
 <style lang="scss" scoped>
 @import '../styles/_config.scss';
-
-.title {
-  color: $c-tertiary;
-  font-family: $ff-sans;
-  @apply font-semibold;
-  @apply text-3xl;
-  letter-spacing: 1px;
-}
 </style>
