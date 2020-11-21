@@ -3,11 +3,11 @@
     <time>{{ formatPublishDate }}</time>
     <article class="p-8">
       <h2 class="title">
-        <a :href="path">{{ title.toLowerCase() }}</a>
+        <a :href="path">‡ {{ title.toLowerCase() }}</a>
       </h2>
       <p v-if="desc" class="mb-10">{{ desc }}</p>
       <div class="flex justify-end">
-        <nuxt-link class="subtitle underline" :to="path"> read ❒ </nuxt-link>
+        <nuxt-link class="subtitle underline" :to="path"> ❒ </nuxt-link>
       </div>
     </article>
     <hr />
@@ -53,6 +53,4 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped>
-@import '../styles/_config.scss';
-</style>
+<style lang="scss" scoped></style>

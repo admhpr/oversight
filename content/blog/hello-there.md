@@ -1,6 +1,6 @@
 ---
 title: hello there
-date: 2020-07-07 13:52:10
+date: 2020-07-07T13:52
 desc: lorem ipsum desc Lorem markdownum ibat est loco facerent monstri stagnata materiaque et negat
 tags:
   - vue
@@ -51,6 +51,8 @@ saepe puniceum *aere sub cineres* furta tellure et divum. Tamen luces,
 avidissima accipit depulerat nescio. Mente pro licet frustra, sed vident urbe
 creatus temptantes!
 
+```js
+
     extranet_truncate(-5 - 3, adf_boot);
     if (gps > cell) {
         smb = 5 + oleHacker;
@@ -62,6 +64,7 @@ creatus temptantes!
     var analystText = 55 - superscalar + interlacedTutorial;
     tweet += ddr_error_play;
     var compression_gps = thread;
+```
 
 Addita dixit, pectora cortex, haec sibi [locuturo hostis
 divitibusque](http://autnec.net/flendaamoris.php) nobis per subsedit et reverti

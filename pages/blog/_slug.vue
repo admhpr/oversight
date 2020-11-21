@@ -19,20 +19,20 @@ export default {
   computed: {
     formatPublishDate() {
       const dateFormat = new Date(this.page.date)
+      const time = this.page.date.split('T')[1]
+      console.log(this.page.date.split('T'))
       const options = {
         year: 'numeric',
         month: 'long',
         day: 'numeric',
       }
-      return dateFormat.toLocaleDateString('en-IE', options)
+      return `${dateFormat.toLocaleDateString('en-IE', options)}, ${time}`
     },
   },
 }
 </script>
 
 <style lang="scss">
-@import '../../styles/_config.scss';
-
 .content {
   @apply mx-auto;
   @apply px-8;
@@ -57,7 +57,7 @@ export default {
   li {
     line-height: 1.7;
     font-size: 16px;
-    font-family: $ff-serif;
+    font-family: $ff-sans;
     @include breakpoint(600px) {
       font-size: 18px;
     }

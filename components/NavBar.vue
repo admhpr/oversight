@@ -2,7 +2,7 @@
   <nav class="navbar">
     <div class="flex items-center">
       <nuxt-link
-        to="/"
+        to="/blog"
         class="navbar-logo"
         exact-active-class="no-active-style"
       >
@@ -11,7 +11,6 @@
           src="~/assets/logo.png"
           alt="site logo"
         />
-        adam harpur
       </nuxt-link>
     </div>
     <div class="navbar-item-wrapper">
@@ -26,10 +25,8 @@ export default {}
 </script>
 
 <style lang="scss">
-@import '../styles/_config.scss';
 .navbar {
   @apply py-3 px-5;
-  border-bottom: 2px solid $c-tertiary;
   color: $c-nav-link;
   font-family: $ff-sans;
   @include breakpoint($bk-navbar) {

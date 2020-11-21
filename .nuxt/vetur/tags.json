@@ -1,0 +1,44 @@
+{
+  "BlogPostList": {
+    "description": "Auto imported from components/BlogPostList.vue"
+  },
+  "LazyBlogPostList": {
+    "description": "Auto imported from components/BlogPostList.vue"
+  },
+  "BlogPostPreview": {
+    "description": "Auto imported from components/BlogPostPreview.vue"
+  },
+  "LazyBlogPostPreview": {
+    "description": "Auto imported from components/BlogPostPreview.vue"
+  },
+  "Footer": {
+    "description": "Auto imported from components/Footer.vue"
+  },
+  "LazyFooter": {
+    "description": "Auto imported from components/Footer.vue"
+  },
+  "Icon": {
+    "description": "Auto imported from components/Icon.vue"
+  },
+  "LazyIcon": {
+    "description": "Auto imported from components/Icon.vue"
+  },
+  "Logo": {
+    "description": "Auto imported from components/Logo.vue"
+  },
+  "LazyLogo": {
+    "description": "Auto imported from components/Logo.vue"
+  },
+  "NavBar": {
+    "description": "Auto imported from components/NavBar.vue"
+  },
+  "LazyNavBar": {
+    "description": "Auto imported from components/NavBar.vue"
+  },
+  "Socials": {
+    "description": "Auto imported from components/Socials.vue"
+  },
+  "LazySocials": {
+    "description": "Auto imported from components/Socials.vue"
+  }
+}

@@ -25,8 +25,8 @@
       v-if="displayRange.end <= filteredList.length"
       class="flex justify-center"
     >
-      <button class="title text-2xl underline" type="button" @click="loadMore">
-        more ➾
+      <button class="subtitle underline" type="button" @click="loadMore">
+        ➾
       </button>
     </div>
   </div>
@@ -93,6 +93,4 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped>
-@import '../styles/_config.scss';
-</style>
+<style lang="scss" scoped></style>

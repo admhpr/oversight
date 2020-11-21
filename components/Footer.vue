@@ -35,14 +35,12 @@ export default {
 </script>
 
 <style lang="scss">
-@import '../styles/_config.scss';
 .footer {
   @apply text-center;
   font-family: $ff-sans;
   @apply text-lg;
   @apply mt-12;
   @apply p-8;
-  border-top: 2px solid $c-tertiary;
 }
 .brand-logo {
   width: 32px;

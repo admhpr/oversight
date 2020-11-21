@@ -11,7 +11,7 @@ export default {
   },
   computed: {
     iconPath() {
-      return require(`../assets/icons/${this.name}.svg`)
+      return require(`../assets/icons/${this.name}.png`)
     },
   },
 }

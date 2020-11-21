@@ -1,0 +1,23 @@
+[
+  {
+    "name": "blog",
+    "path": "/blog",
+    "component": "/home/adam/workspace/oversight/pages/blog/index.vue",
+    "chunkName": "pages/blog/index",
+    "_name": "_ba20189e"
+  },
+  {
+    "name": "blog-slug",
+    "path": "/blog/:slug",
+    "component": "/home/adam/workspace/oversight/pages/blog/_slug.vue",
+    "chunkName": "pages/blog/_slug",
+    "_name": "_bd8d5b2e"
+  },
+  {
+    "name": "index",
+    "path": "/",
+    "component": "/home/adam/workspace/oversight/pages/index.vue",
+    "chunkName": "pages/index",
+    "_name": "_5d81ca76"
+  }
+]

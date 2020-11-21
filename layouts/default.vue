@@ -1,7 +1,9 @@
 <template>
   <div class="flex flex-col min-h-screen">
     <NavBar />
-    <nuxt class="flex-1" />
+    <hr />
+    <nuxt class="flex-1" keep-alive />
+    <hr />
     <Footer />
   </div>
 </template>

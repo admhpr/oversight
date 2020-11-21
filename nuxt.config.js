@@ -8,7 +8,7 @@ export default {
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: '' },
+      { hid: 'desc', name: 'desc', content: '' },
     ],
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
   },
@@ -17,7 +17,7 @@ export default {
   css: [],
 
   // Plugins to run before rendering page (https://go.nuxtjs.dev/config-plugins)
-  plugins: [],
+  plugins: ['~/plugins/axios.js'],
 
   // Auto import components (https://go.nuxtjs.dev/config-components)
   components: true,
@@ -26,6 +26,7 @@ export default {
   buildModules: [
     // https://go.nuxtjs.dev/eslint
     '@nuxtjs/eslint-module',
+    '@nuxtjs/style-resources',
     // https://go.nuxtjs.dev/tailwindcss
     '@nuxtjs/tailwindcss',
   ],
@@ -42,10 +43,22 @@ export default {
   axios: {},
 
   // Content module configuration (https://go.nuxtjs.dev/config-content)
-  content: {},
+  content: {
+    markdown: {
+      prism: {
+        theme: 'prism-themes/themes/prism-material-oceanic.css',
+      },
+    },
+  },
 
   // Build Configuration (https://go.nuxtjs.dev/config-build)
   build: {},
+  publicRuntimeConfig: {
+    apiKey: process.env.DEV_TO_API_KEY,
+  },
+  styleResources: {
+    scss: ['~/styles/style.scss'],
+  },
   server: {
     port: 8000, // default: 3000
     host: '0.0.0.0', // default: localhost
