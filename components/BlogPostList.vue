@@ -1,13 +1,19 @@
 <template>
   <div class="mt-5">
     <h2 class="title">::</h2>
-    <hr />
-
-    <div v-if="selectedTag">
-      <h2>filtered by {{ selectedTag }} tag</h2>
-      <button type="button" @click="selectedTag = ''">clear</button>
+    <div class="flex">
+      <a
+        v-for="tag in allTags"
+        :key="tag"
+        href="#"
+        class="underline tag mr-5"
+        @click="selectedTag === tag ? (selectedTag = '') : (selectedTag = tag)"
+        ><span> #{{ tag }}</span>
+        <span v-if="selectedTag === tag">∅</span>
+      </a>
     </div>
-    <ul>
+    <hr />
+    <ul class="mt-5">
       <li v-for="(item, index) in filteredList" :key="`blog-post-${index}`">
         <BlogPostPreview
           v-show="index < displayRange.end"
@@ -48,7 +54,7 @@ export default {
   data() {
     return {
       displayRange: {
-        end: 1,
+        end: 10,
       },
       selectedTag: '',
     }

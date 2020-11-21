@@ -35,3 +35,11 @@ $ff-serif: 'PT Serif', serif;
   @apply text-2xl;
   letter-spacing: 1px;
 }
+
+.tag {
+  color: $c-secondary;
+  font-family: $ff-sans;
+  @apply font-semibold;
+  @apply text-lg;
+  letter-spacing: 1px;
+}

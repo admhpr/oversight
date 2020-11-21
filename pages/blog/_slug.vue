@@ -20,7 +20,6 @@ export default {
     formatPublishDate() {
       const dateFormat = new Date(this.page.date)
       const time = this.page.date.split('T')[1]
-      console.log(this.page.date.split('T'))
       const options = {
         year: 'numeric',
         month: 'long',

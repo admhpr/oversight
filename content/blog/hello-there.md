@@ -4,7 +4,6 @@ date: 2020-07-07T13:52
 desc: lorem ipsum desc Lorem markdownum ibat est loco facerent monstri stagnata materiaque et negat
 tags:
   - vue
-  - static-site-generator
   - documentation
 
 ---
