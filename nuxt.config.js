@@ -57,7 +57,7 @@ export default {
     apiKey: process.env.DEV_TO_API_KEY,
   },
   styleResources: {
-    scss: ['~/styles/style.scss'],
+    scss: ['~/styles/main.scss'],
   },
   server: {
     port: 8000, // default: 3000
