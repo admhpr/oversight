@@ -42,6 +42,17 @@ export default {
     font-style: italic;
     @apply ml-3;
   }
+  a {
+    color: $c-secondary;
+    font-family: $ff-sans;
+    @apply font-semibold;
+    @apply text-lg;
+    @apply underline;
+    letter-spacing: 1px;
+  }
+  a[target='_blank']:after {
+    content: '∉';
+  }
   h2 {
     color: $c-secondary;
     font-family: $ff-sans;

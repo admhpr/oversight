@@ -16,10 +16,13 @@ tags:
 
 ## Alemonides tempus posita
 
+[link](https://duckduckgo.com)
+
 Lorem markdownum ibat est loco facerent monstri stagnata materiaque et negat
 pendebat umerique advehor undis, late! Aequora haec adorat in pacisci Minos
 latronis fera **diu**, tibi isdem.
 
+```python
     formatOcrListserv += mediaMulti(typeJsfProcess.bsodArchie.ivrX(driveHdmi),
             scsi_header, startContextual);
     if (integer + cableDramGopher) {
@@ -28,7 +31,7 @@ latronis fera **diu**, tibi isdem.
     web_default_protocol.hdv += -1;
     widget.websiteWinSla(5, lion_thread + ribbon_language_boot);
     importPostTrojan.verticalPhreakingSequence += basicToggle;
-
+```
 ## Hectoris et repellite vulnera dixit sed ligno
 
 Plenum fama tibi tiliae, conveniunt vidit pectus lenis condi materna resilire
