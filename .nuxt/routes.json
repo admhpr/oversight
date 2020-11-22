@@ -1,5 +1,12 @@
 [
   {
+    "name": "about",
+    "path": "/about",
+    "component": "/home/adam/workspace/oversight/pages/about/index.vue",
+    "chunkName": "pages/about/index",
+    "_name": "_c953a518"
+  },
+  {
     "name": "blog",
     "path": "/blog",
     "component": "/home/adam/workspace/oversight/pages/blog/index.vue",
