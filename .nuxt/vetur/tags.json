@@ -1,4 +1,10 @@
 {
+  "ArchivedList": {
+    "description": "Auto imported from components/ArchivedList.vue"
+  },
+  "LazyArchivedList": {
+    "description": "Auto imported from components/ArchivedList.vue"
+  },
   "BlogPostList": {
     "description": "Auto imported from components/BlogPostList.vue"
   },

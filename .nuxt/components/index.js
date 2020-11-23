@@ -1,3 +1,4 @@
+export { default as ArchivedList } from '../../components/ArchivedList.vue'
 export { default as BlogPostList } from '../../components/BlogPostList.vue'
 export { default as BlogPostPreview } from '../../components/BlogPostPreview.vue'
 export { default as Footer } from '../../components/Footer.vue'
@@ -6,6 +7,7 @@ export { default as Logo } from '../../components/Logo.vue'
 export { default as NavBar } from '../../components/NavBar.vue'
 export { default as Socials } from '../../components/Socials.vue'
 
+export const LazyArchivedList = import('../../components/ArchivedList.vue' /* webpackChunkName: "components/ArchivedList" */).then(c => c.default || c)
 export const LazyBlogPostList = import('../../components/BlogPostList.vue' /* webpackChunkName: "components/BlogPostList" */).then(c => c.default || c)
 export const LazyBlogPostPreview = import('../../components/BlogPostPreview.vue' /* webpackChunkName: "components/BlogPostPreview" */).then(c => c.default || c)
 export const LazyFooter = import('../../components/Footer.vue' /* webpackChunkName: "components/Footer" */).then(c => c.default || c)
