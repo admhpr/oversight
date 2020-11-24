@@ -1,19 +1,19 @@
 <template>
-  <div class="mt-5">
-    <pre>
-       {{ JSON.stringify(list) }}
-   </pre
-    >
-  </div>
+  <BlogPostList :list="adaptedPosts" />
 </template>
 
 <script>
 export default {
-  name: 'BlogPostList',
+  name: 'ArchivedList',
   props: {
     list: {
       type: Array,
       default: () => [],
+    },
+  },
+  computed: {
+    adaptedPosts() {
+      return []
     },
   },
 }
