@@ -63,7 +63,7 @@ export default {
     allTags() {
       const allTags = []
       this.list.map((item) => {
-        if (item.tags.length) {
+        if (typeof item.tags !== 'undefined' && item.tags.length) {
           for (const tag of item.tags) {
             allTags.push(tag)
           }
@@ -74,7 +74,9 @@ export default {
     filteredList() {
       return this.list
         .filter((item) => {
-          const isBlogPost = item.path.includes('/blog/')
+          debugger
+          const isBlogPost =
+            item.path.includes('/blog/') || item.path.includes('/archived/')
           const isReadyToPublish = new Date(item.date) <= new Date()
 
           const hasTags = item.tags && item.tags.includes(this.selectedTag)
