@@ -41,6 +41,8 @@ export default {
   blockquote {
     font-style: italic;
     @apply ml-3;
+    @apply px-3;
+    border-left: solid 2px $c-primary;
   }
   a {
     color: $c-secondary;
@@ -59,8 +61,7 @@ export default {
     @apply font-bold;
     @apply mt-5 mb-5;
     @apply pb-3;
-    border-bottom: 1px solid $c-border;
-    @apply text-2xl;
+    @apply text-xl;
     line-height: 1.3;
   }
   p,
