@@ -1,6 +1,6 @@
 ---
 title: 'CSS sanity with SASS: Setup.'
-date: '09-09-2017 18:27'
+date: '2017-09-09T18:27'
 metadata:
     Sass: Blog
 taxonomy:

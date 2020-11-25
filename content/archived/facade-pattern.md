@@ -1,6 +1,6 @@
 ---
 title: 'The Facade Pattern'
-date: '07-03-2019 17:09'
+date: '2019-03-07T17:09'
 publish_date: '07-03-2019 17:09'
 taxonomy:
     category:

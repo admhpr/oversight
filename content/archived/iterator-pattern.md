@@ -1,7 +1,7 @@
 ---
 title: 'The Iterator Pattern'
 published: true
-date: '04-05-2019 13:49'
+date: '2019-05-04T13:49'
 publish_date: '04-05-2019 13:54'
 taxonomy:
     category:

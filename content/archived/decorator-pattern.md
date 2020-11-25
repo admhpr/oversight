@@ -1,6 +1,6 @@
 ---
 title: 'The Decorator Pattern'
-date: '05-03-2019 12:43'
+date: '2019-03-05T12:43'
 publish_date: '05-03-2019 12:43'
 taxonomy:
     category:

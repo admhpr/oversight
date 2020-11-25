@@ -1,6 +1,6 @@
 ---
 title: 'Custom Distribution : Controlling the Random'
-date: '31-01-2018 18:09'
+date: '2018-01-31T18:09'
 taxonomy:
     category:
         - blog

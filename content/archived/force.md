@@ -1,6 +1,6 @@
 ---
 title: Force
-date: '07-03-2018 18:14'
+date: '2018-03-07T18:14'
 taxonomy:
     category:
         - blog

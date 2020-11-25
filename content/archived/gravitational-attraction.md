@@ -1,7 +1,7 @@
 ---
 title: 'Gravitational Attraction'
 media_order: grav_attraction.png
-date: '12-10-2018 15:19'
+date: '2018-10-12T15:19'
 taxonomy:
     category:
         - blog

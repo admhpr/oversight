@@ -1,7 +1,7 @@
 ---
 title: 'The Chain of Responsibility'
 published: true
-date: '14-04-2019 12:19'
+date: '2019-04-14T12:19'
 taxonomy:
     category:
         - blog

@@ -1,6 +1,6 @@
 ---
 title: 'JavaScript 101  ~  Better Event Handling'
-date: '01-06-2017 11:23'
+date: '2017-06-01T11:23'
 taxonomy:
     category:
         - blog

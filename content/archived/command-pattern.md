@@ -1,7 +1,7 @@
 ---
 title: 'The Command Pattern'
 published: true
-date: '30-04-2019 15:00'
+date: '2019-04-30T15:00'
 taxonomy:
     category:
         - blog

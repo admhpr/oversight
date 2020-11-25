@@ -1,6 +1,6 @@
 ---
 title: 'The Composite Pattern'
-date: '19-02-2019 21:03'
+date: '2019-02-19T21:03'
 taxonomy:
     category:
         - blog

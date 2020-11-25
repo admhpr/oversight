@@ -1,6 +1,6 @@
 ---
 title: 'JavaScript 101  ~  Closure'
-date: '11:23 20-06-2017'
+date: '2017-06-20T11:23'
 taxonomy:
     category:
         - blog

@@ -1,6 +1,6 @@
 ---
 title: 'The Flyweight Pattern'
-date: '12-03-2019 12:16'
+date: '2019-03-12T12:16'
 taxonomy:
     category:
         - blog

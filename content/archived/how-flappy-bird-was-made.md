@@ -1,6 +1,6 @@
 ---
 title: 'How Flappy Bird Was Made'
-date: '21-03-2018 18:17'
+date: '2018-03-21T18:17'
 taxonomy:
     category:
         - blog

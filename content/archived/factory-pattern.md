@@ -1,6 +1,6 @@
 ---
 title: 'The Factory Pattern'
-date: '28-12-2018 12:14'
+date: '2018-12-28T12:14'
 publish_date: '28-12-2018 12:14'
 taxonomy:
     category:

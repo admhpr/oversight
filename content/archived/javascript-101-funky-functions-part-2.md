@@ -1,7 +1,7 @@
 ---
 title: 'JavaScript 101 ~ Funky functions part 2'
 published: true
-date: '08-06-2017 11:23'
+date: '2017-06-08T11:23'
 taxonomy:
     category:
         - blog
