@@ -1,6 +1,6 @@
 ---
 title: Acceleration
-date: '28-02-2018 18:12'
+date: '2018-02-28T18:12'
 taxonomy:
     category:
         - blog

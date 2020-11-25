@@ -74,16 +74,15 @@ export default {
     filteredList() {
       return this.list
         .filter((item) => {
-          debugger
-          const isBlogPost =
-            item.path.includes('/blog/') || item.path.includes('/archived/')
+          const isBlogPost = item.path.includes('/blog/')
+          const isArchived = item.path.includes('/archived/')
           const isReadyToPublish = new Date(item.date) <= new Date()
 
           const hasTags = item.tags && item.tags.includes(this.selectedTag)
           const shouldPublish = this.selectedTag
             ? isBlogPost && isReadyToPublish && hasTags
             : isBlogPost && isReadyToPublish
-          if (shouldPublish) {
+          if (shouldPublish || isArchived) {
             return item
           }
         })

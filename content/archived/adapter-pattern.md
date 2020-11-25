@@ -1,5 +1,6 @@
 ---
 title: 'The Adapter Pattern'
+date: '2018-03-12T17:12'
 published: true
 taxonomy:
     category:

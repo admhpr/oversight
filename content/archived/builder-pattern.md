@@ -1,6 +1,6 @@
 ---
 title: 'The Builder Pattern'
-date: '31-12-2018 00:00'
+date: '2018-12-31T00:00'
 taxonomy:
     category:
         - blog

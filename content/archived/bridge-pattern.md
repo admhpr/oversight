@@ -1,5 +1,6 @@
 ---
 title: 'The Bridge Pattern'
+date: '2018-04-12T17:05'
 published: true
 taxonomy:
     category:
@@ -38,7 +39,6 @@ Handle orthogonal ("Changing A does not change B") concerns separately. Think co
 
 ## Variants
 
-### 
 
 From Wikipedia:
 
@@ -56,7 +56,7 @@ Typescript Code Example:
 
 The webpage:
 
-```
+```ts
 
 interface IWebPage {
     theme: Theme;
@@ -87,7 +87,7 @@ class Careers implements IWebPage{
 
 And the separate theme hierarchy,
 
-```
+```ts
 interface Theme {
     getColor();
 }
@@ -111,7 +111,7 @@ class AquaTheme implements Theme{
 
 Usage:
 
-```
+```ts
 const darkTheme = new DarkTheme();
 
 const about = new About(darkTheme);
