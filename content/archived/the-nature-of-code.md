@@ -1,7 +1,7 @@
 ---
 title: 'The Nature of Code ~ first thoughts'
 published: true
-date: '11:23 29-08-2017'
+date: '2017-08-29T11:23'
 taxonomy:
     category:
         - blog

@@ -1,6 +1,6 @@
 ---
 title: 'Starting ~ 2019 '
-date: '24-12-2018 12:14'
+date: '24-12-2018T12:14'
 taxonomy:
     category:
         - blog

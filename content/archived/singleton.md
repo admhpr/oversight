@@ -1,6 +1,6 @@
 ---
 title: 'The Singleton Pattern'
-date: '06-01-2019 00:00'
+date: '06-01-2019T00:00'
 publish_date: '06-01-2019 00:00'
 taxonomy:
     category:

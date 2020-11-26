@@ -1,7 +1,7 @@
 ---
 title: 'JavaScript ES6 ~ The Way of the Arrow Function'
 published: true
-date: '01-07-2017 11:23'
+date: '01-07-2017T11:23'
 taxonomy:
     category:
         - blog

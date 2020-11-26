@@ -1,6 +1,6 @@
 ---
 title: 'The Humanness of programs'
-date: '11-04-2018 18:16'
+date: '11-04-2018T18:16'
 taxonomy:
     category:
         - blog

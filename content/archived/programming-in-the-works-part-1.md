@@ -1,7 +1,7 @@
 ---
 title: 'Programming ~ in the works part one'
 published: true
-date: '11:23 25-07-2017'
+date: '2017-07-25T11:23'
 taxonomy:
     category:
         - blog

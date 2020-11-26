@@ -1,7 +1,7 @@
 ---
 title: 'Breaking ground'
 published: true
-date: '29-05-2017 00:00'
+date: '29-05-2017T00:00'
 publish_date: '29-05-2017 00:00'
 taxonomy:
     category:

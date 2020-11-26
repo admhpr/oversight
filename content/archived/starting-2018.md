@@ -1,6 +1,6 @@
 ---
 title: 'Starting ~ 2018'
-date: '02-01-2018 18:07'
+date: '02-01-2018T18:07'
 taxonomy:
     category:
         - blog

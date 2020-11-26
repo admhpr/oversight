@@ -1,7 +1,7 @@
 ---
 title: Recursion
 media_order: recursion.jpg
-date: '30-09-2018 15:50'
+date: '30-09-2018T15:50'
 publish_date: '30-09-2018 15:50'
 taxonomy:
     category:

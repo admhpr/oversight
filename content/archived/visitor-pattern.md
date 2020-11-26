@@ -1,6 +1,6 @@
 ---
 title: 'The Visitor Pattern'
-date: '24-05-2019 15:16'
+date: '24-05-2019T15:16'
 taxonomy:
     category:
         - blog

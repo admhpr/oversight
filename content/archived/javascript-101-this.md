@@ -1,7 +1,7 @@
 ---
 title: 'JavaScript 101  ~  This'
 published: true
-date: '11:23 16-06-2017'
+date: '2017-06-16T11:23 '
 taxonomy:
     category:
         - blog

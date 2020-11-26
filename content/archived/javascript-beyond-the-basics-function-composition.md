@@ -1,7 +1,7 @@
 ---
 title: 'JavaScript Beyond the Basics ~ Function Composition'
 published: true
-date: '11:23 16-07-2017'
+date: '2017-07-16T11:23'
 taxonomy:
     category:
         - blog

@@ -1,7 +1,7 @@
 ---
 title: 'The Observer Pattern'
 published: true
-date: '17-05-2019 09:05'
+date: '17-05-2019T09:05'
 taxonomy:
     category:
         - blog

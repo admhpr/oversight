@@ -1,7 +1,7 @@
 ---
 title: 'Steering Behaviour'
 media_order: 'auto_2.png,auto_1.png'
-date: '22-09-2018 09:28'
+date: '22-09-2018T09:28'
 taxonomy:
     category:
         - blog

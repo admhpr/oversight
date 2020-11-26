@@ -1,7 +1,7 @@
 ---
 title: 'Maze Generation'
 media_order: '01-grid.png,02-cell-corners.png,03-cells.png,04-walls.png'
-date: '11-09-2018 23:05'
+date: '11-09-2018T23:05'
 taxonomy:
     category:
         - blog

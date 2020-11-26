@@ -1,6 +1,6 @@
 ---
 title: 'More Vectors'
-date: '21-02-2018 18:11'
+date: '21-02-2018T18:11'
 taxonomy:
     category:
         - blog

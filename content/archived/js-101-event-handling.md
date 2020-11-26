@@ -1,6 +1,6 @@
 ---
 title: ' JavaScript 101 ~ Event Handling'
-date: '11:23 30-05-2017'
+date: '2017-05-30T11:23'
 taxonomy:
     category:
         - blog

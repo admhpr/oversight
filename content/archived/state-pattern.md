@@ -1,6 +1,6 @@
 ---
 title: 'The State Pattern'
-date: '04-07-2019 01:43'
+date: '04-07-2019T01:43'
 taxonomy:
     category:
         - blog
