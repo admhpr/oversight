@@ -1,7 +1,7 @@
 <template>
   <div class="mt-5">
     <h2 class="title">::</h2>
-    <div class="flex">
+    <div class="flex flex-wrap">
       <a
         v-for="tag in allTags"
         :key="tag"
@@ -74,15 +74,15 @@ export default {
     filteredList() {
       return this.list
         .filter((item) => {
-          const isBlogPost = item.path.includes('/blog/')
-          const isArchived = item.path.includes('/archived/')
+          const isBlogPost =
+            item.path.includes('/blog/') || item.path.includes('/archived/')
           const isReadyToPublish = new Date(item.date) <= new Date()
 
           const hasTags = item.tags && item.tags.includes(this.selectedTag)
           const shouldPublish = this.selectedTag
             ? isBlogPost && isReadyToPublish && hasTags
             : isBlogPost && isReadyToPublish
-          if (shouldPublish || isArchived) {
+          if (shouldPublish) {
             return item
           }
         })

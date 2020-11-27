@@ -12,7 +12,7 @@ function createBlogPostItem(archivedItem) {
     title,
     taxonomy = {},
   } = archivedItem
-  const tags = taxonomy.tags || []
+  const tags = taxonomy.tag || []
   return { body, date: String(date), desc: '', extension, path, title, tags }
 }
 export default {
