@@ -1,7 +1,7 @@
 ---
 title: 'The Prototype Pattern'
 published: true
-date: '13-01-2019T00:00'
+date: '2019-01-13T00:00'
 taxonomy:
     category:
         - blog

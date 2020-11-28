@@ -1,6 +1,6 @@
 ---
 title: 'The Template Pattern'
-date: '08-07-2019T00:21'
+date: '2019-07-08T00:21'
 taxonomy:
     category:
         - blog

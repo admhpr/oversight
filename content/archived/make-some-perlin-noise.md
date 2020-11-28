@@ -1,6 +1,6 @@
 ---
 title: 'Make some ( Perlin ) Noise'
-date: '07-02-2018T18:10'
+date: '2018-02-07T18:10'
 taxonomy:
     category:
         - blog

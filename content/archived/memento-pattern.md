@@ -1,7 +1,7 @@
 ---
 title: 'The Memento Pattern'
 published: true
-date: '12-05-2019T12:40'
+date: '2019-05-12T12:40'
 taxonomy:
     category:
         - blog

@@ -1,6 +1,6 @@
 ---
 title: 'Normal Distribution : Taming the Random'
-date: '24-01-2018T18:08'
+date: '2018-01-24T18:08'
 taxonomy:
     category:
         - blog

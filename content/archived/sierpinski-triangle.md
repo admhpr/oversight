@@ -1,6 +1,6 @@
 ---
 title: 'Sierpinski Triangle'
-date: '28-10-2018T14:22'
+date: '2018-10-28T14:22'
 taxonomy:
     category:
         - blog

@@ -1,6 +1,6 @@
 ---
 title: 'Probability and Movement'
-date: '10-01-2018T18:02'
+date: '2018-01-10T18:02'
 publish_date: '10-01-2018 18:02'
 taxonomy:
     category:

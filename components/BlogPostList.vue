@@ -77,6 +77,10 @@ export default {
           const isBlogPost =
             item.path.includes('/blog/') || item.path.includes('/archived/')
           const isReadyToPublish = new Date(item.date) <= new Date()
+          console.log(`::::::::::ITEM::::::::::`)
+          console.log(item.title, new Date(item.date))
+          console.log(isReadyToPublish)
+          console.log(`::::::::::END::::::::::`)
 
           const hasTags = item.tags && item.tags.includes(this.selectedTag)
           const shouldPublish = this.selectedTag

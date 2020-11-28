@@ -1,7 +1,7 @@
 ---
 title: 'The Strategy Pattern'
 published: true
-date: '25-06-2019T01:52'
+date: '2019-06-25T01:52'
 taxonomy:
     category:
         - blog

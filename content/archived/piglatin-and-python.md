@@ -1,6 +1,6 @@
 ---
 title: 'Piglatin and  Python'
-date: '16-09-2018T16:11'
+date: '2018-09-16T16:11'
 taxonomy:
     category:
         - blog

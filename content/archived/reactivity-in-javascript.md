@@ -1,6 +1,6 @@
 ---
 title: 'Reactivity In JavaScript'
-date: '23-05-2018T18:17'
+date: '2018-05-23T18:17'
 twittercardoptions: summary
 articleenabled: false
 musiceventenabled: false

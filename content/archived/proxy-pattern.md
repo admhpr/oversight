@@ -1,6 +1,6 @@
 ---
 title: 'The Proxy Pattern'
-date: '25-03-2019T17:05'
+date: '2019-03-25T17:05'
 taxonomy:
     category:
         - blog

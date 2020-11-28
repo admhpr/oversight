@@ -1,6 +1,6 @@
 ---
 title: 'Make a Decision'
-date: '17-01-2018T18:06'
+date: '2018-01-17T18:06'
 taxonomy:
     category:
         - blog

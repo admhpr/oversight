@@ -1,7 +1,7 @@
 ---
 title: 'SASS ~ An Introduction'
 published: true
-date: '01-09-2017T18:26'
+date: '2017-09-01T18:26'
 metadata:
     Sass: Blog
 taxonomy:
