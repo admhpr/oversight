@@ -1,5 +1,6 @@
 ---
-title: 'The Iterator Pattern'
+title: The Iterator Pattern
+desc: In object-oriented programming, the iterator pattern is a design pattern in which an iterator is used to traverse a container and access the container's elements. The iterator pattern decouples algorithms from containers; in some cases, algorithms are necessarily container-specific and thus cannot be decoupled.
 published: true
 date: '2019-05-04T13:49'
 publish_date: '04-05-2019 13:54'

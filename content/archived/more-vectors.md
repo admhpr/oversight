@@ -1,5 +1,6 @@
 ---
-title: 'More Vectors'
+title: More Vectors
+desc: As expected my schedule is only getting busier, however I have been squeezing in some learning on my lunch breaks. I learnt a little more about vectors and vector math this week so I'm sharing my notes.
 date: '2018-01-24T18:08'
 taxonomy:
     category:

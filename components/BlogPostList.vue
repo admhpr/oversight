@@ -5,7 +5,7 @@
       <a
         v-for="{ name, count } in allTags"
         :key="name"
-        href="#"
+        :href="'#' + name"
         class="underline tag mr-5"
         @click="
           selectedTag === name ? (selectedTag = '') : (selectedTag = name)
@@ -94,7 +94,7 @@ export default {
           const isReadyToPublish = new Date(item.date) <= new Date()
 
           if (!isReadyToPublish) {
-            console.log(item.title)
+            console.log(item)
           }
 
           const hasTags = item.tags && item.tags.includes(this.selectedTag)

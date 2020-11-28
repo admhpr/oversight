@@ -1,5 +1,6 @@
 ---
-title: 'JavaScript 101 ~ Funky functions part 1'
+title: JavaScript 101 ~ Funky functions part 1
+desc: JavaScript has its quirks and that's one of the many things I like about it, but it does have some potential gotchas that are worth noting. In the 'Funky functions' series I'll be looking at some of these quirks as well as taking a deeper dive into functions in JavaScript.
 published: true
 date: '2017-06-01T11:23'
 taxonomy:

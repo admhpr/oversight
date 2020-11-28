@@ -1,5 +1,6 @@
 ---
-title: 'JavaScript 101  ~  This'
+title: JavaScript 101  ~  This
+desc: If you have spent some time reading or writing JavaScript, you will have no doubt came across the `this` keyword. In other object orientated languages, the `this` keyword refers to the current instance of the class. In JavaScript the value of this depends on the context of the function and where it is called.Not knowing this or rather `this` can be confusing. 
 published: true
 date: '2017-06-16T11:23'
 taxonomy:

@@ -1,5 +1,6 @@
 ---
-title: 'The Memento Pattern'
+title: The Memento Pattern
+desc: The memento pattern is a software design pattern that provides the ability to restore an object to its previous state (undo via rollback).
 published: true
 date: '2019-05-12T12:40'
 taxonomy:

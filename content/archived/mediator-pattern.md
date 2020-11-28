@@ -1,5 +1,6 @@
 ---
-title: 'The Mediator Pattern'
+title: The Mediator Pattern
+desc: In software engineering, the mediator pattern defines an object that encapsulates how a set of objects interact. This pattern is considered to be a behavioral pattern due to the way it can alter the program's running behavior.
 published: true
 date: '2019-05-07T08:24'
 taxonomy:

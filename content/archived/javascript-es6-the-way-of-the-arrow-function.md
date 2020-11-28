@@ -1,5 +1,6 @@
 ---
-title: 'JavaScript ES6 ~ The Way of the Arrow Function'
+title: JavaScript ES6 ~ The Way of the Arrow Function
+desc: Doing what is comfortable at the moment is not the best approach to learning how to code, for me anyway. Pushing yourself outside of your comfort zone is one of the most important parts of learning and getting good at a new skill. It's for that reason I have been making a conscious effort to embrace ES6. 
 published: true
 date: '2017-07-01T11:23'
 taxonomy:

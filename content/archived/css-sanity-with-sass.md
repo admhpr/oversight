@@ -1,6 +1,7 @@
 ---
 title: 'CSS sanity with SASS: Setup.'
 date: '2017-09-09T18:27'
+desc: 'CSS can be painful to write and even worse to maintain...'
 metadata:
     Sass: Blog
 taxonomy:

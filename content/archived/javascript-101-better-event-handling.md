@@ -1,5 +1,6 @@
 ---
-title: 'JavaScript 101  ~  Better Event Handling'
+title: JavaScript 101  ~  Better Event Handling
+desc: In a previous post I took at look event handling in JavaScript. The title of this post is a clue you can expect more of the same in this one.This time, my goal is to show that there is merit to spending some time refactoring and tidying up code once your idea has been stubbed out and is working, and hopefully in the following example I can make my case.
 date: '2017-06-01T11:23'
 taxonomy:
     category:

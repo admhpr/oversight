@@ -1,5 +1,6 @@
 ---
-title: 'How Flappy Bird Was Made'
+title: How Flappy Bird Was Made
+desc: In 2013 a game was released that in the following year would take the world by storm. A young Vietnamese programmer named Dong Nguyen released a game that he would later remove from the App store from guilt of overuse and the addictive nature of the game. That game was Flappy Bird.
 date: '2018-03-21T18:17'
 taxonomy:
     category:

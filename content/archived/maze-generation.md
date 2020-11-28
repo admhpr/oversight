@@ -1,6 +1,6 @@
 ---
-title: 'Maze Generation'
-media_order: '01-grid.png,02-cell-corners.png,03-cells.png,04-walls.png'
+title: Maze Generation
+desc: First I have to think about how I am going to approach the maze.I'm using an HTML5 canvas which I will divide into a grid with each cell being it's own object. The program will figure out which walls of the cells to remove to create a maze.
 date: '2018-09-11T23:05'
 taxonomy:
     category:

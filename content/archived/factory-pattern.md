@@ -1,6 +1,7 @@
 ---
-title: 'The Factory Pattern'
+title: The Factory Pattern
 date: '2018-12-28T12:14'
+desc: In object-oriented programming (OOP), a factory is an object for creating other objects – formally a factory is a function or method that returns objects of a varying prototype or class from some method call, which is assumed to be "new".
 publish_date: '28-12-2018 12:14'
 taxonomy:
     category:

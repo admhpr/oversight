@@ -64,7 +64,7 @@ The steps are lined out in this [post](https://webdesign.tutsplus.com/tutorials/
 Of course you can use task runners such as [Gulp](https://gulpjs.com/) or [Grunt](https://gruntjs.com/) to get the job done, but there is really no need for the overhead if you are just playing around with Sass's functionality. I've found that build tools can become a bit of a rabbit hole and you often times spend more time on setting up build tools than actually writing code, this up front cost is worth it on bigger projects but not really for small or medium ventures.
 
 For reference I am assuming you project folder is as follows: 
-```
+```bash
 
 
 index.html
@@ -135,7 +135,7 @@ Let's continue working on our starter project, add this to ```/sass-starter/scss
 
 ![sass-2.png](https://steemitimages.com/DQmcXihj8RyF75gppmPXyCXEQ4ZgwinaLokAsTdriqPj8fw/sass-2.png)
 
-```
+```css
 /*with mixins we use the @mixin keyword to tell 
 the compiler that it is approaching a mixin,
 we then define the values and properties inside
@@ -163,7 +163,7 @@ With nesting you can style elements that are within other elements. Let's look a
 
 ![sass-3.png](https://steemitimages.com/DQmThgVZojvEjBsY4tSmrQLWa68fFHLfDXQzipzG2umtDZo/sass-3.png)
 
-```
+```css
 // modules and variables
 @import "partials/base";
 ```
@@ -183,7 +183,7 @@ Once the two top import statements are added we can now head over to the termina
 Let's look at our finished styles.scss file. Notice how we are passing in values to our mixins and using our variables.
 
 ![sass-4.png](https://steemitimages.com/DQmSctgi8jYhpqJGRWBpPQexuywPWcez5HMuZa7iVEE6LEG/sass-4.png)
-```
+```css
 /*Note: that we are importing the files that 
 we need and are using in this base file,
 the SassScript compiler automatically 

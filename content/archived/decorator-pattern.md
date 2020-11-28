@@ -1,6 +1,7 @@
 ---
-title: 'The Decorator Pattern'
+title: The Decorator Pattern
 date: '2019-03-05T12:43'
+desc: In object-oriented programming, the decorator pattern is a design pattern that allows behavior to be added to an individual object, either statically or dynamically, without affecting the behavior of other objects from the same class. The decorator pattern is often useful for adhering to the Single Responsibility Principle, as it allows functionality to be divided between classes with unique areas of concern.
 publish_date: '05-03-2019 12:43'
 taxonomy:
     category:

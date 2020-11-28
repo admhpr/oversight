@@ -1,5 +1,6 @@
 ---
-title: 'JavaScript 101  ~  Closure'
+title: JavaScript 101  ~  Closure
+desc: In this post I'm going to be taking a look at the idea of closure and how it can be used in JavaScript. Closure can seem almost mystical at first glance and can certainly be a mind bender. 
 date: '2017-06-20T11:23'
 taxonomy:
     category:

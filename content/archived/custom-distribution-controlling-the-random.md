@@ -1,6 +1,7 @@
 ---
 title: 'Custom Distribution : Controlling the Random'
 date: '2018-01-31T18:09'
+desc: Last time I looked at how normal distribution can make make random numbers consistently closer to the mean.
 taxonomy:
     category:
         - blog
@@ -24,7 +25,7 @@ restaurant:
 facebookenable: true
 ---
 
-Last time I looked at how [Normal Distrobution](https://steemit.com/coding/@harps116/day-3-normal-distribution-taming-the-random) can make make random numbers consistently closer to the mean.
+Last time I looked at how [Normal Distribution](https://steemit.com/coding/@harps116/day-3-normal-distribution-taming-the-random) can make make random numbers consistently closer to the mean.
 
 Let's customize the distribution a little.
 

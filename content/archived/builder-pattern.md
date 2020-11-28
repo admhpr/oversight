@@ -1,6 +1,7 @@
 ---
 title: 'The Builder Pattern'
 date: '2018-12-31T00:00'
+desc: The builder pattern is an object creation software design pattern with the intentions of finding a solution to the telescoping constructor** anti-pattern.
 taxonomy:
     category:
         - blog

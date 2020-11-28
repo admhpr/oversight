@@ -1,5 +1,6 @@
 ---
-title: 'JavaScript Beyond the Basics ~ Function Composition'
+title: JavaScript Beyond the Basics ~ Function Composition
+desc:  In the Beyond the Basics series I'll be exploring more intermediate/advanced topics in JavaScript in an attempt to understand these topics more on a personal level. 
 published: true
 date: '2017-07-16T11:23'
 taxonomy:

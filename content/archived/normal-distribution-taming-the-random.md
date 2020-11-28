@@ -1,5 +1,6 @@
 ---
-title: 'Normal Distribution : Taming the Random'
+title: Normal Distribution, Taming the Random
+desc: Wouldn't it be great to generate sets of numbers that seem more naturally distributed.
 date: '2018-01-24T18:08'
 taxonomy:
     category:

@@ -1,5 +1,6 @@
 ---
 title: Force
+desc: A vector that causes an object with mass to accelerate. All objects with mass experience force. Some common forces,gravity, tension, spring, buoyancy, air resistance.
 date: '2018-03-07T18:14'
 taxonomy:
     category:

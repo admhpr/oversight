@@ -1,5 +1,6 @@
 ---
-title: 'Make a Decision'
+title: Make a Decision
+desc: As a web application developer I make a lot of decisions each day. The art of programming is making decisions ahead of time and writing the code to deal with the potential decisions the program should know how to make depending  on the interactions of the user or other programs. 
 date: '2018-01-17T18:06'
 taxonomy:
     category:

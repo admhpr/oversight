@@ -1,6 +1,6 @@
 ---
-title: 'Gravitational Attraction'
-media_order: grav_attraction.png
+title: Gravitational Attraction
+desc: If you want to see the pull of gravity, drop whatever you're holding right now. If you had listened, you may have seen your phone drop to the ground and bounce. 
 date: '2018-10-12T15:19'
 taxonomy:
     category:

@@ -1,5 +1,6 @@
 ---
-title: 'Make some ( Perlin ) Noise'
+title: Make some ( Perlin ) Noise
+desc: Perlin Noise allows us to make smooth randomness, It was originally developed to create textures in 3d graphics. Let's say we wanted to make a vase seem like it was made of marble. Rather than hand create we can use an algorythm to generate a texture.
 date: '2018-02-07T18:10'
 taxonomy:
     category:

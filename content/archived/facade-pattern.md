@@ -1,5 +1,6 @@
 ---
-title: 'The Facade Pattern'
+title: The Facade Pattern
+desc:  A facade is an object that provides a simplified interface to a larger body of code, such as a class library.
 date: '2019-03-07T17:09'
 publish_date: '07-03-2019 17:09'
 taxonomy:

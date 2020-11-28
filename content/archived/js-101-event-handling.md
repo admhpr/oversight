@@ -1,5 +1,6 @@
 ---
-title: ' JavaScript 101 ~ Event Handling'
+title: JavaScript 101 ~ Event Handling
+desc: As I've found myself getting deeper into the world of JavaScript it's hard not to take notice of the vast amount of frameworks available to the would be developer. It's actually a little overwhelming at first. Still being relatively fresh to the world  programming and web development in JavaScript, trying to pick a lane is tough.
 date: '2017-05-30T11:23'
 taxonomy:
     category:

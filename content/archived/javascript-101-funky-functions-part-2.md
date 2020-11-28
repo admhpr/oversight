@@ -1,5 +1,6 @@
 ---
-title: 'JavaScript 101 ~ Funky functions part 2'
+title: JavaScript 101 ~ Funky functions part 2
+desc: In the last funky functions I looked at the silently passed argument, ___argument___. I had full intention to talk about the other implicit argument ___this___ in part 2 but I found myself going down a different path. 
 published: true
 date: '2017-06-08T11:23'
 taxonomy:
