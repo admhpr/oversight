@@ -8,7 +8,7 @@ taxonomy:
     tag:
         - javascript
         - 'web development'
-        - Ideas
+        - ideas
 twittercardoptions: summary
 articleenabled: false
 article:

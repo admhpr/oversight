@@ -1,7 +1,7 @@
 ---
 title: 'The Mediator Pattern'
 published: true
-publish_date: '2019-05-07T08:24'
+date: '2019-05-07T08:24'
 taxonomy:
     category:
         - blog

@@ -3,13 +3,20 @@
     <h2 class="title">::</h2>
     <div class="flex flex-wrap">
       <a
-        v-for="tag in allTags"
-        :key="tag"
+        v-for="{ name, count } in allTags"
+        :key="name"
         href="#"
         class="underline tag mr-5"
-        @click="selectedTag === tag ? (selectedTag = '') : (selectedTag = tag)"
-        ><span> #{{ tag }}</span>
-        <span v-if="selectedTag === tag">∅</span>
+        @click="
+          selectedTag === name ? (selectedTag = '') : (selectedTag = name)
+        "
+        ><span> #{{ name }} </span>
+        <span v-if="selectedTag === name">∅</span>
+        <span
+          v-else
+          class="bg-gray-700 text-gray-100 rounded-full bg-white px-2"
+          >{{ count }}</span
+        >
       </a>
     </div>
     <hr />
@@ -62,14 +69,22 @@ export default {
   computed: {
     allTags() {
       const allTags = []
+      const seenTags = {}
       this.list.map((item) => {
         if (typeof item.tags !== 'undefined' && item.tags.length) {
           for (const tag of item.tags) {
-            allTags.push(tag)
+            if (Object.keys(seenTags).includes(tag)) {
+              seenTags[tag] = seenTags[tag] + 1
+              continue
+            }
+            seenTags[tag] = 1
           }
         }
       })
-      return [...new Set(allTags)]
+      for (const [name, count] of Object.entries(seenTags)) {
+        allTags.push({ name, count })
+      }
+      return allTags
     },
     filteredList() {
       return this.list
@@ -77,10 +92,10 @@ export default {
           const isBlogPost =
             item.path.includes('/blog/') || item.path.includes('/archived/')
           const isReadyToPublish = new Date(item.date) <= new Date()
-          console.log(`::::::::::ITEM::::::::::`)
-          console.log(item.title, new Date(item.date))
-          console.log(isReadyToPublish)
-          console.log(`::::::::::END::::::::::`)
+
+          if (!isReadyToPublish) {
+            console.log(item.title)
+          }
 
           const hasTags = item.tags && item.tags.includes(this.selectedTag)
           const shouldPublish = this.selectedTag

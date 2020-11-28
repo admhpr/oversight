@@ -5,7 +5,7 @@ taxonomy:
     category:
         - blog
     tag:
-        - Ideas
+        - ideas
 twitterenable: true
 twittercardoptions: summary
 articleenabled: false

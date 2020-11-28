@@ -7,7 +7,7 @@ taxonomy:
         - blog
     tag:
         - javascript
-        - Ideas
+        - ideas
         - code
 twittercardoptions: summary
 articleenabled: false
