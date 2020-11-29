@@ -27,27 +27,39 @@
       </a>
     </div>
     <hr />
-    <ul class="mt-5">
-      <li v-for="(item, index) in filteredList" :key="`blog-post-${index}`">
-        <BlogPostPreview
-          v-show="index < displayRange.end"
-          :desc="item.desc"
-          :path="item.path"
-          :published="item.date"
-          :tags="item.tags"
-          :title="item.title"
-          @updateSelectedTag="updateSelectedTag"
-        />
-      </li>
-    </ul>
+    <div v-if="filteredList.length">
+      <ul class="mt-5">
+        <li v-for="(item, index) in filteredList" :key="`blog-post-${index}`">
+          <BlogPostPreview
+            v-show="index < displayRange.end"
+            :desc="item.desc"
+            :path="item.path"
+            :published="item.date"
+            :tags="item.tags"
+            :title="item.title"
+            @updateSelectedTag="updateSelectedTag"
+          />
+        </li>
+      </ul>
 
-    <div
-      v-if="displayRange.end <= filteredList.length"
-      class="flex justify-center"
-    >
-      <button class="subtitle underline" type="button" @click="loadMore">
-        ➾
-      </button>
+      <div
+        v-if="displayRange.end <= filteredList.length"
+        class="flex justify-center"
+      >
+        <button class="subtitle underline" type="button" @click="loadMore">
+          ➾
+        </button>
+      </div>
+    </div>
+    <div v-else class="mt-10 flex justify-center">
+      <iframe
+        src="https://giphy.com/embed/d8lUKXD00IXSw"
+        width="480"
+        height="331"
+        frameBorder="0"
+        class="giphy-embed"
+        allowFullScreen
+      ></iframe>
     </div>
   </div>
 </template>

@@ -16,7 +16,7 @@
     </div>
     <aside
       v-if="filteredList.length > 0 && showSearchItems"
-      class="absolute z-10 flex flex-col items-start bg-white border rounded-md shadow-md mt-1"
+      class="absolute w-1/4 z-10 flex flex-col items-start bg-white border rounded-md shadow-md mt-1"
       role="menu"
       aria-labelledby="menu-heading"
     >
@@ -24,8 +24,8 @@
         <li
           v-for="(item, index) in filteredList"
           :key="index"
-          :class="index === currentIndex ? 'bg-blue-600' : ''"
-          class="px-2 py-3 space-x-2 hover:bg-blue-600 hover:text-white focus:bg-gray-600 focus:text-white focus:outline-none"
+          :class="index === currentIndex ? 'bg-secondary text-white' : ''"
+          class="px-2 py-3 space-x-2 hover:bg-secondary hover:text-white focus:bg-gray-600 focus:text-white focus:outline-none"
           @click="
             selectSearchItem(item)
             showSearchItems = false
@@ -68,6 +68,7 @@ export default {
       this.$emit('selected', this.search)
       if (this.search === '') {
         this.currentIndex = 0
+        this.showSearchItems = false
       }
     },
   },
@@ -78,7 +79,10 @@ export default {
       this.$emit('selected', this.search)
     },
     enter() {
-      this.search = this.filteredList[this.currentIndex].title.toLowerCase()
+      if (this.filteredList[this.currentIndex]) {
+        this.search = this.filteredList[this.currentIndex].title.toLowerCase()
+        this.showSearchItems = false
+      }
     },
     up() {
       if (this.currentIndex) {
