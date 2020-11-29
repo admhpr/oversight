@@ -7,7 +7,7 @@ taxonomy:
         - blog
     tag:
         - javascript
-        - node.js
+        - node
 googledesc: 'A quick guide to setting up sequelize.js to interact with a sqlite database in node.'
 twitterenable: true
 twittercardoptions: summary

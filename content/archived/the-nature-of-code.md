@@ -8,7 +8,7 @@ taxonomy:
     tag:
         - javascript
         - ideas
-        - code
+        
 twittercardoptions: summary
 articleenabled: false
 article:

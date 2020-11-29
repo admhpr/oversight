@@ -8,7 +8,7 @@ taxonomy:
         - blog
     tag:
         - '100 days of learning'
-        - probability
+        
 twitterenable: true
 twittercardoptions: summary
 articleenabled: false

@@ -6,7 +6,6 @@ taxonomy:
         - blog
     tag:
         - personal_dev
-        - nts
 twitterenable: true
 twittercardoptions: summary
 articleenabled: false

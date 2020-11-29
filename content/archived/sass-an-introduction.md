@@ -10,7 +10,7 @@ taxonomy:
         - blog
     tag:
         - 'web development'
-        - code
+        
         - 'web design'
 twittercardoptions: summary
 articleenabled: false

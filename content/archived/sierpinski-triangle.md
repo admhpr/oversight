@@ -7,7 +7,6 @@ taxonomy:
         - blog
     tag:
         - p5
-        - fractals
 twitterenable: true
 twittercardoptions: summary
 articleenabled: false

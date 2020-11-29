@@ -8,7 +8,6 @@ taxonomy:
         - blog
     tag:
         - javascript
-        - 'javascript ES6'
         - 'web development'
 googledesc: 'How and when to use the arrow function in JavaScript.'
 twittercardoptions: summary

@@ -8,7 +8,6 @@ taxonomy:
         - blog
     tag:
         - javascript
-        - 'javascript beyond the basics'
         - programming
 googledesc: 'A brief look at function composition in JavaScript.'
 twittercardoptions: summary
