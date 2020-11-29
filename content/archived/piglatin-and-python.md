@@ -1,6 +1,7 @@
 ---
 title: 'Piglatin and  Python'
 date: '2018-09-16T16:11'
+desc: Back when I was a kid pig latin made no sense. I wanted to make a basic pig latin translator so if I ever come across it again I can at least hold a conversation....
 taxonomy:
     category:
         - blog

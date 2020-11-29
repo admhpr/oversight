@@ -2,6 +2,7 @@
 title: Recursion
 media_order: recursion.jpg
 date: '2018-09-30T15:50'
+desc: Recurions  is one of those topics in programming that I have had an interest in. Partly because infinate recursion is well... so weird.
 publish_date: '30-09-2018 15:50'
 taxonomy:
     category:

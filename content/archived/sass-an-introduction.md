@@ -2,6 +2,7 @@
 title: 'SASS ~ An Introduction'
 published: true
 date: '2017-09-01T18:26'
+desc: In this post I am going to be building off a previous post. I went over how to install and setup Sass using Ruby aswell as the basic project structure, since that post I have came across away to use Sass with Nod
 metadata:
     Sass: Blog
 taxonomy:

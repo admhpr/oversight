@@ -1,6 +1,7 @@
 ---
 title: 'The Humanness of programs'
 date: '2018-04-11T18:16'
+desc: 0110100001100101011011000110110001101111,Even something as simple as hello can seem strange and alien in machine language. Yet our world today in 2018 is shaped by 1’s and 0’s. These 1’s and 0’s represent state at the hardware level.
 taxonomy:
     category:
         - blog

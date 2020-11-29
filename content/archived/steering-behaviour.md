@@ -2,6 +2,7 @@
 title: 'Steering Behaviour'
 media_order: 'auto_2.png,auto_1.png'
 date: '2018-09-22T09:28'
+desc: The goal of this post is to examine simulations where the objects make decisions.
 taxonomy:
     category:
         - blog

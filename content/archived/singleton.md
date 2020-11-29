@@ -1,6 +1,7 @@
 ---
 title: 'The Singleton Pattern'
 date: '2019-01-06T00:00'
+desc: In software engineering, the singleton pattern is a software design pattern that restricts the instantiation of a class to one object. This is useful when exactly one object is needed to coordinate actions across the system.
 publish_date: '06-01-2019 00:00'
 taxonomy:
     category:

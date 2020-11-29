@@ -1,6 +1,7 @@
 ---
 title: ' Node js ~ sequelize and sqlite'
 date: '2017-06-01T11:23'
+desc: I have been teaching myself Node.js over the last few weeks and it has really tested my JavaScript skills.  
 taxonomy:
     category:
         - blog

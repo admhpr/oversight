@@ -1,6 +1,7 @@
 ---
 title: 'Probability and Movement'
 date: '2018-01-10T18:02'
+desc: Probability is the measure of the likelihood that an event will occur. It is a way to evaluate a given set of scenarios and decide how often will event x happen.
 publish_date: '10-01-2018 18:02'
 taxonomy:
     category:

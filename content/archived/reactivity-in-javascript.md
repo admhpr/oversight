@@ -1,6 +1,7 @@
 ---
 title: 'Reactivity In JavaScript'
 date: '2018-05-23T18:17'
+desc: How do changes in state translate to changes in the DOM?
 twittercardoptions: summary
 articleenabled: false
 musiceventenabled: false

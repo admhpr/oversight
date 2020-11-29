@@ -1,6 +1,7 @@
 ---
 title: 'Sierpinski Triangle'
 date: '2018-10-28T14:22'
+desc: The Sierpinski Triangle is rather beautiful. I thought might be interesting to try and create it in code. Luckily I was able to find many others who had attempted the same thing. I did a little reading on what was involved and the steps are pretty straight forward
 taxonomy:
     category:
         - blog
