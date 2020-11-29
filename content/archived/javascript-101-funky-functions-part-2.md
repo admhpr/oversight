@@ -9,7 +9,7 @@ taxonomy:
     tag:
         - javascript
         - 'javascript 101'
-        - 'funky functions'
+
 googledesc: 'A look at ways to define and invoke functions in JavaScript.'
 twittercardoptions: summary
 articleenabled: false

@@ -9,7 +9,7 @@ taxonomy:
     tag:
         - javascript
         - 'javascript 101'
-        - 'funky functions'
+
 googledesc: 'A quick exploration of the arugments parameter and the use of the rest parameter in ES6.'
 twittercardoptions: summary
 articleenabled: false
