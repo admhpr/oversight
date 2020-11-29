@@ -1,18 +1,22 @@
 <template>
   <div class="w-full">
-    <div class="mt-1 flex rounded-md shadow-sm">
+    <div class="mt-1 flex justify-between rounded-md">
       <input
         ref="searchBox"
         v-model="search"
         type="text"
         placeholder="Search posts..."
         aria-label="Search"
+        @keydown.down="down"
+        @keydown.up="up"
+        @keydown.enter="enter"
         @input="showSearchItems = true"
       />
+      <span @click="search = ''">∅</span>
     </div>
     <aside
       v-if="filteredList.length > 0 && showSearchItems"
-      class="absolute z-10 flex flex-col items-start w-64 bg-white border rounded-md shadow-md mt-1"
+      class="absolute z-10 flex flex-col items-start bg-white border rounded-md shadow-md mt-1"
       role="menu"
       aria-labelledby="menu-heading"
     >
@@ -20,13 +24,14 @@
         <li
           v-for="(item, index) in filteredList"
           :key="index"
-          class="px-2 py-3 space-x-2 hover:bg-blue-600 hover:text-white focus:bg-blue-600 focus:text-white focus:outline-none"
+          :class="index === currentIndex ? 'bg-blue-600' : ''"
+          class="px-2 py-3 space-x-2 hover:bg-blue-600 hover:text-white focus:bg-gray-600 focus:text-white focus:outline-none"
           @click="
             selectSearchItem(item)
             showSearchItems = false
           "
         >
-          {{ item.name }}
+          {{ item.title.toLowerCase() }}
         </li>
       </ul>
     </aside>
@@ -34,13 +39,8 @@
 </template>
 
 <script>
-import ClickOutside from 'vue-click-outside'
-// import './css/tailwind.css' // Development only
 export default {
-  name: 'VueTailwindcssTypeahead',
-  directives: {
-    ClickOutside,
-  },
+  name: 'PostSearch',
   props: {
     list: {
       type: Array,
@@ -54,40 +54,43 @@ export default {
   data() {
     return {
       search: '',
-      selectedItem: '',
+      currentIndex: 0,
       showSearchItems: false,
-      isMouseOverList: false,
-      searchItemList: this.lists,
     }
   },
   computed: {
     filteredList() {
-      return this.searchItemList.filter((item) => {
-        return item.name.toLowerCase().includes(this.search.toLowerCase())
-      })
-    },
-    classProps() {
-      return [...this.inputClass]
+      return this.list
     },
   },
-  created() {
-    if (this.selectedData !== 0) {
-      const selected = this.lists.filter((item) => {
-        if (item.id === this.selectedData) {
-          return true
-        }
-        return false
-      })
-      this.selectedItem = selected[0].name
-      this.search = selected[0].name
-    }
+  watch: {
+    search(v) {
+      this.$emit('selected', this.search)
+      if (this.search === '') {
+        this.currentIndex = 0
+      }
+    },
   },
   methods: {
     selectSearchItem(item) {
-      this.search = item.name
-      this.selectedItem = item.name
+      this.search = item.title.toLowerCase()
       this.showSearchItems = false
-      this.$emit('selected', item)
+      this.$emit('selected', this.search)
+    },
+    enter() {
+      this.search = this.filteredList[this.currentIndex].title.toLowerCase()
+    },
+    up() {
+      if (this.currentIndex) {
+        this.currentIndex = this.currentIndex - 1
+      }
+    },
+    down() {
+      if (this.currentIndex + 1 < this.filteredList.length - 1) {
+        this.currentIndex = this.currentIndex + 1
+        return
+      }
+      this.currentIndex = 0
     },
   },
 }

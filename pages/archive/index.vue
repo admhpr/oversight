@@ -1,17 +1,17 @@
 <template>
   <div class="content">
-    <ArchivedList :list="posts" />
+    <ArchiveList :list="posts" />
   </div>
 </template>
 
 <script>
-import ArchivedList from '~/components/ArchivedList'
+import ArchiveList from '~/components/ArchiveList'
 export default {
   components: {
-    ArchivedList,
+    ArchiveList,
   },
   async asyncData({ $content }) {
-    const posts = await $content('archived').fetch()
+    const posts = await $content('archive').fetch()
     return {
       posts,
     }

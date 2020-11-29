@@ -1,6 +1,13 @@
 <template>
   <div class="mt-5">
     <h2 class="title">::</h2>
+    <PostSearch
+      class="subtitle mt-2"
+      :list="filteredList"
+      @selected="updateSearch"
+    />
+    <hr />
+    <h2 class="title">∴</h2>
     <div class="flex flex-wrap">
       <a
         v-for="{ name, count } in allTags"
@@ -46,11 +53,13 @@
 </template>
 
 <script>
+import PostSearch from '~/components/PostSearch'
 import BlogPostPreview from '~/components/BlogPostPreview'
 export default {
   name: 'BlogPostList',
   components: {
     BlogPostPreview,
+    PostSearch,
   },
   props: {
     list: {
@@ -64,6 +73,7 @@ export default {
         end: 10,
       },
       selectedTag: '',
+      search: '',
     }
   },
   computed: {
@@ -90,18 +100,16 @@ export default {
       return this.list
         .filter((item) => {
           const isBlogPost =
-            item.path.includes('/blog/') || item.path.includes('/archived/')
+            item.path.includes('/blog/') || item.path.includes('/archive/')
           const isReadyToPublish = new Date(item.date) <= new Date()
-
-          if (!isReadyToPublish) {
-            console.log(item)
-          }
-
+          const isInSearch = this.search.length
+            ? item.title.toLowerCase().includes(this.search)
+            : true
           const hasTags = item.tags && item.tags.includes(this.selectedTag)
           const shouldPublish = this.selectedTag
             ? isBlogPost && isReadyToPublish && hasTags
             : isBlogPost && isReadyToPublish
-          if (shouldPublish) {
+          if (shouldPublish && isInSearch) {
             return item
           }
         })
@@ -114,6 +122,9 @@ export default {
     },
     updateSelectedTag(tag) {
       this.selectedTag = tag
+    },
+    updateSearch(search) {
+      this.search = search
     },
   },
 }

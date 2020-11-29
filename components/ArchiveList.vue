@@ -17,7 +17,7 @@ function createBlogPostItem(archivedItem) {
   return { body, date: String(date), desc, extension, path, title, tags }
 }
 export default {
-  name: 'ArchivedList',
+  name: 'ArchiveList',
   props: {
     list: {
       type: Array,

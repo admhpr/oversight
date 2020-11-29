@@ -4,9 +4,9 @@ import { interopDefault } from './utils'
 import scrollBehavior from './router.scrollBehavior.js'
 
 const _c953a518 = () => interopDefault(import('../pages/about/index.vue' /* webpackChunkName: "pages/about/index" */))
-const _53fa5c1e = () => interopDefault(import('../pages/archived/index.vue' /* webpackChunkName: "pages/archived/index" */))
+const _7ba9cd2e = () => interopDefault(import('../pages/archive/index.vue' /* webpackChunkName: "pages/archive/index" */))
 const _ba20189e = () => interopDefault(import('../pages/blog/index.vue' /* webpackChunkName: "pages/blog/index" */))
-const _57679eae = () => interopDefault(import('../pages/archived/_slug.vue' /* webpackChunkName: "pages/archived/_slug" */))
+const _7f170fbe = () => interopDefault(import('../pages/archive/_slug.vue' /* webpackChunkName: "pages/archive/_slug" */))
 const _bd8d5b2e = () => interopDefault(import('../pages/blog/_slug.vue' /* webpackChunkName: "pages/blog/_slug" */))
 const _5d81ca76 = () => interopDefault(import('../pages/index.vue' /* webpackChunkName: "pages/index" */))
 
@@ -31,17 +31,17 @@ export const routerOptions = {
     component: _c953a518,
     name: "about"
   }, {
-    path: "/archived",
-    component: _53fa5c1e,
-    name: "archived"
+    path: "/archive",
+    component: _7ba9cd2e,
+    name: "archive"
   }, {
     path: "/blog",
     component: _ba20189e,
     name: "blog"
   }, {
-    path: "/archived/:slug",
-    component: _57679eae,
-    name: "archived-slug"
+    path: "/archive/:slug",
+    component: _7f170fbe,
+    name: "archive-slug"
   }, {
     path: "/blog/:slug",
     component: _bd8d5b2e,

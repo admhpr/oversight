@@ -37,4 +37,4 @@ async function convert(path) {
   }
 }
 
-convert('../content/archived').catch(console.error)
+convert('../content/archive').catch(console.error)

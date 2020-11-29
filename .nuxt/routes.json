@@ -7,11 +7,11 @@
     "_name": "_c953a518"
   },
   {
-    "name": "archived",
-    "path": "/archived",
-    "component": "/home/adam/workspace/oversight/pages/archived/index.vue",
-    "chunkName": "pages/archived/index",
-    "_name": "_53fa5c1e"
+    "name": "archive",
+    "path": "/archive",
+    "component": "/home/adam/workspace/oversight/pages/archive/index.vue",
+    "chunkName": "pages/archive/index",
+    "_name": "_7ba9cd2e"
   },
   {
     "name": "blog",
@@ -21,11 +21,11 @@
     "_name": "_ba20189e"
   },
   {
-    "name": "archived-slug",
-    "path": "/archived/:slug",
-    "component": "/home/adam/workspace/oversight/pages/archived/_slug.vue",
-    "chunkName": "pages/archived/_slug",
-    "_name": "_57679eae"
+    "name": "archive-slug",
+    "path": "/archive/:slug",
+    "component": "/home/adam/workspace/oversight/pages/archive/_slug.vue",
+    "chunkName": "pages/archive/_slug",
+    "_name": "_7f170fbe"
   },
   {
     "name": "blog-slug",

@@ -11,7 +11,7 @@
 <script>
 export default {
   async asyncData(ctx) {
-    const page = await ctx.$content(`archived/${ctx.params.slug}`).fetch()
+    const page = await ctx.$content(`archive/${ctx.params.slug}`).fetch()
     return {
       page,
     }

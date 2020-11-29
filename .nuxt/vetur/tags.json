@@ -1,9 +1,9 @@
 {
-  "ArchivedList": {
-    "description": "Auto imported from components/ArchivedList.vue"
+  "ArchiveList": {
+    "description": "Auto imported from components/ArchiveList.vue"
   },
-  "LazyArchivedList": {
-    "description": "Auto imported from components/ArchivedList.vue"
+  "LazyArchiveList": {
+    "description": "Auto imported from components/ArchiveList.vue"
   },
   "BlogPostList": {
     "description": "Auto imported from components/BlogPostList.vue"
@@ -40,6 +40,12 @@
   },
   "LazyNavBar": {
     "description": "Auto imported from components/NavBar.vue"
+  },
+  "PostSearch": {
+    "description": "Auto imported from components/PostSearch.vue"
+  },
+  "LazyPostSearch": {
+    "description": "Auto imported from components/PostSearch.vue"
   },
   "Socials": {
     "description": "Auto imported from components/Socials.vue"
