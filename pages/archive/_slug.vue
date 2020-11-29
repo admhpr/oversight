@@ -19,7 +19,6 @@ export default {
   computed: {
     formatPublishDate() {
       const dateFormat = new Date(this.page.date)
-      console.log(this.page)
       const time = this.page.date.split('T')[1]
       const options = {
         year: 'numeric',
