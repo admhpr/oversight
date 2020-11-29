@@ -2,7 +2,7 @@
   <nav class="navbar">
     <div class="flex items-center">
       <nuxt-link
-        to="/blog"
+        to="/"
         class="navbar-logo"
         exact-active-class="no-active-style"
       >
@@ -14,7 +14,6 @@
       </nuxt-link>
     </div>
     <div class="navbar-item-wrapper">
-      <nuxt-link to="/blog" class="navbar-item">blog</nuxt-link>
       <nuxt-link to="/archive" class="navbar-item">archive</nuxt-link>
       <nuxt-link to="/about" class="navbar-item">about</nuxt-link>
     </div>

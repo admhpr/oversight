@@ -1,16 +1,22 @@
 <template>
-  <div class="container mx-auto text-center">
-    <div>
-      <div class="flex justify-center">
-        <logo />
-      </div>
-      <p class="title">thinking out loud</p>
-    </div>
+  <div class="content">
+    <BlogPostList :list="posts" />
   </div>
 </template>
 
 <script>
-export default {}
+import BlogPostList from '~/components/BlogPostList'
+export default {
+  components: {
+    BlogPostList,
+  },
+  async asyncData({ $content }) {
+    const posts = await $content('blog').fetch()
+    return {
+      posts,
+    }
+  },
+}
 </script>
 
-<style lang="scss" scoped></style>
+<style></style>
