@@ -3,7 +3,9 @@
     <time>{{ formatPublishDate }}</time>
     <article class="p-8">
       <h2 class="title">
-        <a :href="path">‡ {{ title.toLowerCase() }}</a>
+        <nuxt-link class="subtitle underline" :to="path">
+          ‡ {{ title.toLowerCase() }}</nuxt-link
+        >
       </h2>
       <p v-if="desc" class="mb-10">{{ desc }}</p>
       <div class="flex justify-end">
