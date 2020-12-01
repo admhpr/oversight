@@ -1,6 +1,6 @@
 <template>
   <section>
-    <time>{{ formatPublishDate }}</time>
+    <time class="mt-5">{{ formatPublishDate }}</time>
     <article class="p-8">
       <h2 class="title">
         <nuxt-link class="subtitle underline" :to="path">
