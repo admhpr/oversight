@@ -23,7 +23,7 @@ export default {
     @apply text-4xl;
   }
   p {
-    font-family: $ff-serif;
+    font-family: $ff-sans;
     @apply mb-3;
   }
 }
