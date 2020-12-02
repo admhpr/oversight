@@ -1,1 +1,0 @@
-window.__NUXT__={staticAssetsBase:"\u002F_nuxt\u002Fstatic\u002F1606842663",layout:"default",error:null,serverRendered:true,routePath:"\u002Farchive\u002Fhow-flappy-bird-was-made",config:{apiKey:"8RAPkZ1PgqvfaZPsxL6t9PBn",content:{dbHash:"4875619a"}}};
