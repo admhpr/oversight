@@ -1,5 +1,5 @@
 <template>
-  <div class="flex flex-col min-h-screen">
+  <div class="flex flex-col min-h-screen max-width-full">
     <NavBar />
     <hr />
     <nuxt class="flex-1" keep-alive />
