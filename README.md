@@ -1,5 +1,9 @@
 # oversight
 
+![CI](https://github.com/harps116/oversight/workflows/CI/badge.svg)
+
+keeping it simple circa 2020
+
 ## Build Setup
 
 ```bash
