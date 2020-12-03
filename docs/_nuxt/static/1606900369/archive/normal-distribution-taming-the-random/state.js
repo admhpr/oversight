@@ -1,1 +1,0 @@
-window.__NUXT__={staticAssetsBase:"\u002F_nuxt\u002Fstatic\u002F1606900369",layout:"default",error:null,serverRendered:true,routePath:"\u002Farchive\u002Fnormal-distribution-taming-the-random",config:{apiKey:"8RAPkZ1PgqvfaZPsxL6t9PBn",content:{dbHash:"9213a30c"}}};
