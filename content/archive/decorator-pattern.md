@@ -54,7 +54,7 @@ Typescript Code Example:
 
 Start off with a basic coffee definition:
 
-```
+```ts
 interface Coffee{
     getCost() : number;
     getDescription() : string;
@@ -73,7 +73,7 @@ class SimpleCoffee implements Coffee{
 ```
 We want to make the code extensible to allow options to modify it if required. Lets make some add-ons (decorators)
 
-```
+```ts
 class AsLatte implements Coffee{
 
     constructor(protected coffee: Coffee){
@@ -110,7 +110,7 @@ class WithVanilla implements Coffee
 ```
 Usage:
 
-```
+```ts
 let someCoffee = new SimpleCoffee();
 console.log(someCoffee.getCost()); // 10
 console.log(someCoffee.getDescription()); // Simple Coffee

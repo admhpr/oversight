@@ -59,7 +59,7 @@ Typescript Code Example:
 
 Door interface and implementation
 
-```
+```ts
 interface IDoor{
 	getWidth: () => number;
 	getHeight: () => number;
@@ -81,7 +81,7 @@ class WoodenDoor implements IDoor {
 ```
 Door Factory that makes an instance of the Door
 
-```
+```ts
 class DoorFactory{
 	public static makeDoor(w : number, h: number){ 
         return new WoodenDoor(w, h)
@@ -91,7 +91,7 @@ class DoorFactory{
 
 And can be used like so:
 
-```
+```ts
 const door = DoorFactory.makeDoor(100, 200)
 
 console.log(door.getWidth())
@@ -122,7 +122,7 @@ Main purpose:
 Typescript Code example:
 
 Setup variations of question askers
-```
+```ts
 interface IInterviewer{
     askQuestions: () => void;
 }
@@ -141,7 +141,7 @@ class CommunityExecutive implements IInterviewer {
 ```
 
 Asking the question
-```
+```ts
 abstract class HiringManager{
 
     // Factory method
@@ -154,7 +154,7 @@ abstract class HiringManager{
 }
 ```
 Who asks the question
-```
+```ts
 class DevelopmentManager extends HiringManager {
     makeInterviewer() {
         return new Developer()
@@ -168,7 +168,7 @@ class MarketingManager extends HiringManager {
 }
 ```
 Usage
-```
+```ts
 const devManager = new DevelopmentManager()
 devManager.takeInterview() // Output: Asking about design patterns
 
@@ -195,7 +195,7 @@ Main Purpose:
 > A way to group individual but related/dependant factories together without specifying their concrete class
 
 Door interface implementation
-```
+```ts
 interface Door {
     getDescription() : void;
 }
@@ -213,7 +213,7 @@ class IronDoor implements Door{
 }
 ```
 Door Fitter and implemenation
-```
+```ts
 interface DoorFittingExpert {
     getDescription() : void;
 }
@@ -231,7 +231,7 @@ class Carpenter implements DoorFittingExpert{
 }
 ```
 Grouping the dependencies together
-```
+```ts
 interface DoorFactory {
     makeDoor(): Door;
     makeFittingExpert(): DoorFittingExpert;
@@ -262,7 +262,7 @@ class IronDoorFactory implements DoorFactory{
 
 Usage
 
-```
+```ts
 
 const woodenFactory = new WoodenDoorFactory()
 

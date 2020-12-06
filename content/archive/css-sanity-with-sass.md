@@ -98,7 +98,7 @@ We are ready to roll:
 
 set up a `config.rb` file in your project root to let compass know what's up, here's a sample to get you started:
 
-```
+```bash
 # Require any additional compass plugins here.
 # defaults to project root
 
@@ -128,7 +128,7 @@ For more details on configuration check out the compass [docs](http://compass-st
 <br/>
 be sure to set your paths correctly this example project looks like this:
 
-```
+```bash
 index.html
 |
 css/styles.css

@@ -51,7 +51,7 @@ Typescript Code Example:
 
 The computer class.
 
-```
+```ts
 
 class Computer { 
     public initPost() { 
@@ -80,7 +80,7 @@ class Computer {
 
 The facade.
 
-```
+```ts
 
 class ComputerFacade { 
     constructor(protected computer: Computer) { 
@@ -100,7 +100,7 @@ class ComputerFacade {
 
 Usage:
 
-```
+```ts
 const myLapytop = new ComputerFacade(new Computer());
 
 myLapytop.powerOn();
