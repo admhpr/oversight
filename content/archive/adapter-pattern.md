@@ -58,7 +58,7 @@ Typescript Code Example:
 
 Let's say we had made a game called `Lion Hunter` now our marketing manager loves a good scandal and knows a game like this will generate a lot of social media attention. So we write some code:
 
-```typescript
+```ts
 interface ILion { 
     roar()
 }
@@ -79,7 +79,7 @@ class AsianLion implements ILion {
 
 Now we have a couple of lions, now let's create the hunter:
 
-```typescript
+```ts
 interface IHunter { 
     hunt(lion : ILion)
 }
@@ -97,7 +97,7 @@ It's all working and our PM is very happy...but marketing comes back and says we
 Rather than mess with the hunter set up we can make an adapter that uses the already established interface like so:
 
 
-```typescript
+```ts
 interface IWildDog { 
     bark()
 }
@@ -122,7 +122,7 @@ class WildDogAdapter implements ILion {;
 
 Usage:
 
-```typescript
+```ts
 const wildDog = new WildDog();
 const wildDogAdapter = new WildDogAdapter(wildDog);
 const lion = new AfricanLion()

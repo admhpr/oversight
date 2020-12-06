@@ -81,7 +81,7 @@ Back to the builder...
 
 Typescript Code Example:
 
-```
+```ts
 enum BreadTypes { 
     wheat,
     rye,
@@ -135,7 +135,7 @@ Full Example:
 
 Of course this can also be done with a simple object as a param like so:
 
-```
+```ts
 enum BreadTypes { 
     wheat,
     rye,

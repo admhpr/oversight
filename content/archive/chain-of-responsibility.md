@@ -51,7 +51,7 @@ Typescript Code Example:
 
 Here's what all accounts must be able to do:
 
-```
+```ts
 abstract class Account {
 
     protected successor: Account;
@@ -80,7 +80,7 @@ abstract class Account {
 
 Now let's setup the payment mentods:
 
-```
+```ts
 
 class Bank extends Account {
     constructor(protected balance) {
@@ -104,7 +104,7 @@ class Bitcoin extends Account {
 
 Tie them together and handle a payment:
 
-```
+```ts
 const bank = new Bank(100);
 const paypal = new Paypal(200);
 const bitcoin = new Bitcoin(300)
