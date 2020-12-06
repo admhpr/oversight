@@ -43,14 +43,14 @@ Here is the example in code:
 
 We add the location to velocity to get the new location. The formula in psuedo-code:
 
-```
+```ts
 newLocation.x = location.x + velocity.x
 newLocation.y = location.y + velocity.y
 
 ```
 Now that we have have a handle on adding let's look at subtraction. There isn't that much difference. All we are doing is replacing the add with subtract but it does require a little extra thinking. Lets first write the pseudo code and then draw it out.
 
-```
+```ts
 W.x = V.x - U.x
 W.y = V.y - U.y
 
@@ -63,7 +63,7 @@ To subtract the vectors we lay the vectors end to end but when subtracting we in
 
 now in we can label those letters:
 
-```
+```ts
 velocity.x = mouseV.x - centerV.x
 velocity.y = mouseV.y - centerV.y
 

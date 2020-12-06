@@ -54,7 +54,7 @@ Typescript Code Example:
 
 Job seekers that need to be notified for a job posting:
 
-```
+```ts
 class JobPost {
     constructor(protected title: string) { }
 
@@ -72,7 +72,7 @@ class JobSeeker {
 }
 ```
 Job postings to which the job seekers will subscribe:
-```
+```ts
 class JobBoard {
     private subscribers = []
     subscribe(jobSeeker) {
@@ -86,7 +86,7 @@ class JobBoard {
 }
 ```
 Usage:
-```
+```ts
 // Create subscribers
 const jonDoe = new JobSeeker('John Doe')
 const janeDoe = new JobSeeker('Jane Doe')

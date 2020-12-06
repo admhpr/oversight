@@ -54,7 +54,7 @@ Typescript Code Example:
 
 Create a radio station:
 
-```
+```ts
 class RadioStation {
 
     constructor(private frequency: number) {
@@ -69,7 +69,7 @@ class RadioStation {
 
 And a list of stations
 
-```
+```ts
 class StationList {
     
     constructor(public stations: RadioStation[] = []){
@@ -90,7 +90,7 @@ class StationList {
 
 Iterate through th list:
 
-````
+````ts
 const stationList = new StationList()
 
 stationList.addStation(new RadioStation(89))

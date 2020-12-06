@@ -51,7 +51,7 @@ Real World Example:
 Typescript Code Example:
 
 First of all we have our memento object that will be able to hold the editor state
-```
+```ts
 class EditorMemento { 
     constructor(protected content: string) {
         
@@ -66,7 +66,7 @@ class EditorMemento {
 
 Then we have our editor i.e. originator that is going to use memento object
 
-```
+```ts
 class Editior { 
     protected content: string = "";
 
@@ -90,7 +90,7 @@ class Editior {
 ```
 The two classes can be used as follows:
 
-```
+```ts
 const editor = new Editor()
 
 // Type some stuff

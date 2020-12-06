@@ -53,7 +53,7 @@ Typescript Code Example:
 
 Setup teapot:
 
-```
+```ts
 // Anything that will be cached is flyweight.
 // Types of tea here will be flyweights.
 class Teapot{
@@ -68,7 +68,7 @@ class Teapot{
 ```
 Our tea maker and shop:
 
-```
+```ts
 // Acts as a factory and saves the tea
 class TeaMaker{
     protected availableTea = new Map([]);
@@ -99,7 +99,7 @@ class TeaShop{
 }
 ```
 Usage:
-```
+```ts
 const teaMaker = new TeaMaker();
 const shop = new TeaShop(teaMaker);
 

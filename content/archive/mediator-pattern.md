@@ -53,7 +53,7 @@ Typescript Code Example:
 
 Set up the mediator:
 
-```
+```ts
 interface IChatRoom { 
     showMessage(user: User, message: string)
 }
@@ -71,7 +71,7 @@ class ChatRoom implements IChatRoom {
 
 The colleagues:
 
-```
+```ts
 class User {
     constructor(private name: string, private chatMediator: IChatRoom) {
     }
