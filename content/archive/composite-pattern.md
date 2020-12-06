@@ -53,7 +53,7 @@ Typescript Code Example:
 
 Say we had the following types of employees:
 
-```
+```ts
 interface IEmployee{
     getName(): string;
     setSalary(salary: number);
@@ -110,7 +110,7 @@ class Designer implements IEmployee{
 
 In the following organisation:
 
-```
+```ts
 class Organisation{
     protected employees : IEmployee[] = [];
 
@@ -132,7 +132,7 @@ class Organisation{
 
 We could use it as follows:
 
-```
+```ts
 // Prepare the employees
 const john = new Developer('John Doe', 12000);
 const jane = new Designer('Jane Doe', 15000);

@@ -54,7 +54,7 @@ Typescript Code Example:
 
 The `receiver` has the implementation of every action that could be performed:
 
-```
+```ts
 // Receiver
 class Bulb { 
     public turnOn() { 
@@ -70,7 +70,7 @@ class Bulb {
 
 There is also an iterface for each command and an implementation of that command:
 
-```
+```ts
 interface ICommand { 
     execute(): void;
     undo(): void;
@@ -92,7 +92,7 @@ class TurnOn implements ICommand {
 }
 
 class TurnOff implements ICommand { 
-        constructor(protected bulb: Bulb) { }
+    constructor(protected bulb: Bulb) { }
     public execute() {
         this.bulb.turnOff();
      }
@@ -107,7 +107,7 @@ class TurnOff implements ICommand {
 
 Then an `invoker` with whom the client will interact with to process the command:
 
-```
+```ts
 class RemoteControl { 
     submit(command: ICommand) { 
         command.execute();
@@ -117,7 +117,7 @@ class RemoteControl {
 
 And now we can tie it all together:
 
-```
+```ts
 // receiver
 var bulb = new Bulb();
 
