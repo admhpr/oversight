@@ -50,7 +50,7 @@ Typescript Code Example:
 
 Say we have a hotel room door:
 
-```
+```ts
 interface IDoor { 
     open(): void;
     close(): void;
@@ -71,7 +71,7 @@ class HotelRoomDoor implements IDoor {
 ```
 Which we wanted to add some security to:
 
-```
+```ts
 class SecureDoor { 
     constructor(protected door: IDoor) { }
 
@@ -98,7 +98,7 @@ class SecureDoor {
 We can now use the secure door as a proxy to the actual hotel door like so:
 
 
-```
+```ts
 const door = new SecureDoor(new HotelRoomDoor())
 
 door.open(4567); // wrong passcode

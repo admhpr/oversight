@@ -47,7 +47,7 @@ Real World Example:
 
 Typescript Code Example:
 
-```
+```ts
 // Visitee
 interface Animal {
     accept(operation: AnimalOperation);
@@ -61,7 +61,7 @@ interface AnimalOperation {
 }
 ```
 Implementation
-```
+```ts
 
 class Monkey implements Animal {
     public shout() {
@@ -96,7 +96,7 @@ class Dolphin implements Animal {
 ```
 
 implement our visitor to add jump and sound behaviour:
-```
+```ts
 
 class Speak implements AnimalOperation {
     public visitMonkey(monkey: Monkey) {
@@ -127,7 +127,7 @@ class Jump implements AnimalOperation {
 }
 ```
 Usage:
-```
+```ts
 const monkey = new Monkey()
 const lion = new Lion()
 const dolphin = new Dolphin()

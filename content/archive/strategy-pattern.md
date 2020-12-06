@@ -52,7 +52,7 @@ Typescript Code Example:
 
 Strategies that conform to the interface:
 
-```
+```ts
 interface SortStrategy {
     sort(data: number[]): number[]
 }
@@ -75,7 +75,7 @@ class QuickSortStrategy implements SortStrategy{
 ```
 The Sorter:
 
-```
+```ts
 class Sorter { 
     protected sorter;
     constructor(sorter: SortStrategy) { 
@@ -89,7 +89,7 @@ class Sorter {
 ```
 Usage:
 
-```
+```ts
 const dataset = [1, 5, 4, 3, 2, 8];
 
 const bubbleSorter = new Sorter(new BubbleSortStrategy());

@@ -60,7 +60,7 @@ In the example we are imagining that we have a build tool that helps us test, li
 
 First of all we have our base class that specifies the skeleton for the build algorithm
 
-```
+```ts
 abstract class Builder {
     build(){
         this.test();
@@ -79,7 +79,7 @@ abstract class Builder {
 
 The implementations:
 
-```
+```ts
 class AndroidBuilder extends Builder{
     test(){     
         console.log('Running android tests');
@@ -120,7 +120,7 @@ class IosBuilder extends Builder{
 
 Usage:
 
-```
+```ts
 
 const androidBuilder = new AndroidBuilder();
 androidBuilder.build();

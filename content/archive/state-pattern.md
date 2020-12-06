@@ -53,7 +53,7 @@ An example of the state patterns use case is a text editor, it lets you change t
 
 First of all we have our state interface and some state implementations
 
-```
+```ts
 interface WritingState{
     write(words: string) : void;
 }
@@ -79,7 +79,7 @@ class DefaultText implements WritingState{
 
 The Editor:
 
-```
+```ts
 class TextEditor{
     protected state : WritingState;
 
@@ -99,7 +99,7 @@ class TextEditor{
 
 Usage:
 
-```
+```ts
 const editor = new TextEditor(new DefaultText());
 
 editor.type('First line');

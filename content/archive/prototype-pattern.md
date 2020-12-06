@@ -52,7 +52,7 @@ Main Purpose:
 
 Typescript Code Example:
 
-```
+```ts
 enum SheepType{ 
     mountain,
     fluffy,
