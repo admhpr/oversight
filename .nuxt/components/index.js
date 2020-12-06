@@ -6,6 +6,7 @@ export { default as Icon } from '../../components/Icon.vue'
 export { default as Logo } from '../../components/Logo.vue'
 export { default as NavBar } from '../../components/NavBar.vue'
 export { default as PostSearch } from '../../components/PostSearch.vue'
+export { default as PostView } from '../../components/PostView.vue'
 export { default as Socials } from '../../components/Socials.vue'
 
 export const LazyArchiveList = import('../../components/ArchiveList.vue' /* webpackChunkName: "components/ArchiveList" */).then(c => c.default || c)
@@ -16,4 +17,5 @@ export const LazyIcon = import('../../components/Icon.vue' /* webpackChunkName: 
 export const LazyLogo = import('../../components/Logo.vue' /* webpackChunkName: "components/Logo" */).then(c => c.default || c)
 export const LazyNavBar = import('../../components/NavBar.vue' /* webpackChunkName: "components/NavBar" */).then(c => c.default || c)
 export const LazyPostSearch = import('../../components/PostSearch.vue' /* webpackChunkName: "components/PostSearch" */).then(c => c.default || c)
+export const LazyPostView = import('../../components/PostView.vue' /* webpackChunkName: "components/PostView" */).then(c => c.default || c)
 export const LazySocials = import('../../components/Socials.vue' /* webpackChunkName: "components/Socials" */).then(c => c.default || c)

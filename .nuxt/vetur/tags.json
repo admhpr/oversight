@@ -47,6 +47,12 @@
   "LazyPostSearch": {
     "description": "Auto imported from components/PostSearch.vue"
   },
+  "PostView": {
+    "description": "Auto imported from components/PostView.vue"
+  },
+  "LazyPostView": {
+    "description": "Auto imported from components/PostView.vue"
+  },
   "Socials": {
     "description": "Auto imported from components/Socials.vue"
   },
