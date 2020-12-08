@@ -1,7 +1,7 @@
 ---
 title: thinking out loud
 date: 2020-11-30T08:52
-desc: some thoughts and ideas as I begin to write again
+desc: Some thoughts and ideas as I begin to write again
 tags:
   - meta
 
