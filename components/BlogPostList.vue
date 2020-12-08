@@ -99,7 +99,10 @@ export default {
               seenTags[tag] = seenTags[tag] + 1
               continue
             }
-            seenTags[tag] = 1
+            const isReadyToPublish = new Date(item.date) <= new Date()
+            if (isReadyToPublish) {
+              seenTags[tag] = 1
+            }
           }
         }
       })

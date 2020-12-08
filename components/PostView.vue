@@ -59,6 +59,15 @@ export default {
     @apply font-bold;
     @apply mt-5 mb-5;
     @apply pb-3;
+    @apply text-2xl;
+    line-height: 1.3;
+  }
+  h3 {
+    color: $c-secondary;
+    font-family: $ff-sans;
+    @apply font-bold;
+    @apply mt-5 mb-5;
+    @apply pb-3;
     @apply text-xl;
     line-height: 1.3;
   }
