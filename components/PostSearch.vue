@@ -14,27 +14,29 @@
       />
       <span @click="search = ''">∅</span>
     </div>
-    <aside
-      v-if="filteredList.length > 0 && showSearchItems"
-      class="absolute w-1/4 z-10 flex flex-col items-start bg-white border rounded-md shadow-md mt-1"
-      role="menu"
-      aria-labelledby="menu-heading"
-    >
-      <ul class="flex flex-col w-full">
-        <li
-          v-for="(item, index) in filteredList"
-          :key="index"
-          :class="index === currentIndex ? 'bg-secondary text-white' : ''"
-          class="px-2 py-3 space-x-2 hover:bg-secondary hover:text-white focus:bg-gray-600 focus:text-white focus:outline-none"
-          @click="
-            selectSearchItem(item)
-            showSearchItems = false
-          "
-        >
-          {{ item.title.toLowerCase() }}
-        </li>
-      </ul>
-    </aside>
+    <div class="w-full">
+      <aside
+        v-if="filteredList.length > 0 && showSearchItems"
+        class="z-10 flex justify-between flex-col items-start bg-white border rounded-md shadow-md mt-1"
+        role="menu"
+        aria-labelledby="menu-heading"
+      >
+        <ul class="flex flex-col w-full">
+          <li
+            v-for="(item, index) in filteredList"
+            :key="index"
+            :class="index === currentIndex ? 'bg-secondary text-white' : ''"
+            class="px-2 py-3 space-x-2 hover:bg-secondary hover:text-white focus:bg-gray-600 focus:text-white focus:outline-none"
+            @click="
+              selectSearchItem(item)
+              showSearchItems = false
+            "
+          >
+            {{ item.title.toLowerCase() }}
+          </li>
+        </ul>
+      </aside>
+    </div>
   </div>
 </template>
 
