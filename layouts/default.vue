@@ -2,7 +2,7 @@
   <div class="flex flex-col min-h-screen max-width-full">
     <NavBar />
     <hr />
-    <nuxt class="flex-1" keep-alive />
+    <nuxt class="max-width-full flex-1" keep-alive />
     <hr />
     <Footer />
   </div>
