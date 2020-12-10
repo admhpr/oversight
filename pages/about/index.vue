@@ -1,5 +1,5 @@
 <template>
-  <div class="content">
+  <div class="content p-5">
     <nuxt-content :document="page"></nuxt-content>
   </div>
 </template>

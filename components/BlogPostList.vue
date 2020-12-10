@@ -1,5 +1,5 @@
 <template>
-  <div class="mt-5 p-2">
+  <div class="mt-5 p-5">
     <h2 class="title">::</h2>
     <PostSearch
       class="subtitle mt-2"
