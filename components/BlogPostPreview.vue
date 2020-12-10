@@ -1,5 +1,6 @@
 <template>
   <section class="w-full min-width-full">
+    <hr class="mb-5" />
     <time class="mt-5">{{ formatPublishDate }}</time>
     <article class="p-8">
       <h2 class="title">
@@ -12,7 +13,6 @@
         <nuxt-link class="subtitle underline" :to="path"> ❒ </nuxt-link>
       </div>
     </article>
-    <hr />
   </section>
 </template>
 

@@ -26,7 +26,6 @@
         >
       </a>
     </div>
-    <hr />
     <div v-if="filteredList.length">
       <ul class="mt-5">
         <li v-for="(item, index) in filteredList" :key="`blog-post-${index}`">
