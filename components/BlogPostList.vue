@@ -8,7 +8,7 @@
     />
     <hr />
     <h2 class="title">∴</h2>
-    <div class="flex flex-wrap">
+    <div class="flex max-w-full flex-wrap">
       <a
         v-for="{ name, count } in allTags"
         :key="name"
@@ -54,8 +54,7 @@
     <div v-else class="mt-10 flex justify-center">
       <iframe
         src="https://giphy.com/embed/d8lUKXD00IXSw"
-        width="480"
-        height="331"
+        height="330"
         frameBorder="0"
         class="giphy-embed"
         allowFullScreen
