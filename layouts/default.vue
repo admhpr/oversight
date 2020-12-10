@@ -2,7 +2,9 @@
   <div class="flex flex-col min-h-screen max-width-full">
     <NavBar />
     <hr />
-    <nuxt class="max-width-full flex-1" keep-alive />
+    <section class="flex justify-center">
+      <nuxt keep-alive class="lg:w-2/5 md:w-full max-width-full" />
+    </section>
     <hr />
     <Footer />
   </div>
@@ -34,10 +36,5 @@ html {
 *:after {
   box-sizing: border-box;
   margin: 0;
-}
-.content {
-  @apply mx-auto;
-  @apply px-8;
-  max-width: 740px;
 }
 </style>

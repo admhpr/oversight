@@ -1,5 +1,5 @@
 <template>
-  <section>
+  <section class="w-full min-width-full">
     <time class="mt-5">{{ formatPublishDate }}</time>
     <article class="p-8">
       <h2 class="title">

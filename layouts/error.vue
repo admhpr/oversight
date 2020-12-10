@@ -38,9 +38,4 @@ html {
   box-sizing: border-box;
   margin: 0;
 }
-.content {
-  @apply mx-auto;
-  @apply px-8;
-  max-width: 740px;
-}
 </style>

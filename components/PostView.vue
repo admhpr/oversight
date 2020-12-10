@@ -30,11 +30,6 @@ export default {
 </script>
 
 <style lang="scss">
-.content {
-  @apply mx-auto;
-  @apply px-8;
-  max-width: 740px;
-}
 .nuxt-content {
   blockquote {
     font-style: italic;
