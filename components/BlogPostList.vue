@@ -1,33 +1,35 @@
 <template>
   <div class="mt-5 p-5">
-    <h2 class="title">::</h2>
-    <PostSearch
-      class="subtitle mt-2"
-      :list="filteredList"
-      @selected="updateSearch"
-    />
-    <hr />
-    <h2 class="title">∴</h2>
-    <div class="flex max-w-full flex-wrap">
-      <a
-        v-for="{ name, count } in allTags"
-        :key="name"
-        :href="'#' + name"
-        class="underline tag mr-5"
-        @click="
-          selectedTag === name ? (selectedTag = '') : (selectedTag = name)
-        "
-        ><span> #{{ name }} </span>
-        <span v-if="selectedTag === name">∅</span>
-        <span
-          v-else
-          class="bg-gray-700 text-gray-100 rounded-full bg-white px-2"
-          >{{ count }}</span
-        >
-      </a>
-    </div>
+    <section class="p-5">
+      <h2 class="title">::</h2>
+      <PostSearch
+        class="subtitle mt-2"
+        :list="filteredList"
+        @selected="updateSearch"
+      />
+      <hr />
+      <h2 class="title">∴</h2>
+      <div class="flex max-w-full flex-wrap">
+        <a
+          v-for="{ name, count } in allTags"
+          :key="name"
+          :href="'#' + name"
+          class="underline tag mr-5"
+          @click="
+            selectedTag === name ? (selectedTag = '') : (selectedTag = name)
+          "
+          ><span> #{{ name }} </span>
+          <span v-if="selectedTag === name">∅</span>
+          <span
+            v-else
+            class="bg-gray-700 text-gray-100 rounded-full bg-white px-2"
+            >{{ count }}</span
+          >
+        </a>
+      </div>
+    </section>
     <div v-if="filteredList.length">
-      <ul class="mt-5">
+      <ul class="p-5 mt-5">
         <li v-for="(item, index) in filteredList" :key="`blog-post-${index}`">
           <BlogPostPreview
             v-show="index < displayRange.end"
