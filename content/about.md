@@ -8,7 +8,7 @@ through code and beyond.
 
 In May 2018, I graduated with high honors from Western Technical College, Wisconsin USA, with an Associates in Applied Science with a focus on web and software development and design. I have worked in the industry since 2016.
 
-Working with emerging rapid growth start-ups and thriving fast paced product focused work envrionments. This is my little slice of the web to write put down some thoughts and learn as I go.
+Working with emerging rapid growth start-ups and fast paced product focused work environments. This is my little slice of the web to put down some thoughts and learn as I go.
 
 ## blog
 
