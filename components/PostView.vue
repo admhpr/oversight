@@ -1,6 +1,6 @@
 <template>
   <main>
-    <article class="content">
+    <article class="w-screen p-5">
       <p class="my-5">{{ formatPublishDate }}</p>
       <h1 class="title">{{ page.title.toLowerCase() }}</h1>
       <hr />

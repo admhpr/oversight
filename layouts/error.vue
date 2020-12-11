@@ -1,6 +1,6 @@
 <template>
   <section>
-    <div class="flex justify-center">
+    <div class="p-5 flex justify-center">
       <span class="subtitle"
         >ehhh....you might be a little lost,
         <nuxt-link to="/" class="underline">get me out of here</nuxt-link></span
