@@ -8,9 +8,9 @@ tags:
 
 ## First Steps
 
-Variables in rust are [immutable](https://www.dictionary.com/browse/immutable) by default. a helpful hint by the language to write code that is easy to follow and unwanted side effects are reduced.
+Variables in rust are [immutable](https://www.dictionary.com/browse/immutable) by default. a helpful hint by the language to write code that is easy to follow and avoid any unwanted side effects are reduced.
 
-Once a immutable variable is bound to a name, it cannot change. Let's have a quick look at what that means,
+Once a immutable variable is bound to a name, it cannot change. Let's have a quick look at what that means.
 
 `src/main.rs`
 ```rust
@@ -47,7 +47,7 @@ error: could not compile `variables`.
 To learn more, run the command again with --verbose.
 
 ```
-This is a good thing, the compiler is nudging you to solving the issue at hand. Take note of `cannot assign twice to immutable variable x`.
+This is a good thing, the compiler is nudging you to solving the issue at hand. Take note of the following message: `cannot assign twice to immutable variable x`.
 
 Now we know we have two options to achieve the desired output. We can either create a new immutable variable and assign `6` to it. Or, we can make `x` mutable. If we want to make `x` mutable we can add the `mut` keyword to the variable declaration.
 
