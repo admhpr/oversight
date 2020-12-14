@@ -7,7 +7,13 @@
         :list="filteredList"
         @selected="updateSearch"
       />
-      <hr />
+      <hr class="mb-2" />
+      <YearSelect
+        :all-years="allYears"
+        :selected-years="selectedYears"
+        @yearSelected="onYearSelected"
+        @yearRemoved="onYearRemoved"
+      />
       <h2 class="title">∴</h2>
       <TagSelect
         :all-tags="allTags"
@@ -74,6 +80,7 @@ export default {
         end: 10,
       },
       selectedTags: [],
+      selectedYears: [],
       search: '',
     }
   },
@@ -81,7 +88,7 @@ export default {
     allTags() {
       const allTags = []
       const seenTags = {}
-      this.list.map((item) => {
+      this.list.forEach((item) => {
         if (typeof item.tags !== 'undefined' && item.tags.length) {
           for (const tag of item.tags) {
             if (Object.keys(seenTags).includes(tag)) {
@@ -100,6 +107,15 @@ export default {
       }
       return allTags
     },
+    allYears() {
+      return [
+        ...new Set(
+          this.list
+            .map((item) => new Date(item.date).getFullYear())
+            .filter((year) => year <= new Date().getFullYear())
+        ),
+      ].sort((a, b) => b - a)
+    },
     filteredList() {
       return this.list
         .filter((item) => {
@@ -116,9 +132,15 @@ export default {
             item.tags.filter((tag) => this.selectedTags.includes(tag))
               .length === this.selectedTags.length
 
+          const hasYear = this.selectedYears.length
+            ? this.selectedYears.includes(new Date(item.date).getFullYear())
+            : true
+
+          const isAsExpected = isPost && isReadyToPublish && hasYear
           const shouldPublish = this.selectedTags.length
-            ? isPost && isReadyToPublish && hasTags
-            : isPost && isReadyToPublish
+            ? isAsExpected && hasTags
+            : isAsExpected
+
           if (shouldPublish && isInSearch) {
             return item
           }
@@ -135,6 +157,12 @@ export default {
     },
     onTagRemoved(tag) {
       this.selectedTags = this.selectedTags.filter((t) => t !== tag)
+    },
+    onYearSelected(year) {
+      this.selectedYears.push(year)
+    },
+    onYearRemoved(year) {
+      this.selectedYears = this.selectedYears.filter((y) => y !== year)
     },
     updateSearch(search) {
       this.search = search
