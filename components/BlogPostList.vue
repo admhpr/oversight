@@ -9,24 +9,12 @@
       />
       <hr />
       <h2 class="title">∴</h2>
-      <div class="flex max-w-full flex-wrap">
-        <a
-          v-for="{ name, count } in allTags"
-          :key="name"
-          :href="'#' + name"
-          class="underline tag mr-5"
-          @click="
-            selectedTag === name ? (selectedTag = '') : (selectedTag = name)
-          "
-          ><span> #{{ name }} </span>
-          <span v-if="selectedTag === name">∅</span>
-          <span
-            v-else
-            class="bg-gray-700 text-gray-100 rounded-full bg-white px-2"
-            >{{ count }}</span
-          >
-        </a>
-      </div>
+      <TagSelect
+        :all-tags="allTags"
+        :selected-tags="selectedTags"
+        @tagSelected="onTagSelected"
+        @tagRemoved="onTagRemoved"
+      />
     </section>
     <div v-if="filteredList.length">
       <ul class="p-5 mt-5">
@@ -38,7 +26,6 @@
             :published="item.date"
             :tags="item.tags"
             :title="item.title"
-            @updateSelectedTag="updateSelectedTag"
           />
         </li>
       </ul>
@@ -67,11 +54,13 @@
 <script>
 import PostSearch from '~/components/PostSearch'
 import BlogPostPreview from '~/components/BlogPostPreview'
+import TagSelect from '~/components/TagSelect'
 export default {
   name: 'BlogPostList',
   components: {
     BlogPostPreview,
     PostSearch,
+    TagSelect,
   },
   props: {
     list: {
@@ -84,7 +73,7 @@ export default {
       displayRange: {
         end: 10,
       },
-      selectedTag: '',
+      selectedTags: [],
       search: '',
     }
   },
@@ -114,16 +103,22 @@ export default {
     filteredList() {
       return this.list
         .filter((item) => {
-          const isBlogPost =
+          const isPost =
             item.path.includes('/blog/') || item.path.includes('/archive/')
           const isReadyToPublish = new Date(item.date) <= new Date()
+
           const isInSearch = this.search.length
             ? item.title.toLowerCase().includes(this.search)
             : true
-          const hasTags = item.tags && item.tags.includes(this.selectedTag)
-          const shouldPublish = this.selectedTag
-            ? isBlogPost && isReadyToPublish && hasTags
-            : isBlogPost && isReadyToPublish
+
+          const hasTags =
+            item.tags &&
+            item.tags.filter((tag) => this.selectedTags.includes(tag))
+              .length === this.selectedTags.length
+
+          const shouldPublish = this.selectedTags.length
+            ? isPost && isReadyToPublish && hasTags
+            : isPost && isReadyToPublish
           if (shouldPublish && isInSearch) {
             return item
           }
@@ -135,8 +130,11 @@ export default {
     loadMore() {
       this.displayRange.end += 5
     },
-    updateSelectedTag(tag) {
-      this.selectedTag = tag
+    onTagSelected(tag) {
+      this.selectedTags.push(tag)
+    },
+    onTagRemoved(tag) {
+      this.selectedTags = this.selectedTags.filter((t) => t !== tag)
     },
     updateSearch(search) {
       this.search = search

@@ -58,5 +58,11 @@
   },
   "LazySocials": {
     "description": "Auto imported from components/Socials.vue"
+  },
+  "TagSelect": {
+    "description": "Auto imported from components/TagSelect.vue"
+  },
+  "LazyTagSelect": {
+    "description": "Auto imported from components/TagSelect.vue"
   }
 }

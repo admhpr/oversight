@@ -8,6 +8,7 @@ export { default as NavBar } from '../../components/NavBar.vue'
 export { default as PostSearch } from '../../components/PostSearch.vue'
 export { default as PostView } from '../../components/PostView.vue'
 export { default as Socials } from '../../components/Socials.vue'
+export { default as TagSelect } from '../../components/TagSelect.vue'
 
 export const LazyArchiveList = import('../../components/ArchiveList.vue' /* webpackChunkName: "components/ArchiveList" */).then(c => c.default || c)
 export const LazyBlogPostList = import('../../components/BlogPostList.vue' /* webpackChunkName: "components/BlogPostList" */).then(c => c.default || c)
@@ -19,3 +20,4 @@ export const LazyNavBar = import('../../components/NavBar.vue' /* webpackChunkNa
 export const LazyPostSearch = import('../../components/PostSearch.vue' /* webpackChunkName: "components/PostSearch" */).then(c => c.default || c)
 export const LazyPostView = import('../../components/PostView.vue' /* webpackChunkName: "components/PostView" */).then(c => c.default || c)
 export const LazySocials = import('../../components/Socials.vue' /* webpackChunkName: "components/Socials" */).then(c => c.default || c)
+export const LazyTagSelect = import('../../components/TagSelect.vue' /* webpackChunkName: "components/TagSelect" */).then(c => c.default || c)
