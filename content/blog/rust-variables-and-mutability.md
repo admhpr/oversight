@@ -1,7 +1,7 @@
 ---
 title: variables and mutability in rust
 date: 2020-12-11T11:02
-desc: A look at basic building blocks using rust
+desc: A look at basic building blocks of rust
 tags:
   - rust
 ---
