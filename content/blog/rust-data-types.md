@@ -234,3 +234,27 @@ You would write an array’s type by using square brackets, and within the brack
 let months: [&str; 12] = ["January", "February", "March", "April", "May", "June", "July",
               "August", "September", "October", "November", "December"];
 ```
+
+Writing an array’s type this way looks similar to an alternative syntax for initializing an array: if you want to create an array that contains the same value for each element, you can specify the initial value, followed by a semicolon, and then the length of the array in square brackets, as shown here:
+
+```rust
+let a = [3; 5];
+
+```
+The array named `a` will contain `5` elements that will all be set to the value `3` initially. This is the same as writing `let a = [3, 3, 3, 3, 3];` but in a more concise way.
+
+### Accessing Array Elements
+
+An array is a single chunk of memory allocated on the stack. You can access elements of an array using indexing, like this:
+
+```rust
+fn main() {
+    let a = [1, 2, 3, 4, 5];
+
+    let first = a[0];
+    let second = a[1];
+}
+```
+
+In this example, the variable named `first` will get the value `1`, because that is the value at index `[0]` in the array. The variable named second will get the value `2` from index `[1]` in the array.
+
