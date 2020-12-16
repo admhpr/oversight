@@ -296,4 +296,4 @@ To learn more, run the command again with --verbose.
 ```
 The compilation didn’t produce any errors, but the program resulted in a __runtime__ error and didn’t exit successfully. When you attempt to access an element using indexing, Rust will check that the index you’ve specified is less than the array length. If the index is greater than or equal to the array length, Rust will panic.
 
-This is the an example of Rust’s safety principles in action. In many low-level languages, this kind of check is not done, and when you provide an incorrect index, invalid memory can be accessed, which can lead to a number or issues like a [buffer overrun](https://en.wikipedia.org/wiki/Buffer_overflow).
+This is the an example of Rust’s safety principles in action. In many low-level languages, this kind of check is not done, and when you provide an incorrect index, invalid memory can be accessed, which can lead to a number or issues like a [buffer overflow](https://en.wikipedia.org/wiki/Buffer_overflow).
