@@ -247,6 +247,7 @@ The array named `a` will contain `5` elements that will all be set to the value 
 
 An array is a single chunk of memory allocated on the stack. You can access elements of an array using indexing, like this:
 
+`src/main.rs`
 ```rust
 fn main() {
     let a = [1, 2, 3, 4, 5];
@@ -258,3 +259,41 @@ fn main() {
 
 In this example, the variable named `first` will get the value `1`, because that is the value at index `[0]` in the array. The variable named second will get the value `2` from index `[1]` in the array.
 
+### Invalid Array Element Access
+
+What happens if you try to access an element of an array that is past the end of the array? Say you change the example to the following code, which will compile but exit with an error when it runs:
+
+`src/main.rs`
+```rust
+fn main() {
+    let a = [1, 2, 3, 4, 5];
+    let index = 10;
+
+    let element = a[index];
+
+    println!("The value of element is: {}", element);
+}
+```
+
+Running this code using `cargo run` produces the following result:
+
+```bash
+$ cargo run
+   Compiling arrays v0.1.0 (file:///projects/arrays)
+error: this operation will panic at runtime
+ --> src/main.rs:5:19
+  |
+5 |     let element = a[index];
+  |                   ^^^^^^^^ index out of bounds: the len is 5 but the index is 10
+  |
+  = note: `#[deny(unconditional_panic)]` on by default
+
+error: aborting due to previous error
+
+error: could not compile `arrays`.
+
+To learn more, run the command again with --verbose.
+```
+The compilation didn’t produce any errors, but the program resulted in a __runtime__ error and didn’t exit successfully. When you attempt to access an element using indexing, Rust will check that the index you’ve specified is less than the array length. If the index is greater than or equal to the array length, Rust will panic.
+
+This is the an example of Rust’s safety principles in action. In many low-level languages, this kind of check is not done, and when you provide an incorrect index, invalid memory can be accessed, which can lead to a number or issues like a [buffer overrun](https://en.wikipedia.org/wiki/Buffer_overflow).
