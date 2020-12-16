@@ -202,4 +202,35 @@ fn main() {
     let one = x.2;
 }
 ```
-This program creates a tuple, x, and then makes new variables for each element by using their respective indices. As with most programming languages, the first index in a tuple is 0.
+This program creates a tuple, `x`, and then makes new variables for each element by using their respective indices. As with most programming languages, the first index in a tuple is 0.
+
+### Array Type
+
+Another way to collect values is an array. Every element in an array must be of the same type (unlike a tuple).
+
+Arrays in Rust are different from arrays in other languages because arrays have a fixed length, like tuples.
+
+Values going into an array are written as a comma-separated list inside square brackets:
+
+`src/main.rs`
+```rust
+fn main() {
+    let a = [1, 2, 3, 4, 5];
+}
+```
+Arrays are useful when data is to stored on the stack rather than the heap ([more on stack and heap](https://medium.com/@nickolasteixeira/stack-vs-heap-whats-the-difference-and-why-should-i-care-5abc78da1a88)) or when you want to ensure you always have a fixed number of elements.  An array isn’t as flexible as the vector type, though. A vector is a similar collection type provided by the standard library that is allowed to grow or shrink in size. If you’re unsure whether to use an array or a vector, you should probably use a vector. I will look at vectors in a future post.
+
+An example of when you might want to use an array rather than a vector is in a program that needs to know the names of the months of the year. It’s very unlikely that such a program will need to add or remove months, so you can use an array because you know it will always contain 12 elements:
+
+```rust
+let months = ["January", "February", "March", "April", "May", "June", "July",
+              "August", "September", "October", "November", "December"];
+
+```
+
+You would write an array’s type by using square brackets, and within the brackets include the type of each element, a semicolon, and then the number of elements in the array, like so:
+
+```rust
+let months: [&str; 12] = ["January", "February", "March", "April", "May", "June", "July",
+              "August", "September", "October", "November", "December"];
+```
