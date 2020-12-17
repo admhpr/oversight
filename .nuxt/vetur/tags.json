@@ -41,6 +41,12 @@
   "LazyNavBar": {
     "description": "Auto imported from components/NavBar.vue"
   },
+  "PostPagination": {
+    "description": "Auto imported from components/PostPagination.vue"
+  },
+  "LazyPostPagination": {
+    "description": "Auto imported from components/PostPagination.vue"
+  },
   "PostSearch": {
     "description": "Auto imported from components/PostSearch.vue"
   },
@@ -64,5 +70,11 @@
   },
   "LazyTagSelect": {
     "description": "Auto imported from components/TagSelect.vue"
+  },
+  "YearSelect": {
+    "description": "Auto imported from components/YearSelect.vue"
+  },
+  "LazyYearSelect": {
+    "description": "Auto imported from components/YearSelect.vue"
   }
 }

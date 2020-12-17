@@ -3,42 +3,36 @@
     "name": "about",
     "path": "/about",
     "component": "/home/adam/workspace/oversight/pages/about/index.vue",
-    "chunkName": "pages/about/index",
-    "_name": "_c953a518"
+    "chunkName": "pages/about/index"
   },
   {
     "name": "archive",
     "path": "/archive",
     "component": "/home/adam/workspace/oversight/pages/archive/index.vue",
-    "chunkName": "pages/archive/index",
-    "_name": "_7ba9cd2e"
+    "chunkName": "pages/archive/index"
   },
   {
     "name": "blog",
     "path": "/blog",
     "component": "/home/adam/workspace/oversight/pages/blog/index.vue",
-    "chunkName": "pages/blog/index",
-    "_name": "_ba20189e"
+    "chunkName": "pages/blog/index"
   },
   {
     "name": "archive-slug",
     "path": "/archive/:slug",
     "component": "/home/adam/workspace/oversight/pages/archive/_slug.vue",
-    "chunkName": "pages/archive/_slug",
-    "_name": "_7f170fbe"
+    "chunkName": "pages/archive/_slug"
   },
   {
     "name": "blog-slug",
     "path": "/blog/:slug",
     "component": "/home/adam/workspace/oversight/pages/blog/_slug.vue",
-    "chunkName": "pages/blog/_slug",
-    "_name": "_bd8d5b2e"
+    "chunkName": "pages/blog/_slug"
   },
   {
     "name": "index",
     "path": "/",
     "component": "/home/adam/workspace/oversight/pages/index.vue",
-    "chunkName": "pages/index",
-    "_name": "_5d81ca76"
+    "chunkName": "pages/index"
   }
 ]

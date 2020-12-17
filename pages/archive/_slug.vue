@@ -1,13 +1,13 @@
 <template>
-  <PostView :page="page" />
+  <PostViewContainer :page="page" />
 </template>
 
 <script>
-import PostView from '~/components/PostView'
+import PostViewContainer from '~/containers/PostViewContainer'
 const pageType = `archive`
 export default {
   components: {
-    PostView,
+    PostViewContainer,
   },
   async asyncData(ctx) {
     const page = await ctx.$content(`${pageType}/${ctx.params.slug}`).fetch()
