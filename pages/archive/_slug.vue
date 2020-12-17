@@ -1,5 +1,5 @@
 <template>
-  <PostViewContainer :page="page" />
+  <PostViewContainer :page="page" :page-type="pageType" />
 </template>
 
 <script>
@@ -13,6 +13,11 @@ export default {
     const page = await ctx.$content(`${pageType}/${ctx.params.slug}`).fetch()
     return {
       page,
+    }
+  },
+  data() {
+    return {
+      pageType,
     }
   },
 }
