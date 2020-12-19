@@ -1,23 +1,23 @@
 <template>
-  <PostViewContainer :page="page" :page-type="pageType" />
+  <PostViewContainer :page="post" :page-type="postType" />
 </template>
 
 <script>
 import PostViewContainer from '~/containers/PostViewContainer'
-const pageType = `archive`
+const postType = `archive`
 export default {
   components: {
     PostViewContainer,
   },
   async asyncData(ctx) {
-    const page = await ctx.$content(`${pageType}/${ctx.params.slug}`).fetch()
+    const post = await ctx.$content(`${postType}/${ctx.params.slug}`).fetch()
     return {
-      page,
+      post,
     }
   },
   data() {
     return {
-      pageType,
+      postType,
     }
   },
 }
