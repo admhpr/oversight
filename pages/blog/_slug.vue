@@ -1,18 +1,18 @@
 <template>
-  <PostViewContainer :page="page" />
+  <PostViewContainer :post="post" />
 </template>
 
 <script>
 import PostViewContainer from '~/containers/PostViewContainer'
-const pageType = `blog`
+const postType = `blog`
 export default {
   components: {
     PostViewContainer,
   },
   async asyncData(ctx) {
-    const page = await ctx.$content(`${pageType}/${ctx.params.slug}`).fetch()
+    const post = await ctx.$content(`${postType}/${ctx.params.slug}`).fetch()
     return {
-      page,
+      post,
     }
   },
 }
