@@ -9,9 +9,21 @@ export default {
       type: Array,
       required: true,
     },
-    postIndex: {
+    currentPostIndex: {
       type: Number,
       required: true,
+    },
+  },
+  computed: {
+    postAfter() {
+      return this.currentPostIndex !== this.posts.length - 1
+        ? this.posts[this.currentPostIndex + 1]
+        : false
+    },
+    postBefore() {
+      return this.currentPostIndex !== 0
+        ? this.posts[this.currentPostIndex - 1]
+        : false
     },
   },
 }
