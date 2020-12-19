@@ -2,9 +2,9 @@
   <main>
     <article class="w-screen lg:w-full p-5">
       <p class="my-5">{{ formatPublishDate }}</p>
-      <h1 class="title">{{ page.title.toLowerCase() }}</h1>
+      <h1 class="title">{{ post.title.toLowerCase() }}</h1>
       <hr />
-      <nuxt-content v-show="page" class="p-2" :document="page" />
+      <nuxt-content v-show="post" class="p-2" :document="post" />
     </article>
   </main>
 </template>
@@ -12,12 +12,12 @@
 <script>
 export default {
   props: {
-    page: { type: Object, required: true },
+    post: { type: Object, required: true },
   },
   computed: {
     formatPublishDate() {
-      const dateFormat = new Date(this.page.date)
-      const time = this.page.date.split('T')[1]
+      const dateFormat = new Date(this.post.date)
+      const time = this.post.date.split('T')[1]
       const options = {
         year: 'numeric',
         month: 'long',

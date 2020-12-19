@@ -1,6 +1,6 @@
 <template>
   <div>
-    <PostView :page="post" />
+    <PostView :post="post" />
   </div>
 </template>
 
