@@ -1,5 +1,5 @@
 <template>
-  <PostViewContainer :page="post" :page-type="postType" />
+  <PostViewContainer :post="post" :post-type="postType" />
 </template>
 
 <script>

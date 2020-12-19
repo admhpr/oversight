@@ -1,6 +1,6 @@
 <template>
   <div>
-    <PostView :page="page" />
+    <PostView :page="post" />
   </div>
 </template>
 
@@ -11,8 +11,8 @@ export default {
     PostView,
   },
   props: {
-    page: { type: Object, required: true },
-    pageType: { type: String, required: true },
+    post: { type: Object, required: true },
+    postType: { type: String, required: true },
   },
   data() {
     return {
@@ -35,7 +35,7 @@ export default {
     },
   },
   async created() {
-    this.pages = await this.$content(this.pageType).fetch()
+    this.pages = await this.$content(this.postType).fetch()
   },
 }
 </script>
