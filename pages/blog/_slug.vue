@@ -1,5 +1,5 @@
 <template>
-  <PostViewContainer :post="post" />
+  <PostViewContainer :post="post" :post-type="postType" />
 </template>
 
 <script>
@@ -13,6 +13,11 @@ export default {
     const post = await ctx.$content(`${postType}/${ctx.params.slug}`).fetch()
     return {
       post,
+    }
+  },
+  data() {
+    return {
+      postType,
     }
   },
 }

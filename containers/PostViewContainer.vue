@@ -27,8 +27,9 @@ export default {
       return this.posts.findIndex((post) => this.post.path === post.path)
     },
   },
-  async created() {
-    this.posts = await this.$content(this.postType).fetch()
+  created() {
+    this.posts =
+      this.postType === 'blog' ? this.$blogPosts : this.$archivedPosts
   },
 }
 </script>
