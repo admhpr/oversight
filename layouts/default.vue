@@ -3,7 +3,7 @@
     <NavBar />
     <hr />
     <section class="flex justify-center">
-      <nuxt keep-alive class="lg:w-2/5 md:w-full max-width-full" />
+      <nuxt keep-alive class="lg:w-3/5 md:w-full max-width-full" />
     </section>
     <hr />
     <Footer />
