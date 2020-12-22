@@ -1,3 +1,4 @@
+// used to convert blog posts from grav site
 const fs = require('fs')
 
 function copy(source, target) {
