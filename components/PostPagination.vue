@@ -1,14 +1,20 @@
 <template>
   <section
     class="mb-5 flex flex-col sm:flex-row"
-    :class="postAfter && postBefore ? 'justify-between' : 'justify-end'"
+    :class="postAfter && postBefore ? '' : 'justify-end'"
   >
     <hr />
+
     <nuxt-link v-if="postAfter" :to="postAfter.path" class="p-5 navbar-item">
       <span class="text-xl">← {{ postAfter.title }} </span>
     </nuxt-link>
+
     <hr />
-    <nuxt-link v-if="postBefore" :to="postBefore.path" class="p-5 navbar-item">
+    <nuxt-link
+      v-if="postBefore"
+      :to="postBefore.path"
+      class="ml-auto p-5 navbar-item"
+    >
       <span class="text-xl">{{ postBefore.title }} →</span>
     </nuxt-link>
   </section>
