@@ -31,6 +31,9 @@ export default {
 
 <style lang="scss">
 .nuxt-content {
+  strong {
+    font-style: italic;
+  }
   blockquote {
     font-style: italic;
     @apply ml-3;
@@ -38,7 +41,7 @@ export default {
     border-left: solid 2px $c-primary;
   }
   a {
-    color: $c-secondary;
+    color: $c-primary;
     font-family: $ff-sans;
     @apply font-semibold;
     @apply text-lg;
@@ -46,7 +49,7 @@ export default {
     letter-spacing: 1px;
   }
   a[target='_blank']:after {
-    content: '∉';
+    content: '↑';
   }
   h2 {
     color: $c-secondary;
