@@ -35,18 +35,6 @@
   "LazySocials": {
     "description": "Auto imported from components/Socials.vue"
   },
-  "TagSelect": {
-    "description": "Auto imported from components/TagSelect.vue"
-  },
-  "LazyTagSelect": {
-    "description": "Auto imported from components/TagSelect.vue"
-  },
-  "YearSelect": {
-    "description": "Auto imported from components/YearSelect.vue"
-  },
-  "LazyYearSelect": {
-    "description": "Auto imported from components/YearSelect.vue"
-  },
   "ArchiveList": {
     "description": "Auto imported from components/list/ArchiveList.vue"
   },
@@ -76,5 +64,17 @@
   },
   "LazyPostView": {
     "description": "Auto imported from components/post/PostView.vue"
+  },
+  "TagSelect": {
+    "description": "Auto imported from components/select/TagSelect.vue"
+  },
+  "LazyTagSelect": {
+    "description": "Auto imported from components/select/TagSelect.vue"
+  },
+  "YearSelect": {
+    "description": "Auto imported from components/select/YearSelect.vue"
+  },
+  "LazyYearSelect": {
+    "description": "Auto imported from components/select/YearSelect.vue"
   }
 }

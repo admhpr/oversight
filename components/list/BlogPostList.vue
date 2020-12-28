@@ -60,13 +60,15 @@
 <script>
 import PostSearch from '~/components/post/PostSearch'
 import BlogPostPreview from '~/components/BlogPostPreview'
-import TagSelect from '~/components/TagSelect'
+import TagSelect from '~/components/select/TagSelect'
+import YearSelect from '~/components/select/YearSelect'
 export default {
   name: 'BlogPostList',
   components: {
     BlogPostPreview,
     PostSearch,
     TagSelect,
+    YearSelect,
   },
   props: {
     list: {
