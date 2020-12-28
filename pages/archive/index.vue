@@ -5,7 +5,7 @@
 </template>
 
 <script>
-import ArchiveList from '~/components/ArchiveList'
+import ArchiveList from '~/components/list/ArchiveList'
 export default {
   components: {
     ArchiveList,

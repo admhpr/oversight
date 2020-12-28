@@ -1,16 +1,4 @@
 {
-  "ArchiveList": {
-    "description": "Auto imported from components/ArchiveList.vue"
-  },
-  "LazyArchiveList": {
-    "description": "Auto imported from components/ArchiveList.vue"
-  },
-  "BlogPostList": {
-    "description": "Auto imported from components/BlogPostList.vue"
-  },
-  "LazyBlogPostList": {
-    "description": "Auto imported from components/BlogPostList.vue"
-  },
   "BlogPostPreview": {
     "description": "Auto imported from components/BlogPostPreview.vue"
   },
@@ -58,6 +46,18 @@
   },
   "LazyYearSelect": {
     "description": "Auto imported from components/YearSelect.vue"
+  },
+  "ArchiveList": {
+    "description": "Auto imported from components/list/ArchiveList.vue"
+  },
+  "LazyArchiveList": {
+    "description": "Auto imported from components/list/ArchiveList.vue"
+  },
+  "BlogPostList": {
+    "description": "Auto imported from components/list/BlogPostList.vue"
+  },
+  "LazyBlogPostList": {
+    "description": "Auto imported from components/list/BlogPostList.vue"
   },
   "PostPagination": {
     "description": "Auto imported from components/post/PostPagination.vue"

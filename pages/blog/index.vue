@@ -5,7 +5,7 @@
 </template>
 
 <script>
-import BlogPostList from '~/components/BlogPostList'
+import BlogPostList from '~/components/list/BlogPostList'
 export default {
   components: {
     BlogPostList,
