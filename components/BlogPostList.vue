@@ -96,7 +96,10 @@ export default {
               continue
             }
             const isReadyToPublish = new Date(item.date) <= new Date()
-            if (isReadyToPublish) {
+            const isInSelectedYears =
+              this.selectedYears.length === 0 ||
+              this.selectedYears.includes(new Date(item.date).getFullYear())
+            if (isReadyToPublish && isInSelectedYears) {
               seenTags[tag] = 1
             }
           }
