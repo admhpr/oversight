@@ -6,8 +6,8 @@
 </template>
 
 <script>
-import PostView from '~/components/PostView'
-import PostPagination from '~/components/PostPagination'
+import PostView from '~/components/post/PostView'
+import PostPagination from '~/components/post/PostPagination'
 export default {
   components: {
     PostView,

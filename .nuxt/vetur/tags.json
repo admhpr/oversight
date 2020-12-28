@@ -41,24 +41,6 @@
   "LazyNavBar": {
     "description": "Auto imported from components/NavBar.vue"
   },
-  "PostPagination": {
-    "description": "Auto imported from components/PostPagination.vue"
-  },
-  "LazyPostPagination": {
-    "description": "Auto imported from components/PostPagination.vue"
-  },
-  "PostSearch": {
-    "description": "Auto imported from components/PostSearch.vue"
-  },
-  "LazyPostSearch": {
-    "description": "Auto imported from components/PostSearch.vue"
-  },
-  "PostView": {
-    "description": "Auto imported from components/PostView.vue"
-  },
-  "LazyPostView": {
-    "description": "Auto imported from components/PostView.vue"
-  },
   "Socials": {
     "description": "Auto imported from components/Socials.vue"
   },
@@ -76,5 +58,23 @@
   },
   "LazyYearSelect": {
     "description": "Auto imported from components/YearSelect.vue"
+  },
+  "PostPagination": {
+    "description": "Auto imported from components/post/PostPagination.vue"
+  },
+  "LazyPostPagination": {
+    "description": "Auto imported from components/post/PostPagination.vue"
+  },
+  "PostSearch": {
+    "description": "Auto imported from components/post/PostSearch.vue"
+  },
+  "LazyPostSearch": {
+    "description": "Auto imported from components/post/PostSearch.vue"
+  },
+  "PostView": {
+    "description": "Auto imported from components/post/PostView.vue"
+  },
+  "LazyPostView": {
+    "description": "Auto imported from components/post/PostView.vue"
   }
 }

@@ -58,7 +58,7 @@
 </template>
 
 <script>
-import PostSearch from '~/components/PostSearch'
+import PostSearch from '~/components/post/PostSearch'
 import BlogPostPreview from '~/components/BlogPostPreview'
 import TagSelect from '~/components/TagSelect'
 export default {
