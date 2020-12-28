@@ -2,9 +2,12 @@
   <div class="flex flex-col min-h-screen max-width-full">
     <NavBar />
     <hr />
-    <section class="flex justify-center">
-      <nuxt keep-alive class="lg:w-3/5 md:w-full max-width-full" />
-    </section>
+    <main class="content-wrapper flex justify-center">
+      <nuxt
+        keep-alive
+        class="my-5 content bg-white lg:w-3/5 md:w-full max-width-full"
+      />
+    </main>
     <hr />
     <Footer />
   </div>
@@ -36,5 +39,11 @@ html {
 *:after {
   box-sizing: border-box;
   margin: 0;
+}
+main.content-wrapper {
+  background: url('../assets/bg.png');
+}
+.content {
+  border: double grey 4px;
 }
 </style>

@@ -4,6 +4,7 @@
       <input
         ref="searchBox"
         v-model="search"
+        class="w-full"
         type="text"
         placeholder="Search posts..."
         aria-label="Search"

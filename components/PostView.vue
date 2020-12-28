@@ -1,6 +1,6 @@
 <template>
-  <main>
-    <article class="w-screen lg:w-full p-5">
+  <main class="bg-white py-5 px-8 w-screen lg:w-full">
+    <article>
       <p class="my-5">{{ formatPublishDate }}</p>
       <h1 class="title">{{ post.title.toLowerCase() }}</h1>
       <hr />
