@@ -97,7 +97,6 @@ export default {
             const isInSelectedYears =
               this.selectedYears.length === 0 ||
               this.selectedYears.includes(new Date(item.date).getFullYear())
-
             if (Object.keys(seenTags).includes(tag) && isInSelectedYears) {
               seenTags[tag] = seenTags[tag] + 1
               continue
