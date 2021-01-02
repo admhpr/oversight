@@ -97,11 +97,15 @@ export default {
             const isInSelectedYears =
               this.selectedYears.length === 0 ||
               this.selectedYears.includes(new Date(item.date).getFullYear())
-            if (Object.keys(seenTags).includes(tag) && isInSelectedYears) {
+            const isReadyToPublish = new Date(item.date) <= new Date()
+            if (
+              Object.keys(seenTags).includes(tag) &&
+              isInSelectedYears &&
+              isReadyToPublish
+            ) {
               seenTags[tag] = seenTags[tag] + 1
               continue
             }
-            const isReadyToPublish = new Date(item.date) <= new Date()
 
             if (isReadyToPublish && isInSelectedYears) {
               seenTags[tag] = 1
@@ -117,7 +121,7 @@ export default {
     allYears() {
       return [
         ...new Set(
-          this.list
+          this.filteredList
             .map((item) => new Date(item.date).getFullYear())
             .filter((year) => year <= new Date().getFullYear())
         ),
