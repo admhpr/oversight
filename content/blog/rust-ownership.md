@@ -93,3 +93,6 @@ Rust takes a different path: the memory is automatically returned once the varia
     }                                  // this scope is now over, and s is no
                                        // longer valid
 ```
+There is a natural point at which we can return the memory our String needs to the allocator: when `s` goes out of scope.
+Rust calls a special function called `drop` when a variable goes out of scope. This style similar to [Resource Acquisition Is Initialization](https://en.wikipedia.org/wiki/Resource_acquisition_is_initialization) in C++,has a huge impact on the way Rust code is authored.
+
