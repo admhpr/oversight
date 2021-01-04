@@ -96,3 +96,14 @@ Rust takes a different path: the memory is automatically returned once the varia
 There is a natural point at which we can return the memory our String needs to the allocator: when `s` goes out of scope.
 Rust calls a special function called `drop` when a variable goes out of scope. This style similar to [Resource Acquisition Is Initialization](https://en.wikipedia.org/wiki/Resource_acquisition_is_initialization) in C++,has a huge impact on the way Rust code is authored.
 
+### Ways Variables and Data Interact: Move
+
+Multiple variables can interact with the same data in different ways in Rust.
+
+```rust
+let x = 5;
+let y = x;
+```
+We can probably guess what this is doing: bind the value `5` to `x`; then make a copy of the value in `x` and bind it to `y`.We now have two variables, `x` and `y`, and both equal `5`. This is indeed what is happening, because integers are simple values with a known, fixed size, and these two `5` values are pushed onto the stack.
+
+
