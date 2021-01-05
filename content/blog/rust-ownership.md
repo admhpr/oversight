@@ -106,4 +106,23 @@ let y = x;
 ```
 We can probably guess what this is doing: bind the value `5` to `x`; then make a copy of the value in `x` and bind it to `y`.We now have two variables, `x` and `y`, and both equal `5`. This is indeed what is happening, because integers are simple values with a known, fixed size, and these two `5` values are pushed onto the stack.
 
+```rust
+    let s1 = String::from("hello");
+    let s2 = s1;
+```
+The above code on the surface looks very similar to the previous example. It would be easy to assume that the way it works would be the same: that is, the second line would make a copy of the value in `s1` and bind it to `s2`. But this isn’t quite what happens.
+
+ A `String` is made up of three parts, shown on the left: a `pointer` to the memory that holds the contents of the string, a `length`, and a `capacity`. This group of data is stored on the stack. On the right is the memory on the heap that holds the contents.
+
+The length is how much memory, in bytes, the contents of the `String` is currently using. The capacity is the total amount of memory, in bytes, that the String has received from the allocator. The difference between length and capacity matters, but not in this context, so for now, it’s fine to ignore the capacity.
+
+When we assign `s1` to `s2`, the String data is copied, meaning we copy the pointer, the length, and the capacity that are on the stack. We do not copy the data on the heap that the pointer refers to.
+
+Rust does not copy the data, it would be extremely expensive in terms of runtime performance if the data on the heap grows unchecked.
+
+
+
+
+
+
 
