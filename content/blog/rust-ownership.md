@@ -120,7 +120,39 @@ When we assign `s1` to `s2`, the String data is copied, meaning we copy the poin
 
 Rust does not copy the data, it would be extremely expensive in terms of runtime performance if the data on the heap grows unchecked.
 
+Rust automatically calls the `drop` function and cleans up the heap memory for that variable. So what would happen if there was a two pointers to the same place in memory. When both the variables goes out of scope the same place in memory will tried to be freed up. This is a problem: when `s2` and `s1` go out of scope, they will both try to free the same memory. This is known as a double free error and is one of the memory safety bugs we mentioned previously. Freeing memory twice can lead to memory corruption, which can potentially lead to security vulnerabilities.
 
+To ensure memory safety, there’s one more detail to what happens in this situation in Rust. Instead of trying to copy the allocated memory, Rust considers s1 to no longer be valid and, therefore, Rust doesn’t need to free anything when s1 goes out of scope. Check out what happens when you try to use `s1` after `s2` is created; it won’t work:
+
+```rust
+    let s1 = String::from("hello");
+    let s2 = s1;
+
+    println!("{}, world!", s1);
+```
+You’ll get an error like this because Rust prevents you from using the invalidated reference:
+
+```bash
+$ cargo run
+   Compiling ownership v0.1.0 (file:///projects/ownership)
+error[E0382]: borrow of moved value: `s1`
+ --> src/main.rs:5:28
+  |
+2 |     let s1 = String::from("hello");
+  |         -- move occurs because `s1` has type `std::string::String`, which does not implement the `Copy` trait
+3 |     let s2 = s1;
+  |              -- value moved here
+4 | 
+5 |     println!("{}, world!", s1);
+  |                            ^^ value borrowed here after move
+
+error: aborting due to previous error
+
+For more information about this error, try `rustc --explain E0382`.
+error: could not compile `ownership`.
+
+To learn more, run the command again with --verbose.
+```
 
 
 
