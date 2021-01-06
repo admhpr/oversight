@@ -1,0 +1,1 @@
+window.__NUXT__={staticAssetsBase:"\u002F_nuxt\u002Fstatic\u002F1609941421",layout:"default",error:null,serverRendered:true,routePath:"\u002Farchive\u002Fjavascript-es6-the-way-of-the-arrow-function",config:{apiKey:void 0,content:{dbHash:"fa52f9c3"}}};
