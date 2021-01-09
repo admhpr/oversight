@@ -171,3 +171,12 @@ let s1 = String::from("hello");
 
 When you see a call to clone, you know that some arbitrary code is being executed and that code may be expensive. It’s a visual indicator that something different is going on.
 
+### Stack-Only Data: Copy
+
+```rust
+ let x = 5;
+    let y = x;
+
+    println!("x = {}, y = {}", x, y);
+```
+Integers that have a known size at compile time are stored entirely on the stack, so copies of the actual values are quick to make. That means there’s no reason we would want to prevent x from being valid after we create the variable y. In other words, there’s no difference between deep and shallow copying here, so calling clone wouldn’t do anything different from the usual shallow copying and we can leave it out.
