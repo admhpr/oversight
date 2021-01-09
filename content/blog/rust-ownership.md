@@ -51,7 +51,7 @@ In other words, there are two important points in time here:
 
 At this point, the relationship between scopes and when variables are valid is similar to that in other programming languages. Now we’ll build on top of this understanding by introducing the `String` type.
 
-The types covered [previously](../rust-data-types.md) are all stored on the stack and popped off the stack when their scope is over, but we want to look at data that is stored on the heap and explore how Rust knows when to clean up that data.
+The types covered [previously](../rust-data-types) are all stored on the stack and popped off the stack when their scope is over, but we want to look at data that is stored on the heap and explore how Rust knows when to clean up that data.
 
 String literals are immutable which may not be suitable for every situation. Also, not every string value can be known at author time (think user input). For these scenarios Rust has a second string type, `String`. This type is allocated on the heap and as such is able to store an amount of text that is unknown to us at compile time. You can create a `String` from a string literal using the `from` function, like so:
 
