@@ -153,7 +153,7 @@ error: could not compile `ownership`.
 
 To learn more, run the command again with --verbose.
 ```
-If you’ve heard the terms (shallow copy)[https://en.wikipedia.org/wiki/Object_copying#Shallow_copy] and (deep copy)[https://en.wikipedia.org/wiki/Object_copying#Deep_copy] while working with other languages, the concept of copying the pointer, length, and capacity without copying the data probably sounds like making a shallow copy. But because Rust also invalidates the first variable, instead of being called a shallow copy, it’s known as a move. 
+If you’ve heard the terms [shallow copy](https://en.wikipedia.org/wiki/Object_copying#Shallow_copy) and [deep copy](https://en.wikipedia.org/wiki/Object_copying#Deep_copy) while working with other languages, the concept of copying the pointer, length, and capacity without copying the data probably sounds like making a shallow copy. But because Rust also invalidates the first variable, instead of being called a shallow copy, it’s known as a move. 
 
 There’s a design choice that’s implied by this: Rust will never automatically create “deep” copies of your data. Therefore, any automatic copying can be assumed to be inexpensive in terms of runtime performance.
 
