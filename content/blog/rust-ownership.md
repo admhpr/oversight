@@ -180,3 +180,15 @@ When you see a call to clone, you know that some arbitrary code is being execute
     println!("x = {}, y = {}", x, y);
 ```
 Integers that have a known size at compile time are stored entirely on the stack, so copies of the actual values are quick to make. That means there’s no reason we would want to prevent x from being valid after we create the variable y. In other words, there’s no difference between deep and shallow copying here, so calling clone wouldn’t do anything different from the usual shallow copying and we can leave it out.
+
+Rust has a special annotation called the `Copy` trait that we can place on types like integers that are stored on the stack.  If a type has the `Copy` trait, an older variable is still usable after assignment. Rust won’t let us annotate a type with the `Copy` trait if the type, or any of its parts, has implemented the `Drop` trait.If the type needs something special to happen when the value goes out of scope and we add the Copy annotation to that type, we’ll get a compile-time error.
+
+So what types are `Copy`? You can check the [documentation](https://doc.rust-lang.org/std/marker/trait.Copy.html) for the given type to be sure, but as a general rule, any group of simple scalar values can be `Copy`, and nothing that requires allocation or is some form of resource is `Copy`. Here are some of the types that are `Copy`:
+
+* All the integer types, such as u32.
+* The Boolean type, bool, with values true and false.
+* All the floating point types, such as f64.
+* The character type, char.
+* Tuples, if they only contain types that are also Copy. For example, (i32, i32) is Copy, but (i32, String) is not.
+
+
