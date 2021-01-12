@@ -191,4 +191,6 @@ So what types are `Copy`? You can check the [documentation](https://doc.rust-lan
 * The character type, char.
 * Tuples, if they only contain types that are also Copy. For example, (i32, i32) is Copy, but (i32, String) is not.
 
+### Ownership and Functions
 
+The semantics for passing a value to a function are similar to those for assigning a value to a variable. Passing a variable to a function will move or copy, just as assignment does.
