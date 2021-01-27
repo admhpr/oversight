@@ -16,3 +16,9 @@ I'll be using a template to get started, the folks over at [rustwasm](https://gi
 ```
 cargo generate --git https://github.com/rustwasm/wasm-pack-template
 ```
+
+using `wasm-game-of-life` as name of the project.
+
+```bash
+cd wasm-game-of-life
+```
