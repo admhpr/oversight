@@ -22,3 +22,28 @@ using `wasm-game-of-life` as name of the project.
 ```bash
 cd wasm-game-of-life
 ```
+here are the contents:
+
+ ```bash
+ wasm-game-of-life/
+├── Cargo.toml
+├── LICENSE_APACHE
+├── LICENSE_MIT
+├── README.md
+└── src
+    ├── lib.rs
+    └── utils.rs
+ ```
+ 
+ an overview
+ 
+ `Cargo.toml`
+
+Here is where dependencies and meta data are defined for the cargo, which is Rust's package manager and build tool. As we used a template to inialise the project, the file is already pre-configured with the `wasm-bindgen` dependency.
+
+`src/lib.rs`
+This file is the root of the Rust crate that is going to be compiled into WebAssembly. It uses `wasm-bindgen` to interface with JavaScript. It currently exports the `greet` function which uses the `window.alert` method to alert a message.
+
+
+
+ 
