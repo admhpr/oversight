@@ -1,7 +1,7 @@
 ---
 title: a wasm way of life
 date: 2021-29-01T05:02
-desc: coways game of life in was
+desc: coways game of life in wasm
 tags:
   - wasm
   - rust
@@ -44,6 +44,39 @@ Here is where dependencies and meta data are defined for the cargo, which is Rus
 `src/lib.rs`
 This file is the root of the Rust crate that is going to be compiled into WebAssembly. It uses `wasm-bindgen` to interface with JavaScript. It currently exports the `greet` function which uses the `window.alert` method to alert a message.
 
+```rust
+mod utils;
+
+use wasm_bindgen::prelude::*;
+
+// When the `wee_alloc` feature is enabled, use `wee_alloc` as the global
+// allocator.
+#[cfg(feature = "wee_alloc")]
+#[global_allocator]
+static ALLOC: wee_alloc::WeeAlloc = wee_alloc::WeeAlloc::INIT;
+
+#[wasm_bindgen]
+extern {
+    fn alert(s: &str);
+}
+
+#[wasm_bindgen]
+pub fn greet() {
+    alert("Hello, wasm-game-of-life!");
+}
+
+```
+
+`src/utils.rs`
+
+The src/utils.rs module provides common utilities to make working with Rust compiled to WebAssembly easier.
 
 
+### Building the project
+
+I'll be using [wasm-pack](https://github.com/rustwasm/wasm-pack) to orchestrate the following build steps:
+
+* Ensure that we have Rust 1.30 or newer and the `wasm32-unknown-unknown` target installed via `rustup`,
+* Compile the Rust sources into a WebAssembly `.wasm` binary via cargo,
+* Use `wasm-bindgen` to generate the JavaScript API for using our Rust-generated WebAssembly.
  
