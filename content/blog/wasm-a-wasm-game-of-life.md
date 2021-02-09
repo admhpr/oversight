@@ -79,4 +79,25 @@ I'll be using [wasm-pack](https://github.com/rustwasm/wasm-pack) to orchestrate 
 * Ensure that we have Rust 1.30 or newer and the `wasm32-unknown-unknown` target installed via `rustup`,
 * Compile the Rust sources into a WebAssembly `.wasm` binary via cargo,
 * Use `wasm-bindgen` to generate the JavaScript API for using our Rust-generated WebAssembly.
- 
+
+The above points can be satisfied, the following command is ran inside the project directory:
+`wasm-pack build`
+
+When the build is completed, artifacts are generated in the `pkg` directory, with the following content:
+
+```bash
+pkg/
+├── package.json
+├── README.md
+├── wasm_game_of_life_bg.wasm
+├── wasm_game_of_life.d.ts
+└── wasm_game_of_life.js
+```
+
+`wasm-game-of-life/pkg/wasm_game_of_life.d.ts`
+
+The `.d.ts` file contains Typescript type declarations for the JavaScript glue. One advantage of this is the ability to have calls into WebAssembly functions type checked, meaning an IDE can provide autocompletions and suggestions.
+
+```typescript
+export function greet(): void;
+```
