@@ -11,7 +11,7 @@ After a number of weeks getting to grips with the basics of Rust and some of the
 
 ### Getting Started
 
-I'll be using a template to get started, the folks over at [rustwasm](https://github.com/rustwasm) have set up the boiler plate to get started. 
+I'll be using a template to get started, the folks over at [rustwasm](https://github.com/rustwasm) have set up the boiler plate to get started. Note that [cargo generate](https://github.com/cargo-generate/cargo-generate) is also used.
 
 ```
 cargo generate --git https://github.com/rustwasm/wasm-pack-template
@@ -101,3 +101,8 @@ The `.d.ts` file contains Typescript type declarations for the JavaScript glue. 
 ```typescript
 export function greet(): void;
 ```
+
+`wasm-game-of-life/pkg/package.json`
+
+The [package.json](https://docs.npmjs.com/cli/v7/configuring-npm/package-json) file contains metadata about the generated JavaScript and WebAssembly package. This is used by npm and JavaScript bundlers to determine dependencies across packages, package names, versions, and a bunch of other stuff. It helps Rust (and ultimately wasm) integrate with JavaScript tooling and allows us to publish the package to npm.
+
