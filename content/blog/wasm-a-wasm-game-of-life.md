@@ -106,3 +106,22 @@ export function greet(): void;
 
 The [package.json](https://docs.npmjs.com/cli/v7/configuring-npm/package-json) file contains metadata about the generated JavaScript and WebAssembly package. This is used by npm and JavaScript bundlers to determine dependencies across packages, package names, versions, and a bunch of other stuff. It helps Rust (and ultimately wasm) integrate with JavaScript tooling and allows us to publish the package to npm.
 
+```json
+{
+  "name": "wasm-game-of-life",
+  "collaborators": [
+    "Your Name <your.email@example.com>"
+  ],
+  "description": null,
+  "version": "0.1.0",
+  "license": null,
+  "repository": null,
+  "files": [
+    "wasm_game_of_life_bg.wasm",
+    "wasm_game_of_life.d.ts"
+  ],
+  "main": "wasm_game_of_life.js",
+  "types": "wasm_game_of_life.d.ts"
+}
+```
+
