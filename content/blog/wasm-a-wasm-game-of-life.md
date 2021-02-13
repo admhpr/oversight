@@ -125,3 +125,9 @@ The [package.json](https://docs.npmjs.com/cli/v7/configuring-npm/package-json) f
 }
 ```
 
+### Adding the package it to a web page
+
+To add the package to a web page we can bootstrap a web based wasm project using the [create-wasm-app](https://github.com/rustwasm/create-wasm-app) JavaScript project template.
+
+
+
