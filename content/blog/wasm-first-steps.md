@@ -1,7 +1,7 @@
 ---
 title: a wasm way of life
-date: 2021-03-29T05:02
-desc: coways game of life in wasm
+date: 2021-01-29T05:02
+desc: first steps with wasm
 tags:
   - wasm
   - rust
@@ -128,6 +128,4 @@ The [package.json](https://docs.npmjs.com/cli/v7/configuring-npm/package-json) f
 ### Adding the package it to a web page
 
 To add the package to a web page we can bootstrap a web based wasm project using the [create-wasm-app](https://github.com/rustwasm/create-wasm-app) JavaScript project template.
-
-
 
