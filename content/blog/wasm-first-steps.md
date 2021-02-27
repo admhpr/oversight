@@ -1,5 +1,5 @@
 ---
-title: a wasm first steps
+title: wasm first steps
 date: 2021-01-29T05:02
 desc: first steps with wasm
 tags:
