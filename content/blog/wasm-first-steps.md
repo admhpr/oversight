@@ -129,3 +129,58 @@ The [package.json](https://docs.npmjs.com/cli/v7/configuring-npm/package-json) f
 
 To add the package to a web page we can bootstrap a web based wasm project using the [create-wasm-app](https://github.com/rustwasm/create-wasm-app) JavaScript project template.
 
+Run this command within the project directory:
+
+```bash
+npm init wasm-app www
+```
+Here's the output in the `wasm-game-of-life/www` directoy:
+
+```bash
+wasm-game-of-life/www/
+├── bootstrap.js
+├── index.html
+├── index.js
+├── LICENSE-APACHE
+├── LICENSE-MIT
+├── package.json
+├── README.md
+└── webpack.config.js
+```
+
+Let's take a tour of the files.
+
+`wasm-game-of-life/www/package.json`
+
+This package.json comes pre-configured with `webpack` and `webpack-dev-serve`r dependencies, as well as a dependency on `hello-wasm-pac`k, which is a version of the initial wasm-pack-template package that has been published to npm.
+
+`wasm-game-of-life/www/webpack.config.js`
+
+This file configures webpack and its local development server. It comes pre-configured, and you shouldn't have to tweak this at all to get webpack and its local development server working.
+
+`wasm-game-of-life/www/index.html`
+
+This is the root HTML file for the Web page. It doesn't do much other than load bootstrap.js, which is a very thin wrapper around index.js.
+
+```html
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Hello wasm-pack!</title>
+  </head>
+  <body>
+    <script src="./bootstrap.js"></script>
+  </body>
+</html>
+
+```
+`wasm-game-of-life/www/index.js`
+
+The index.js is the main entry point for our Web page's JavaScript. It imports the hello-wasm-pack npm package, which contains the default wasm-pack-template's compiled WebAssembly and JavaScript glue, then it calls hello-wasm-pack's greet function.
+
+```javascript
+import * as wasm from "hello-wasm-pack";
+
+wasm.greet();
+```
