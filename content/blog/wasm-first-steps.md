@@ -184,3 +184,57 @@ import * as wasm from "hello-wasm-pack";
 
 wasm.greet();
 ```
+
+### Install Dependencies
+
+First, ensure that the local development server and its dependencies are installed by running `npm install` within the `wasm-game-of-life/www` subdirectory:
+
+```bash
+npm install
+```
+This will read `package.json` and install the dependencies listed there, including the webpack javascript bundler and development server.
+
+> Note that webpack is not required for working with Rust and WebAssembly, it is just the bundler and development server we've chosen for convenience here. Parcel and Rollup should also support importing WebAssembly as ECMAScript modules. You can also use Rust and WebAssembly [without a bundler](https://rustwasm.github.io/docs/wasm-bindgen/examples/without-a-bundler.html) if you prefer!
+
+### Using local package in www 
+
+Rather than use the `hello-wasm-pack package` from npm, we want to use our local `wasm-game-of-life` package instead. This will allow us to incrementally develop our Game of Life program.
+
+Open up `wasm-game-of-life/www/package.json` and next to "devDependencies", add the "dependencies" field, including a "wasm-game-of-life": "file:../pkg" entry:
+
+```json
+{
+  // ...
+  "dependencies": {                     // Add this three lines block!
+    "wasm-game-of-life": "file:../pkg"
+  },
+  "devDependencies": {
+    //...
+  }
+}
+```
+
+Next, modify `wasm-game-of-life/www/index.js` to import `wasm-game-of-life` instead of the `hello-wasm-pack` package:
+
+```javascript
+import * as wasm from "wasm-game-of-life";
+
+wasm.greet();
+```
+Since we declared a new dependency, we need to install it:
+
+```bash
+npm install
+```
+The web page is now ready to be served locally!
+
+### Serving Locally
+
+Next, open a new terminal for the development server. Running the server in a new terminal lets us leave it running in the background, and doesn't block us from running other commands in the meantime. In the new terminal, run this command from within the `wasm-game-of-life/www` directory:
+
+```bash
+npm run start
+```
+Navigate your Web browser to http://localhost:8080/ and you should be greeted with an alert message. Anytime you make changes and want them reflected on http://localhost:8080/, just re-run the wasm-pack build command within the wasm-game-of-life directory.
+
+That's it, we have a hello world!
