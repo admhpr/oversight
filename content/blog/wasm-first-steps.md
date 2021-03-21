@@ -224,7 +224,7 @@ wasm.greet();
 Since we declared a new dependency, we need to install it:
 
 ```bash
-npm install
+npm install (or npm i)
 ```
 The web page is now ready to be served locally!
 
