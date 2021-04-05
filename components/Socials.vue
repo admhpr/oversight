@@ -19,11 +19,11 @@ export default {
       accounts: [
         {
           name: 'Twitter',
-          url: 'https://www.twitter.com/harps116',
+          url: 'https://www.twitter.com/admhpr',
         },
         {
           name: 'GitHub',
-          url: 'https://www.github.com/harps116',
+          url: 'https://www.github.com/admhpr',
         },
       ],
     }
