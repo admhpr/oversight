@@ -18,6 +18,12 @@
         >blog</nuxt-link
       >
       <nuxt-link
+        to="/notes"
+        class="navbar-item"
+        :class="activeRouteClass('notes')"
+        >notes</nuxt-link
+      >
+      <nuxt-link
         to="/archive"
         class="navbar-item"
         :class="activeRouteClass('archive')"
