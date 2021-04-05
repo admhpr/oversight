@@ -130,8 +130,10 @@ export default {
     filteredList() {
       return this.list
         .filter((item) => {
-          const isPost =
-            item.path.includes('/blog/') || item.path.includes('/archive/')
+          const isListable =
+            item.path.includes('/blog/') ||
+            item.path.includes('/archive/') ||
+            item.path.includes('/notes/')
           const isReadyToPublish = new Date(item.date) <= new Date()
 
           const isInSearch = this.search.length
@@ -147,7 +149,7 @@ export default {
             ? this.selectedYears.includes(new Date(item.date).getFullYear())
             : true
 
-          const isAsExpected = isPost && isReadyToPublish && hasYear
+          const isAsExpected = isListable && isReadyToPublish && hasYear
           const shouldPublish = this.selectedTags.length
             ? isAsExpected && hasTags
             : isAsExpected

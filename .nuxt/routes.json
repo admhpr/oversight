@@ -21,6 +21,13 @@
     "_name": "_ba20189e"
   },
   {
+    "name": "notes",
+    "path": "/notes",
+    "component": "/home/adam/workspace/oversight/pages/notes/index.vue",
+    "chunkName": "pages/notes/index",
+    "_name": "_3c4de7a8"
+  },
+  {
     "name": "archive-slug",
     "path": "/archive/:slug",
     "component": "/home/adam/workspace/oversight/pages/archive/_slug.vue",
@@ -33,6 +40,13 @@
     "component": "/home/adam/workspace/oversight/pages/blog/_slug.vue",
     "chunkName": "pages/blog/_slug",
     "_name": "_bd8d5b2e"
+  },
+  {
+    "name": "notes-slug",
+    "path": "/notes/:slug",
+    "component": "/home/adam/workspace/oversight/pages/notes/_slug.vue",
+    "chunkName": "pages/notes/_slug",
+    "_name": "_3a974660"
   },
   {
     "name": "index",

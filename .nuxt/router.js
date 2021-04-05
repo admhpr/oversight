@@ -6,8 +6,10 @@ import scrollBehavior from './router.scrollBehavior.js'
 const _c953a518 = () => interopDefault(import('../pages/about/index.vue' /* webpackChunkName: "pages/about/index" */))
 const _7ba9cd2e = () => interopDefault(import('../pages/archive/index.vue' /* webpackChunkName: "pages/archive/index" */))
 const _ba20189e = () => interopDefault(import('../pages/blog/index.vue' /* webpackChunkName: "pages/blog/index" */))
+const _3c4de7a8 = () => interopDefault(import('../pages/notes/index.vue' /* webpackChunkName: "pages/notes/index" */))
 const _7f170fbe = () => interopDefault(import('../pages/archive/_slug.vue' /* webpackChunkName: "pages/archive/_slug" */))
 const _bd8d5b2e = () => interopDefault(import('../pages/blog/_slug.vue' /* webpackChunkName: "pages/blog/_slug" */))
+const _3a974660 = () => interopDefault(import('../pages/notes/_slug.vue' /* webpackChunkName: "pages/notes/_slug" */))
 const _5d81ca76 = () => interopDefault(import('../pages/index.vue' /* webpackChunkName: "pages/index" */))
 
 // TODO: remove in Nuxt 3
@@ -39,6 +41,10 @@ export const routerOptions = {
     component: _ba20189e,
     name: "blog"
   }, {
+    path: "/notes",
+    component: _3c4de7a8,
+    name: "notes"
+  }, {
     path: "/archive/:slug",
     component: _7f170fbe,
     name: "archive-slug"
@@ -46,6 +52,10 @@ export const routerOptions = {
     path: "/blog/:slug",
     component: _bd8d5b2e,
     name: "blog-slug"
+  }, {
+    path: "/notes/:slug",
+    component: _3a974660,
+    name: "notes-slug"
   }, {
     path: "/",
     component: _5d81ca76,
