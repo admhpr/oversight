@@ -25,3 +25,11 @@ body {
   @apply text-lg;
   letter-spacing: 1px;
 }
+
+p > code {
+  color: #324859;
+  font-weight: 400;
+  font-style: italic;
+  background-color: #efefef;
+  padding: 2px;
+}
