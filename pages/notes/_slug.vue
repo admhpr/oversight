@@ -1,5 +1,9 @@
 <template>
-  <PostViewContainer :post="post" :post-type="postType" />
+  <PostViewContainer
+    :has-pagination="false"
+    :post="post"
+    :post-type="postType"
+  />
 </template>
 
 <script>

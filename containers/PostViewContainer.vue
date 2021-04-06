@@ -1,7 +1,11 @@
 <template>
   <div>
     <PostView :post="post" />
-    <PostPagination :posts="posts" :current-post-index="currentPostIndex" />
+    <PostPagination
+      v-show="hasPagination"
+      :posts="posts"
+      :current-post-index="currentPostIndex"
+    />
   </div>
 </template>
 
@@ -14,6 +18,7 @@ export default {
     PostPagination,
   },
   props: {
+    hasPagination: { type: Boolean, default: true },
     post: { type: Object, required: true },
     postType: { type: String, required: true },
   },
