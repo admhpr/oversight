@@ -1,6 +1,6 @@
 <template>
   <PostViewContainer
-    :has-pagination="false"
+    :has-pagination="true"
     :post="post"
     :post-type="postType"
   />

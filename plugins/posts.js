@@ -7,6 +7,9 @@ function postsFilter(posts) {
 export default async function ({ app }, inject) {
   const blogPosts = await app.$content('blog').fetch()
   const archivedPosts = await app.$content('archive').fetch()
+  const notesPosts = await app.$content('notes').fetch()
+
   inject('archivedPosts', postsFilter(archivedPosts))
   inject('blogPosts', postsFilter(blogPosts))
+  inject('notesPosts', postsFilter(notesPosts))
 }

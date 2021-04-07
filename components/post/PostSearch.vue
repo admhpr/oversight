@@ -6,7 +6,7 @@
         v-model="search"
         class="w-full"
         type="text"
-        placeholder="Search posts..."
+        placeholder="search..."
         aria-label="Search"
         @keydown.down="down"
         @keydown.up="up"

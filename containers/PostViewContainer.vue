@@ -33,8 +33,15 @@ export default {
     },
   },
   created() {
-    this.posts =
-      this.postType === 'blog' ? this.$blogPosts : this.$archivedPosts
+    const postTypeLookup = {
+      blog: this.$blogPosts,
+      archive: this.$archivedPosts,
+      notes: this.$notesPosts,
+    }
+
+    this.posts = Object.keys(postTypeLookup).includes(this.postType)
+      ? postTypeLookup[this.postType]
+      : this.$blogPosts
   },
 }
 </script>
