@@ -9,125 +9,48 @@ tags:
 
 After a number of weeks getting to grips with the basics of Rust and some of the syntax I'm going to explore how we can use Rust code with JavaScript via Web Assembly.
 
-### Getting Started
+[Wikipedia gives a great description of the rules of Conway's Game of Life](https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life):
 
-I'll be using a template to get started, the folks over at [rustwasm](https://github.com/rustwasm) have set up the boiler plate to get started. Note that [cargo generate](https://github.com/cargo-generate/cargo-generate) is also used.
+> The universe of the Game of Life is an infinite two-dimensional orthogonal grid of square cells, each of which is in one of two possible states, alive or dead, 
+or "populated" or "unpopulated". Every cell interacts with its eight neighbours, which are the cells that are horizontally, 
+vertically, or diagonally adjacent. At each step in time, the following transitions occur:
 
-```
-cargo generate --git https://github.com/rustwasm/wasm-pack-template
-```
+* Any live cell with fewer than two live neighbours dies, as if caused by underpopulation.
 
-using `wasm-game-of-life` as name of the project.
+* Any live cell with two or three live neighbours lives on to the next generation.
 
-```bash
-cd wasm-game-of-life
-```
-here are the contents:
+* Any live cell with more than three live neighbours dies, as if by overpopulation.
 
- ```bash
- wasm-game-of-life/
-├── Cargo.toml
-├── LICENSE_APACHE
-├── LICENSE_MIT
-├── README.md
-└── src
-    ├── lib.rs
-    └── utils.rs
- ```
- 
- an overview
- 
- `Cargo.toml`
+* Any dead cell with exactly three live neighbours becomes a live cell, as if by reproduction.
 
-Here is where dependencies and meta data are defined for the cargo, which is Rust's package manager and build tool. As we used a template to inialise the project, the file is already pre-configured with the `wasm-bindgen` dependency.
+The initial pattern constitutes the seed of the system. The first generation is created by applying the above rules simultaneously to every cell in the seed—births and deaths occur simultaneously, and the discrete moment at which this happens is sometimes called a tick (in other words, each generation is a pure function of the preceding one). The rules continue to be applied repeatedly to create further generations.
 
-`src/lib.rs`
-This file is the root of the Rust crate that is going to be compiled into WebAssembly. It uses `wasm-bindgen` to interface with JavaScript. It currently exports the `greet` function which uses the `window.alert` method to alert a message.
+Consider the following initial universe:
 
-```rust
-mod utils;
+### Initial Universe
 
-use wasm_bindgen::prelude::*;
+We can calculate the next generation by considering each cell. The top left cell is dead. Rule (4) is the only transition rule that applies to dead cells. However, because the top left cell does not have exactly three live neighbors, the transition rule does not apply, and it remains dead in the next generation. The same goes for every other cell in the first row as well.
 
-// When the `wee_alloc` feature is enabled, use `wee_alloc` as the global
-// allocator.
-#[cfg(feature = "wee_alloc")]
-#[global_allocator]
-static ALLOC: wee_alloc::WeeAlloc = wee_alloc::WeeAlloc::INIT;
+Things get interesting when we consider the top live cell, in the second row, third column. For live cells, any of the first three rules potentially applies. In this cell's case, it has only one live neighbor, and therefore rule (1) applies: this cell will die in the next generation. The same fate awaits the bottom live cell.
 
-#[wasm_bindgen]
-extern {
-    fn alert(s: &str);
-}
+The middle live cell has two live neighbors: the top and bottom live cells. This means that rule (2) applies, and it remains live in the next generation.
 
-#[wasm_bindgen]
-pub fn greet() {
-    alert("Hello, wasm-game-of-life!");
-}
+The final interesting cases are the dead cells just to the left and right of the middle live cell. The three live cells are all neighbors both of these cells, which means that rule (4) applies, and these cells will become alive in the next generation.
 
-```
+### Design
 
-`src/utils.rs`
+Before we dive in, we have some design choices to consider.
 
-The src/utils.rs module provides common utilities to make working with Rust compiled to WebAssembly easier.
+#### Infinite Universe
+The Game of Life is played in an infinite universe, but we do not have infinite memory and compute power. Working around this rather annoying limitation usually comes in one of three flavors:
 
+Keep track of which subset of the universe has interesting things happening, and expand this region as needed. In the worst case, this expansion is unbounded and the implementation will get slower and slower and eventually run out of memory.
 
-### Building the project
+Create a fixed-size universe, where cells on the edges have fewer neighbors than cells in the middle. The downside with this approach is that infinite patterns, like gliders, that reach the end of the universe are snuffed out.
 
-I'll be using [wasm-pack](https://github.com/rustwasm/wasm-pack) to orchestrate the following build steps:
+Create a fixed-size, periodic universe, where cells on the edges have neighbors that wrap around to the other side of the universe. Because neighbors wrap around the edges of the universe, gliders can keep running forever.
 
-* Ensure that we have Rust 1.30 or newer and the `wasm32-unknown-unknown` target installed via `rustup`,
-* Compile the Rust sources into a WebAssembly `.wasm` binary via cargo,
-* Use `wasm-bindgen` to generate the JavaScript API for using our Rust-generated WebAssembly.
-
-The above points can be satisfied, the following command is ran inside the project directory:
-`wasm-pack build`
-
-When the build is completed, artifacts are generated in the `pkg` directory, with the following content:
-
-```bash
-pkg/
-├── package.json
-├── README.md
-├── wasm_game_of_life_bg.wasm
-├── wasm_game_of_life.d.ts
-└── wasm_game_of_life.js
-```
-
-`wasm-game-of-life/pkg/wasm_game_of_life.d.ts`
-
-The `.d.ts` file contains Typescript type declarations for the JavaScript glue. One advantage of this is the ability to have calls into WebAssembly functions type checked, meaning an IDE can provide autocompletions and suggestions.
-
-```typescript
-export function greet(): void;
-```
-
-`wasm-game-of-life/pkg/package.json`
-
-The [package.json](https://docs.npmjs.com/cli/v7/configuring-npm/package-json) file contains metadata about the generated JavaScript and WebAssembly package. This is used by npm and JavaScript bundlers to determine dependencies across packages, package names, versions, and a bunch of other stuff. It helps Rust (and ultimately wasm) integrate with JavaScript tooling and allows us to publish the package to npm.
-
-```json
-{
-  "name": "wasm-game-of-life",
-  "collaborators": [
-    "Your Name <your.email@example.com>"
-  ],
-  "description": null,
-  "version": "0.1.0",
-  "license": null,
-  "repository": null,
-  "files": [
-    "wasm_game_of_life_bg.wasm",
-    "wasm_game_of_life.d.ts"
-  ],
-  "main": "wasm_game_of_life.js",
-  "types": "wasm_game_of_life.d.ts"
-}
-```
-
-### Adding the package it to a web page
-
-To add the package to a web page we can bootstrap a web based wasm project using the [create-wasm-app](https://github.com/rustwasm/create-wasm-app) JavaScript project template.
+We will implement the third option.
 
 
 
