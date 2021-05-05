@@ -81,7 +81,9 @@ export default {
   p {
     @apply mb-4;
   }
-  ul,
+  ul {
+    @apply list-disc;
+  }
   ol {
     @apply list-decimal;
     @apply list-inside;
