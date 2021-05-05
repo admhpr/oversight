@@ -42,6 +42,7 @@ The final interesting cases are the dead cells just to the left and right of the
 Before we dive in, we have some design choices to consider.
 
 #### Infinite Universe
+
 The Game of Life is played in an infinite universe, but we do not have infinite memory and compute power. Working around this rather annoying limitation usually comes in one of three flavors:
 
 Keep track of which subset of the universe has interesting things happening, and expand this region as needed. In the worst case, this expansion is unbounded and the implementation will get slower and slower and eventually run out of memory.
