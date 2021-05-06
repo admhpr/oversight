@@ -3,6 +3,7 @@
 </template>
 
 <script>
+import BlogPostList from '~/components/list/BlogPostList'
 function createBlogPostItem(archivedItem) {
   const {
     body,
@@ -18,6 +19,9 @@ function createBlogPostItem(archivedItem) {
 }
 export default {
   name: 'ArchiveList',
+  components: {
+    BlogPostList,
+  },
   props: {
     list: {
       type: Array,
