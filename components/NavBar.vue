@@ -29,12 +29,6 @@
         :class="activeRouteClass('archive')"
         >archive</nuxt-link
       >
-      <nuxt-link
-        to="/about"
-        class="navbar-item"
-        :class="activeRouteClass('about')"
-        >about</nuxt-link
-      >
     </div>
   </nav>
 </template>

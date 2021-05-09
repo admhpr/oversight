@@ -1,22 +1,20 @@
 <template>
   <div class="content">
-    <BlogPostList :list="posts" />
+    <section class="p-10">
+      <nuxt-content :document="page"></nuxt-content>
+    </section>
   </div>
 </template>
 
 <script>
-import BlogPostList from '~/components/list/BlogPostList'
 export default {
-  components: {
-    BlogPostList,
-  },
   async asyncData({ $content }) {
-    const posts = await $content('blog').fetch()
+    const page = await $content('about').fetch()
     return {
-      posts,
+      page,
     }
   },
 }
 </script>
 
-<style></style>
+<style lang="scss"></style>
