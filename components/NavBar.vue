@@ -14,7 +14,10 @@
       </nuxt-link>
     </div>
     <div class="navbar-item-wrapper">
-      <nuxt-link to="/" class="navbar-item" :class="activeRouteClass('')"
+      <nuxt-link
+        to="/blog"
+        class="navbar-item"
+        :class="activeRouteClass('blog')"
         >blog</nuxt-link
       >
       <nuxt-link
