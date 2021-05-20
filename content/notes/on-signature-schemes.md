@@ -6,7 +6,7 @@ tags:
   - security
 ---
 
-### field guide to signature schemes
+### Field guide to signature schemes
 
 triple of three algorithms G S V
 
@@ -42,11 +42,12 @@ the result of the signer with arguments secret key and value will verify with ve
 
 this will be next to impossible, computationally difficult
 
-## typical flow
+## Typical flow
 
 * server calls generator `G() -> (pk, sk)`
 * client logs in
 * server validates log credientials
 * server returns tag `S(sk, x) -> t`
-* on next interaction from client server validates `V(pk, x, S(sk, x))`
+* on next private request from client server validates `V(pk, x, S(sk, x))`
+* if valid returns private response
 
