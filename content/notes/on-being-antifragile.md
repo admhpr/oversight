@@ -1,5 +1,5 @@
 ---
-title: on service design
+title: on being anti-fragile 
 date: 2021-06-03T07:02
 desc: notes on being anti-fragile
 tags:
