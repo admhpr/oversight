@@ -46,11 +46,17 @@ Regardless of whether or not a user is eligible for suitable for a service, the 
 
 The service must be usable by everyone who needs to use it, regardless of their circumstance or abilities. No user should be adversely unable to use the service more than any other.
 
-Respond to change quicklyThe service should respond quickly and adaptively to a change in a user’s circumstance and make this change consistently throughout the service. For example, if a user changes their phone number online, their phone number should be recognised in a face to face service.
+### Respond to change quickly
 
-Work in a way that is familiarPeople base their understanding of the world on previous experiences. If there’s an established custom for your service that benefits a user, your service should confirm to that custom. For example, users who have signed up to a new service often expect an email confirmation acknowledging their sign up. Avoid customs that negatively affect your user (such as pre-selecting a ‘send me marketing emails’ tick-box) or following customs that are inefficient or outdated.
+The service should respond quickly and adaptively to a change in a user’s circumstance and make this change consistently throughout the service. For example, if a user changes their phone number online, their phone number should be recognised in a face to face service.
 
-Encourage the right behaviours from users and staffThe service should encourage safe, productive behaviors from users and staff that are mutually beneficial. For users, the service should not set a precedent for behaviors that may put the user at harm in other circumstances – for example, providing data without knowing the use of that data. For Staff, this means they should not be incentivised to provide a bad service to users, for example through short call handling time targets.
+### Work in a way that is familiar
+
+People base their understanding of the world on previous experiences. If there’s an established custom for your service that benefits a user, your service should confirm to that custom. For example, users who have signed up to a new service often expect an email confirmation acknowledging their sign up. Avoid customs that negatively affect your user (such as pre-selecting a ‘send me marketing emails’ tick-box) or following customs that are inefficient or outdated.
+
+### Encourage the right behaviours from users and staff
+
+The service should encourage safe, productive behaviors from users and staff that are mutually beneficial. For users, the service should not set a precedent for behaviors that may put the user at harm in other circumstances – for example, providing data without knowing the use of that data. For Staff, this means they should not be incentivised to provide a bad service to users, for example through short call handling time targets.
 
 Clearly explain why a decision has been madeWhen a decision is made within a service, it should be obvious to a user why this decision has been made and clearly communicated to the user at the point the decision has been made. A user should also be given a route to contest this decision if they need to.
 
