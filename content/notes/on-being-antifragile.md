@@ -1,3 +1,11 @@
+---
+title: on service design
+date: 2021-06-03T07:02
+desc: notes on being anti-fragile
+tags:
+  - mindset
+---
+
 # Notes on Antifragile
 
 See the book [here](https://www.goodreads.com/book/show/13530973-antifragile).
