@@ -58,7 +58,9 @@ People base their understanding of the world on previous experiences. If thereâ€
 
 The service should encourage safe, productive behaviors from users and staff that are mutually beneficial. For users, the service should not set a precedent for behaviors that may put the user at harm in other circumstances â€“ for example, providing data without knowing the use of that data. For Staff, this means they should not be incentivised to provide a bad service to users, for example through short call handling time targets.
 
-Clearly explain why a decision has been madeWhen a decision is made within a service, it should be obvious to a user why this decision has been made and clearly communicated to the user at the point the decision has been made. A user should also be given a route to contest this decision if they need to.
+### Clearly explain why a decision has been made
+
+When a decision is made within a service, it should be obvious to a user why this decision has been made and clearly communicated to the user at the point the decision has been made. A user should also be given a route to contest this decision if they need to.
 
 ### Make it easy to get human assistance
 
