@@ -1,8 +1,8 @@
 ---
-title: on service design
+title: on design
 date: 2020-03-01T05:02
-desc: notes on service design
+desc: notes on design
 tags:
-  - service design
+  - design
 ---
 resources: https://twitter.com/AvniGupta_/status/1385141337377345536
