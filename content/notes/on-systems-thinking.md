@@ -1,6 +1,6 @@
 ---
 title: on systems thinking
-date: 2021-06-01T06:23
+date: 2021-06-02T08:14
 desc: notes on systems thinking
 tags:
   - systems thinking
