@@ -6,8 +6,6 @@ tags:
   - mindset
 ---
 
-# Notes on Antifragile
-
 See the book [here](https://www.goodreads.com/book/show/13530973-antifragile).
 
 ## Introduction
