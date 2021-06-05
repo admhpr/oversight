@@ -29,14 +29,14 @@ The book gave a number of valuable lessons such as:
 
 ### Weak groups focus on skills and neglect interaction
 
-* every group has a culture ( good or bad )
+* every group has a culture (good or bad)
 * bad culture leads to tense atmospheres
 * this happens when the group is not focused correctly and time is spend figuring out individual positions within the group
 * this means people worry about status
 * which takes away from the bigger goals of the group
 * it also means that people are always wondering whos ideas can be questioned
 * cites marshmallow spaghetti study. build the biggest tower
-* kindergardens usually won ( over business grads and lawyers and CEOs ).
+* kindergardens usually won (over business grads and lawyers and CEOs).
 * due to better group dynamics, they experimented.
 * they didn't waste time figuring out roles they just got on with it. They cooperated.
 
@@ -62,7 +62,7 @@ The book gave a number of valuable lessons such as:
 * make eye contact, pay attention to what the person is actually saying
 * do not interrupt the flow of the conversation
 * let people see your wekness
-* admit that you make mistakes ( this is especially effectice from leaders ).
+* admit that you make mistakes (this is especially effectice from leaders).
 * ask for input and feedback on work
 
 ### Share vulnerabilities
@@ -92,7 +92,7 @@ The book gave a number of valuable lessons such as:
 * high purpose environments have a number of subtle reminders of that purpose
 * let's group know where they are heading, like a bridge with a sign that says "here's where we are, and here's where we are going"
 * communicate common goals like "Customer safety is our number one priority"
-* metaphorical bridges with signs are narratives that the group gets to tell the story of ( people enage well with stories )
+* metaphorical bridges with signs are narratives that the group gets to tell the story of (people enage well with stories)
 * stroytelling is powerful call to action
 
 ### To build a sense of purpose repeat it
