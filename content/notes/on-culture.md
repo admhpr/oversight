@@ -1,7 +1,7 @@
 ---
-title: on being culture
+title: on culture
 date: 2021-06-04T08:23
-desc: notes on being culture
+desc: notes on culture
 tags:
   - mindset 
   - culture
