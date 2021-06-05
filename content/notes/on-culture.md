@@ -1,6 +1,6 @@
 ---
 title: on culture
-date: 2021-06-04T08:23
+date: 2021-06-04T08:24
 desc: notes on culture
 tags:
   - mindset 
