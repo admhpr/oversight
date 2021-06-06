@@ -6,4 +6,4 @@ tags:
   - aws
 ---
 
-## init
+## init.
