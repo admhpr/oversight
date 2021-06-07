@@ -1,0 +1,1 @@
+window.__NUXT__=(function(a){return {staticAssetsBase:"\u002F_nuxt\u002Fstatic\u002F1623078460",layout:"default",error:a,serverRendered:true,routePath:"\u002Fblog\u002Fwhy-rust",config:{apiKey:void 0,_app:{basePath:"\u002F",assetsPath:"\u002F_nuxt\u002F",cdnURL:a},content:{dbHash:"868612cd"}}}}(null));
