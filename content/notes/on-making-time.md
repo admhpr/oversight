@@ -89,9 +89,9 @@ Highlights are flexible, make them adjust to your life and unforeseen happenings
 
 ### Tactics
 
-1. Write it down
-1. Groundhog it (do yesterday again)
-1. Stack rank your life
+#### Write it down
+#### Groundhog it (do yesterday again)
+#### Stack rank your life
 
 	- Make a list of the big things in your life
 	  Categories: Health, Finance, Personal Growth, Work, Personal. 3-10 things
@@ -101,14 +101,14 @@ Highlights are flexible, make them adjust to your life and unforeseen happenings
 	- Circle number one
 	- Use this list to choose highlights
 
-1. Batch the little stuff
+#### Batch the little stuff
 	
 	- Bundle up the small tasks and do them all in the 60-90 session
 	- Catch up all at once
 	- Not a daily highlight
 	- This make ignoring smaller things easier and you know you can bundle them
 
-1. The Might do list
+#### The Might do list
 
 	- To-do list are reactions to other peoples priorities (normally)
 	- Good way to capture things to do
@@ -116,7 +116,7 @@ Highlights are flexible, make them adjust to your life and unforeseen happenings
 	- Move from might do to highlight
 	- Avoids staying busy on the easy stuff
 
-1. The Burner list
+#### The Burner list
 	
 	- Intentionally limited
 	- Make two columns one represents the front burner and one represents the back burner
@@ -125,45 +125,45 @@ Highlights are flexible, make them adjust to your life and unforeseen happenings
 	- bottom half of front burner is the kitchen sink that holds important but miscellaneous tasks
 	- burn through list and then repeat
 
-1. The Personal Sprint
+#### The Personal Sprint
 	
 	- Keep at the same highlight for seven days in row and make it easier to get back in the groove for that project
 	- day 3 or 4 is the zone
 
-1. Schedule your highlight
+#### Schedule your highlight
 	
 	- Estimate highlight time
 	- When to do it
 	- Schedule it and commit
 
-1. Block your calendar
+#### Block your calendar
 	
 	- Block areas of calendar where people can not schedule things
 
-1. Bulldoze your calendar
+#### Bulldoze your calendar
 	
 	- Compress items in calendar as much extra time as possible
 	- Reduce times of meetings
 
-1. Flake it until you make it
+#### Flake it until you make it
 	
 	- Cancel low priority things you do not need to go to
 
-1. Just say no
+#### Just say no
 	
 	- No half choices
 	- Positively say no "Can't do it, but these guys might like it"
 
-1. Design your day
+#### Design your day
 	
 	- Structure your day by half hours
 	- Adjust in each daily `Make Time` cycle
 	- Predictable schedule
 	- Redesign as the day goes on if you need two
 	
-1. Become a morning person
-1. Nighttime is highlight time
-1. Quit When your done
+#### Become a morning person
+#### Nighttime is highlight time
+#### Quit When your done
 	
 	- Draw a line and stop when you can't handle anymore
 	- Find a finish time
@@ -177,123 +177,123 @@ Laser mode is high focus mental activity to get the most out of the highlight st
 
 ### Phone
 
-1. Distraction free phone
+#### Distraction free phone
 
 	- Remove email, apps, browser
 	
-1. Logout
+#### Logout
 
 	- No auto login to make it hard and therefore intentional to good to applications
 
-1. Nix notifications
+#### Nix notifications
 
 	- Make apps not send push notifications
 	
-1. Clear home screen
+#### Clear home screen
 	
 	- no apps on home screen
 
-1. Wear a wrist watch
+#### Wear a wrist watch
 	
 	- Don't need to look at phone
 
-1. Leave devices behind
+#### Leave devices behind
 	
 	- Put in a drawer or at work
 
-1. Skip the morning check-in
+#### Skip the morning check-in
 	
 	- Don't look at phone first thing in the morning
 
-1. Block distraction cryptonite
+#### Block distraction cryptonite
 	
 	- Remove the app you spend most time on
 	- Don't go to that forum on channel you find yourself frittering time on
 
-1. Ignore the news
-1. Put your toys away
-1. Fly without WiFi
-1. Timer on the internet
-1. Cancel the internet
-1. Watch out for time craters
-1. Trade fake wins for real wins
-1. Turn distractions into tools
-1. Become a fair weather fan
+#### Ignore the news
+#### Put your toys away
+#### Fly without WiFi
+#### Timer on the internet
+#### Cancel the internet
+#### Watch out for time craters
+#### Trade fake wins for real wins
+#### Turn distractions into tools
+#### Become a fair weather fan
 
 ### Email 
 
-1. Deal with Email at the end of the day
-1. Schedule email time
-1. Empty inbox once a week
-1. Pretend messages are letters
-1. Be slow to respond
-1. Reset expectations
-1. Setup send only email
-1. Vacation off the grid
-1. Lock yourself out
+#### Deal with Email at the end of the day
+#### Schedule email time
+#### Empty inbox once a week
+#### Pretend messages are letters
+#### Be slow to respond
+#### Reset expectations
+#### Setup send only email
+#### Vacation off the grid
+#### Lock yourself out
 
 ### TV
 
-1. Make TV a sometimes treat
-1. Don't watch the news
-1. Put TV in the corner
-1. Ditch TV for projector
-1. Go A La Carte instead of All you can eat
+#### Make TV a sometimes treat
+#### Don't watch the news
+#### Put TV in the corner
+#### Ditch TV for projector
+#### Go A La Carte instead of All you can eat
 
 ### Find Flow
 
-1. Shut the door
-1. Invent a Deadline
-1. Explode your Highlight
-1. Play a laser soundtrack
-1. Set a visible timer
-1. Avoid the lure of fancy tools
-1. Start on paper
+#### Shut the door
+#### Invent a Deadline
+#### Explode your Highlight
+#### Play a laser soundtrack
+#### Set a visible timer
+#### Avoid the lure of fancy tools
+#### Start on paper
 
 ### Stay in the zone
 
-1. Make a random question list
-1. Notice one breath
-1. Be bored
-1. Be stuck
-1. Go all in
+#### Make a random question list
+#### Notice one breath
+#### Be bored
+#### Be stuck
+#### Go all in
 
 ## Energise
 
-1. Exercise everyday but don't be a hero
-1. Pound the pavement
+#### Exercise everyday but don't be a hero
+#### Pound the pavement
 
 	- Walk more
 
-1. Inconvenience yourself
-1. Squeeze in a short workout
-1. Eat real food
-1. Eat like a hunter gatherer
-1. Central park your plate
-1. Stay hungry
-1. Snack like a toddler
-1. Dark chocolate plan
-1. Optimise caffeine
-1. Wake up before you caffeinate
-1. Caffeinate before you crash
-1. Take a caffeine nap
-1. Maintain altitude with green tea
-1. Turbo Highlight
-1. Learn last call
-1. Disconnect sugar
-1. Go of the grid
-1. Get Woodsy
-1. Trick yourself into meditating 
-1. Leave headphones at home
-1. Take real breaks
-1. Make it personal
-1. Spend time with your tribe
-1. Eat without screens
-1. Sleep in a cave
-1. Make your bedroom a bed room
-1. Sneak a nap
-1. Don't jet lag yourself
-1. Put on your own oxygen on mask first
+#### Inconvenience yourself
+#### Squeeze in a short workout
+#### Eat real food
+#### Eat like a hunter gatherer
+#### Central park your plate
+#### Stay hungry
+#### Snack like a toddler
+#### Dark chocolate plan
+#### Optimise caffeine
+#### Wake up before you caffeinate
+#### Caffeinate before you crash
+#### Take a caffeine nap
+#### Maintain altitude with green tea
+#### Turbo Highlight
+#### Learn last call
+#### Disconnect sugar
+#### Go of the grid
+#### Get Woodsy
+#### Trick yourself into meditating 
+#### Leave headphones at home
+#### Take real breaks
+#### Make it personal
+#### Spend time with your tribe
+#### Eat without screens
+#### Sleep in a cave
+#### Make your bedroom a bed room
+#### Sneak a nap
+#### Don't jet lag yourself
+#### Put on your own oxygen on mask first
 
 
 
@@ -303,10 +303,10 @@ Laser mode is high focus mental activity to get the most out of the highlight st
 
 The Scientific method:
 
-1. Observe what is going on
-1. Guess why things are happening the way they are
-1. Experiment to prove hypothesis
-1. Measure the results
+#### Observe what is going on
+#### Guess why things are happening the way they are
+#### Experiment to prove hypothesis
+#### Measure the results
 
 ### Highlight Hypothesis
 
