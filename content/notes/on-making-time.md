@@ -1,4 +1,13 @@
-Recently I have been examining team processes, and naturally came across the SPRINT approach to software development. When I stumbled across the book `Make Time` and realised it was from the same two behind SPRINT. I thought I'd give it a read. These are my notes...
+---
+title: on making time
+date: 2021-06-07T09:24
+desc: notes on making time
+tags:
+  - mindset 
+  - productivity
+---
+
+When I stumbled across the book `Make Time` and realised it was from the same two behind SPRINT. I thought I'd give it a read. These are my notes...
 
 The main premise is about how to slow time and take a step back and make more time for the things you care about. The book is broken into four main sections.
 
