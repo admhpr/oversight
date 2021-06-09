@@ -55,5 +55,15 @@ The flow of information, from one part to another, is a common way that system i
 * Watch what the system does not what is says or advertises itself to be doing.
 * e.g: “If a government proclaims its interest in protecting the environment but allocates little money or effort toward that goal, environmental protection is not, in fact, the government’s purpose.”
 
+Self-perpetuation is an important function for almost every system.
+
+System purposes need not be human purposes nor need they be the intended purpose. It is common for a well-meaning system to result in unintended outcomes and behaviors.
+
+Successful systems keep “sub-purposes and overall system purposes in harmony.”
+
+Changing elements in a system often has the least impact on the overall system behavior. Modifying the interconnections and purpose often results in dramatic or fundamental changes.
+
+> “The least obvious part of the system, its function or purpose, is often the most crucial determinant of the system’s behavior.”
+
 
 
