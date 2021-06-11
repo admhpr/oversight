@@ -65,5 +65,28 @@ Changing elements in a system often has the least impact on the overall system b
 
 > “The least obvious part of the system, its function or purpose, is often the most crucial determinant of the system’s behavior.”
 
+### System Basics
+
+A stock: This is an element in the system that is accumulated, depleted or stored over time. 
+
+e.g: water in a bath, the population of a city, books in a bookstore, money in a bank.
+
+> “A stock is the memory of the history of changing flows within the system.”
+
+A stock changes over time based on flow. A flow represents elements entering the system stock as well as elements leaving or being depleted from a system stock. 
+
+e.g: For a population, an inflow might be represented by births (these ADD to the population stock). Outflows might be represented by deaths (these result in a reduction in the population stock).
+
+Stock-and-flow diagram: A visual representation of a system that shows inflows, outflows, reinforcing and balancing loops, stocks and interconnections with other systems.
+
+```
+  xxx              ┌────────┐
+ x   xxxx          │        │                xxxx
+xx      xxx        │ stock  │         xxxx x x  xx
+x         x──────► │        │ ──────► xx         x
+ xxxxxxxxxx        │        │           xx       x
+                   └────────┘            xxxx    xx
+           inflow             outflow        x xxxx
+```
 
 
