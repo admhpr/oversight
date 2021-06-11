@@ -23,7 +23,7 @@ A system is an interconnected set of things (people, cells, molecules, component
 
 > “The behavior of a system cannot be known just by knowing the elements of which the system is made.”
 
-## System Structure
+### System Structure
 
 A system consists of three things:
 
