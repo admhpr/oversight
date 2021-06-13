@@ -61,46 +61,66 @@ export default {
     host: '0.0.0.0', // default: localhost
   },
   hooks: {
-    'content:file:beforeInsert': async (document, database) => {
-      if (document.slug === 'on-vue') {
-        // console.log(document)
-        const { children } = document.body
-        for (const [pos, el] of children.entries()) {
-          // console.log(JSON.stringify(el))
-          if (el.children) {
-            const codeblock = el.children.find(({ tag }) => tag === 'pre')
-            if (
-              codeblock &&
-              codeblock.props.className.includes(`language-text`)
-            ) {
-              const mermaid = require('headless-mermaid')
-              const graphValues = codeblock.children[0].children[0].value
-              // console.log(JSON.parse(JSON.stringify(graphValues), null, 2))
-              console.log(graphValues)
-              const svg = await mermaid.execute(`${graphValues}`, {
-                theme: 'neutral',
-              })
-              console.log(svg)
-              const ast = await database.markdown.toJSON(svg)
-
-              const svgAst = ast.body.children
-              console.log('SVG', svgAst)
-              // const diagram = svgAst[svgAst.length - 1]
-              // console.log(diagram)
-              // // eslint-disable-next-line
-              // const [text, ...nodes] = diagram.children
-              // const cleanDiagram = { ...diagram, children: nodes }
-              document.body.children[pos] = {
-                type: 'element',
-                tag: 'p',
-                props: {},
-                children: svgAst,
-              }
-            }
-          }
+    'content:file:beforeParse': async (file) => {
+      if (file.extension !== '.md') return
+      if (
+        file.path === '/home/adam/workspace/oversight/content/notes/on-vue.md'
+      ) {
+        // console.log(file.data)
+        const mermaid = require('headless-mermaid')
+        const regex = /```mermaid((.(?!``)|\n)*)```/g
+        const matches = file.data.matchAll(regex)
+        for (const match of matches) {
+          console.log(`${match[1]}`)
+          const graphValues = `${match[1]}`
+          const svg = await mermaid.execute(graphValues, {
+            theme: 'neutral',
+          })
+          console.log(`${svg}`)
+          file.data += `${svg}`
         }
-        // console.log(JSON.parse(JSON.stringify(document.body.children), null, 2))
       }
+    },
+    'content:file:beforeInsert': async (document, database) => {
+      // if (document.slug === 'on-vue') {
+      //   // console.log(document)
+      //   // console.log('start', JSON.stringify(document.body))
+      //   const { children } = document.body
+      //   for (const [pos, el] of children.entries()) {
+      //     // console.log('EL', JSON.stringify(el))
+      //     if (el.children) {
+      //       const codeblock = el.children.find(({ tag }) => tag === 'pre')
+      //       if (
+      //         codeblock &&
+      //         codeblock.props.className.includes(`language-text`)
+      //       ) {
+      //         const mermaid = require('headless-mermaid')
+      //         const graphValues = codeblock.children[0].children[0].value
+      //         // console.log(JSON.parse(JSON.stringify(graphValues), null, 2))
+      //         console.log(graphValues)
+      //         const svg = await mermaid.execute(`${graphValues}`, {
+      //           theme: 'neutral',
+      //         })
+      //         // console.log(svg)
+      //         const ast = await database.markdown.toJSON(svg)
+      //         const svgAst = ast.body.children
+      //         // console.log('SVG', JSON.stringify(svgAst))
+      //         // const diagram = svgAst[svgAst.length - 1]
+      //         // console.log(diagram)
+      //         // // eslint-disable-next-line
+      //         // const [text, ...nodes] = diagram.children
+      //         // const cleanDiagram = { ...diagram, children: nodes }
+      //         const ogChildNodes = [...document.body.children]
+      //         console.log(ogChildNodes.concat(svgAst))
+      //         document.body.children = ogChildNodes.concat(svgAst)
+      //         console.log(document.body.children)
+      //       }
+      //     }
+      //   }
+      //   console.log(`'''''''''''''''''''''''''''''''''''''`)
+      //   console.log('FIN', JSON.stringify(document.body))
+      //   console.log(`'''''''''''''''''''''''''''''''''''''`)
+      // }
     },
   },
 }
