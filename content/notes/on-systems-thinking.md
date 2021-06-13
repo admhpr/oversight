@@ -89,4 +89,4 @@ x         x──────► │        │ ──────► xx        
            inflow             outflow        x xxxx
 ```
 
-
+> System diagrams are simplified representations of the real world “The map is not the territory.”
