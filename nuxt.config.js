@@ -41,6 +41,7 @@ export default {
       prism: {
         theme: 'prism-themes/themes/prism-material-oceanic.css',
       },
+      rehypePlugins: ['~/plugins/content-image.js'],
     },
   },
   build: {
@@ -68,16 +69,14 @@ export default {
       ) {
         // console.log(file.data)
         const mermaid = require('headless-mermaid')
+        const fs = require('fs')
         const regex = /```mermaid((.(?!``)|\n)*)```/g
         const matches = file.data.matchAll(regex)
         for (const match of matches) {
-          console.log(`${match[1]}`)
-          const graphValues = `${match[1]}`
-          const svg = await mermaid.execute(graphValues, {
-            theme: 'neutral',
-          })
-          console.log(`${svg}`)
-          file.data += `${svg}`
+          // console.log(`${match[1]}`, file.path)
+          // const graphValues = `${match[1]}`
+          // const svg = await mermaid.execute(graphValues)
+          // fs.writeFileSync('output.svg', svg)
         }
       }
     },

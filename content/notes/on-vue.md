@@ -14,3 +14,5 @@ sequenceDiagram
     John-->>-Alice: I feel great!
 ```
 end
+
+![diagram](./diagrams/output.svg)
