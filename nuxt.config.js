@@ -70,7 +70,7 @@ export default {
         const fs = require('fs')
         const regex = /```mermaid((.(?!``)|\n)*)```/g
         const matches = file.data.matchAll(regex)
-        const svgMeta = `xmlns:dc="http://purl.org/dc/elements/1.1/"
+        const svgAttrs = `xmlns:dc="http://purl.org/dc/elements/1.1/"
                         xmlns:cc="http://creativecommons.org/ns#"
                         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
                         xmlns:svg="http://www.w3.org/2000/svg"
