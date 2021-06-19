@@ -83,6 +83,7 @@ export default {
           // const graphValues = `${match[1]}`
           // const svg = await mermaid.execute(graphValues)
           // fs.writeFileSync('output.svg', svg)
+          // TODO: create output per match
         }
       }
     },
