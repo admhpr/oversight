@@ -90,3 +90,31 @@ x         x──────► │        │ ──────► xx        
 ```
 
 > System diagrams are simplified representations of the real world “The map is not the territory.”
+
+> "If you understand the dynamics of stocks and flows—their behavior over time—you understand a good deal about the behavior of complex systems."
+
+Dynamic equilibrium: A state in which inflows and outflows are equal resulting in an unchanged stock.
+
+> “A stock takes time to change because flows take time to flow.”
+
+This is important because people underestimate the time needed to change large or complex systems.
+
+"Stocks allow inflows and outflows to be decoupled and to be independent and temporarily out of balance with each other."
+
+e.g: A water reservoir allows us to maintain stability in the availability of water. People can receive steady flow of water whether there is a temporary drought or if it’s the rainy season.
+
+> “Systems thinkers see the world as a collection of stocks along with the mechanisms for regulating the levels in the stocks by manipulating flows
+
+#### Feedback loops
+
+Feedback loop: A mechanism for regulating a system’s behavior. Feedback loops occur when a change in stock affects the inflow or outflow of that same stock.
+
+Feedback loops can affect stocks in several ways:
+
+* Maintain the level of a stock within a narrow range.
+* Cause a stock to grow.
+* Cause a stock to decline.
+
+
+
+
