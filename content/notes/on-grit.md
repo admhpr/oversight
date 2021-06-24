@@ -1,3 +1,12 @@
+---
+title: on grit
+date: 2021-06-21T11:23
+desc: notes on grit
+tags:
+  - mindset 
+  - productivity
+---
+
 I recently finished reading [Grit](https://angeladuckworth.com/grit-book/)  these
 are the notes from my follow up.
 
