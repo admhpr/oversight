@@ -125,6 +125,6 @@ e.g: A coffee drinker might drink a cup when their energy is running low (in thi
 
 > “Balancing feedback loops are goal-seeking or stability-seeking....a balancing feedback loop opposes whatever direction of change is imposed on the system.”
 
-*Remember*: the mere presence of a feedback loop isn’t sufficient to ensure that a system is working well (the loop may be insufficient or too weak to maintain the desired result).
+*__Remember__*: the mere presence of a feedback loop isn’t sufficient to ensure that a system is working well (the loop may be insufficient or too weak to maintain the desired result).
 
 
