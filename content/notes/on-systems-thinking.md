@@ -115,6 +115,16 @@ Feedback loops can affect stocks in several ways:
 * Cause a stock to grow.
 * Cause a stock to decline.
 
+Balancing feedback loops are loops that aim to stabilize a stock within a desired target or range.
 
+The discrepancy or gap between actual and desired levels in a stock causes a decision to increase or decrease additional inflows into said stock.
+
+Feedback loops can work in both directions (inflows/outflows) and can regulate increased or decreased flow rates.
+
+e.g: A coffee drinker might drink a cup when their energy is running low (in this example, the stock is energy). The drinker notices their energy level is ebbing and opts to drink a cup of coffee. The inflow of caffeine results in an increased stock of energy.
+
+> “Balancing feedback loops are goal-seeking or stability-seeking....a balancing feedback loop opposes whatever direction of change is imposed on the system.”
+
+*Remember*: the mere presence of a feedback loop isn’t sufficient to ensure that a system is working well (the loop may be insufficient or too weak to maintain the desired result).
 
 
