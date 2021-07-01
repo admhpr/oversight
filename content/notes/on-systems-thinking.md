@@ -127,4 +127,20 @@ e.g: A coffee drinker might drink a cup when their energy is running low (in thi
 
 *__Remember__*: the mere presence of a feedback loop isn’t sufficient to ensure that a system is working well (the loop may be insufficient or too weak to maintain the desired result).
 
+Reinforcing feedback loops are loops that amplify or reinforce growth or destruction within a system.
+
+> “A reinforcing feedback loop enhances whatever direction of change is imposed on it.”
+
+e.g: Inflationary pressures. As prices for goods increase, wages increase. As wages increase, prices also must increase to maintain profits.
+e.g: Compound interest. Money is saved and as interest in earned, the interest is added to the stock of savings which increases the overall stock that is earning interest.
+
+> “Reinforcing loops are found wherever a system element has the ability to reproduce itself or to grow as a constant fraction of itself. Those elements include populations and economies.”
+
+Reinforcing loops can lead to exponential growth but that can also result in runaway collapse.
+
+Consider: If A causes B, is it possible that B also causes A?
+
+e.g: If someone says that population growth causes poverty, ask yourself if poverty causes population growth.
+
+> “The concept of feedback opens up the idea that a system can cause it's own behaviour.”
 
