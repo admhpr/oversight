@@ -144,3 +144,22 @@ e.g: If someone says that population growth causes poverty, ask yourself if pove
 
 > “The concept of feedback opens up the idea that a system can cause it's own behaviour.”
 
+### A Brief Visit to the Systems Zoo
+
+One-Stock Systems:
+
+* A Stock with Two Competing Balancing Loops
+e.g: A thermostat.
+   
+* Stock is the temperature of the room which is influenced by inflows and outflows.
+* Inflow comes from heat from the furnace.
+* Outflow results from temperature outside (which is presumably colder).
+
+* One balancing feedback loop regulates the inflow: A desired temperature compared against the real temperature of the system stock. The delta between desired and actual influences the subsequent flow of more heat (or reduced inflow).
+
+* One balancing feedback loop regulates the outflow: The outside temperature influences the inside temperature based on the delta between outside temp and inside temp. A higher delta (e.g. between high room temp and low outdoor temp) results in increased outflow of indoor heat.
+
+* The two balancing loops compete.
+
+> Note that owing to the flow of information and time needed to impact the stock, there are inherent delays to rebalancing the stock. Any actions taken (e.g. to increase inflow of heat) can only affect future behavior and stock.Because of the competing outflow, the thermostat inflow needs to be set HIGHER than the target or desired temperature.
+
