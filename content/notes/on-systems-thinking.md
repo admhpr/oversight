@@ -115,7 +115,7 @@ Feedback loops can affect stocks in several ways:
 * Cause a stock to grow.
 * Cause a stock to decline.
 
-Balancing feedback loops are loops that aim to stabilize a stock within a desired target or range.
+*Balancing feedback loops* are loops that aim to stabilize a stock within a desired target or range.
 
 The discrepancy or gap between actual and desired levels in a stock causes a decision to increase or decrease additional inflows into said stock.
 
@@ -127,7 +127,7 @@ e.g: A coffee drinker might drink a cup when their energy is running low (in thi
 
 *__Remember__*: the mere presence of a feedback loop isn’t sufficient to ensure that a system is working well (the loop may be insufficient or too weak to maintain the desired result).
 
-Reinforcing feedback loops are loops that amplify or reinforce growth or destruction within a system.
+*Reinforcing feedback loops* are loops that amplify or reinforce growth or destruction within a system.
 
 > “A reinforcing feedback loop enhances whatever direction of change is imposed on it.”
 
@@ -146,10 +146,11 @@ e.g: If someone says that population growth causes poverty, ask yourself if pove
 
 ### A Brief Visit to the Systems Zoo
 
-One-Stock Systems:
+#### One-Stock Systems:
 
-* A Stock with Two Competing Balancing Loops
-e.g: A thermostat.
+*A Stock with Two Competing Balancing Loops*
+
+e.g: A thermostat
    
 * Stock is the temperature of the room which is influenced by inflows and outflows.
 * Inflow comes from heat from the furnace.
@@ -163,3 +164,46 @@ e.g: A thermostat.
 
 > Note that owing to the flow of information and time needed to impact the stock, there are inherent delays to rebalancing the stock. Any actions taken (e.g. to increase inflow of heat) can only affect future behavior and stock.Because of the competing outflow, the thermostat inflow needs to be set HIGHER than the target or desired temperature.
 
+* Because of the competing outflow, the thermostat inflow needs to be set HIGHER than the target or desired temperature.
+
+*A Stock with One Reinforcing Loop and One Balancing Loop*
+
+e.g Population and industrial economies
+
+* Stock is the population (city, nation, world).
+
+* Systems have key driving variables. For a population these are fertility and mortality.
+
+* Inflow is the result of births which add to the population stock.
+
+* Inflow is governed by a reinforcing loop. As births increase (fertility levels), the population stock increases which drives more births and adds more rapidly to the population stock.
+
+* Outflow is the result of deaths which reduces the population stock.
+
+* Outflow is regulated by a balancing loop—mortality rate.
+
+* Population grows when the birth rate outpaces the mortality rate. Population declines when the reverse is true.
+
+* Changes in the flows change the (over time) the behavior of the stock.
+
+* _Shifting dominance_ refers to situations where one feedback loop dominates the system. _The loop that dominates the system determines its behavior_.
+
+> “A stock governed by linked reinforcing and balancing loops will grow exponentially if the reinforcing loop dominates the balancing one. It will die off if the balancing loop dominates the reinforcing one. It will level off if the two loops are of equal strength.”
+
+* In reality, loop dominance will shift back and forth in sequence over time.
+
+> fertility and mortality are governed by their own feedback loops (they can be modeled as discrete systems that interconnect with the population system).
+
+* An economy bears similar behavior to the population loop.
+
+  - Stock = capital
+  - Inflow = investment
+  - Reinforcing feedback loop: increased capital stock leads to reinvestment and increasing capital over time.
+  - Outflow = depreciation
+  - Balancing loop: lifetime of the capital affects depreciation. The longer the lifetime, the smaller fraction of capital needs to be retired/replaced annually.
+
+> “Systems with similar feedback structures produce similar dynamic behaviors.”
+
+### Reference
+
+[Mental Pivot](https://mentalpivot.com/book-notes-thinking-in-systems-a-primer-by-donella-meadows/)
