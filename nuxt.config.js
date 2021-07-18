@@ -77,14 +77,17 @@ export default {
                         xmlns="http://www.w3.org/2000/svg"
                         xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
                         xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"`
-
-        for (const match of matches) {
-          // console.log(`${match[1]}`, file.path)
-          // const graphValues = `${match[1]}`
-          // const svg = await mermaid.execute(graphValues)
-          // fs.writeFileSync('output.svg', svg)
-          // TODO: create output per match
-        }
+        // for (const [index, match] of [...matches].entries()) {
+        //   console.log(`${index},${match[1]}`, file.path)
+        //   const graphValues = `${match[1]}`
+        //   const contentNameParts = file.path.split('/')
+        //   const contentName = contentNameParts[
+        //     contentNameParts.length - 1
+        //   ].replace('.md', '')
+        //   const svg = await mermaid.execute(graphValues)
+        //   fs.writeFileSync(`${contentName}-diagram-${index}.svg`, svg)
+        //   // TODO: create output per match
+        // }
       }
     },
     'content:file:beforeInsert': async (document, database) => {

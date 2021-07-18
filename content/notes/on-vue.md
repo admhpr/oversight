@@ -15,4 +15,4 @@ sequenceDiagram
 ```
 end
 
-![diagram](./diagrams/output.svg)
+![diagram](./diagrams/on-vue-diagram-0.svg)
