@@ -204,8 +204,6 @@ e.g Population and industrial economies
 
 > “Systems with similar feedback structures produce similar dynamic behaviors.”
 
-*A System with Delays—Business Inventory*
-
 ##### A System with Delays — Business Inventory
 
 * Stock is the product inventory itself — vehicles for sale.
