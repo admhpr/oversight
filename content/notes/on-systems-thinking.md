@@ -148,7 +148,7 @@ e.g: If someone says that population growth causes poverty, ask yourself if pove
 
 #### One-Stock Systems:
 
-*A Stock with Two Competing Balancing Loops*
+##### A Stock with Two Competing Balancing Loops
 
 e.g: A thermostat
    
@@ -166,7 +166,7 @@ e.g: A thermostat
 
 * Because of the competing outflow, the thermostat inflow needs to be set HIGHER than the target or desired temperature.
 
-*A Stock with One Reinforcing Loop and One Balancing Loop*
+##### A Stock with One Reinforcing Loop and One Balancing Loop
 
 e.g Population and industrial economies
 
@@ -203,6 +203,23 @@ e.g Population and industrial economies
   - Balancing loop: lifetime of the capital affects depreciation. The longer the lifetime, the smaller fraction of capital needs to be retired/replaced annually.
 
 > “Systems with similar feedback structures produce similar dynamic behaviors.”
+
+*A System with Delays—Business Inventory*
+
+##### A System with Delays — Business Inventory
+
+* Stock is the product inventory itself — vehicles for sale.
+
+* Inflows are the deliveries from factories.
+
+* Balancing feedback loop regulates the inflow to ensure that there are 10 days of vehicle inventory in stock.
+
+* Outflows are the sale of new cars to consumers.
+
+* Balancing feedback loop regulates the outflow (customer demand). Dealer can monitor sales and sales trends. If forecast is higher, the dealer can modify the inflow of new vehicles accordingly.
+
+
+
 
 ### Reference
 
