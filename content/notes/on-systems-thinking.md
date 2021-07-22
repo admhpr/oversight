@@ -216,7 +216,14 @@ e.g Population and industrial economies
 
 * Balancing feedback loop regulates the outflow (customer demand). Dealer can monitor sales and sales trends. If forecast is higher, the dealer can modify the inflow of new vehicles accordingly.
 
+* Delays are inherent to the system. The response to each balancing loop is not immediate or always accurate.
 
+* Perception delay: The dealer bases their ordering decisions on a 5-day average to smooth the temporary spikes and dips in demand.
+
+* Response delay: The dealer doesn’t adjust inflows in a single order. They make up a fraction of any shortfall with each subsequent order. Changes in inflows occur over several days (rather than as a one-time, immediate response).
+
+* Delays in balancing feedback loops result in system oscillations (fluctuations over time of inventory levels).
+Other delays: production delays, delivery delays, construction delays.
 
 
 ### Reference
