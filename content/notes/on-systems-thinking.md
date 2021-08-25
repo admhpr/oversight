@@ -229,6 +229,32 @@ Other delays: production delays, delivery delays, construction delays.
 
 > “Delays are pervasive in systems, and they are strong determinants of behavior. Changing the length of a delay may make a large change in the behavior of a system.”
 
+#### Two-Stock Systems:
+
+A Renewable Stock Constrained by a Nonrenewable Stock
+
+e.g: An oil company
+
+* This model considers environmental constraints (which is lacking in the simpler single stock models).
+
+* Entities that exchange things with the environment need both a supply of the resource and a way to dispose of waste and byproducts of the process.
+
+> “Any physical, growing system is going to run into some kind of constraint sooner or later. That constraint will take the form of a balancing loop that in some way shifts the dominance of the reinforcing loop driving the growth behavior, either by strengthening the outflow or by weakening the inflow.”
+
+* Systems that exhibit growth: look for a reinforcing loop driving inflows and a balancing loop that constrains it.
+
+Renewable vs. nonrenewable pollution constraint (outflow):
+
+*Nonrenewable*: The environment cannot absorb the pollutant.
+
+*Renewable*: The environment can absorb the pollutant and make it harmless.
+
+Two constraints:
+
+*Resource-constrained systems*: Inflow supply constraints.
+*Pollution-constrained systems*: Outflow constraints (production is not feasible because the damage to the environment is too great or hazardous).
+
+* Constraints on a system can be either temporary or permanent.
 
 ### Reference
 
