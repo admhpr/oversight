@@ -245,17 +245,18 @@ e.g: An oil company
 
 Renewable vs. nonrenewable pollution constraint (outflow):
 
-*Nonrenewable*: The environment cannot absorb the pollutant.
-
-*Renewable*: The environment can absorb the pollutant and make it harmless.
+**Nonrenewable**: The environment cannot absorb the pollutant.
+**Renewable**: The environment can absorb the pollutant and make it harmless.
 
 Two constraints:
 
-*Resource-constrained systems*: Inflow supply constraints.
-*Pollution-constrained systems*: Outflow constraints (production is not feasible because the damage to the environment is too great or hazardous).
+**Resource-constrained systems**: Inflow supply constraints.
+**Pollution-constrained systems**: Outflow constraints (production is not feasible because the damage to the environment is too great or hazardous).
 
 * Constraints on a system can be either temporary or permanent.
 
 ### Reference
 
+[Thinking in Systems: A Primer](https://www.goodreads.com/book/show/3828902-thinking-in-systems)
 [Mental Pivot](https://mentalpivot.com/book-notes-thinking-in-systems-a-primer-by-donella-meadows/)
+
