@@ -225,6 +225,10 @@ e.g Population and industrial economies
 * Delays in balancing feedback loops result in system oscillations (fluctuations over time of inventory levels).
 Other delays: production delays, delivery delays, construction delays.
 
+* Other delays: production delays, delivery delays, construction delays.
+
+> “Delays are pervasive in systems, and they are strong determinants of behavior. Changing the length of a delay may make a large change in the behavior of a system.”
+
 
 ### Reference
 
