@@ -255,8 +255,12 @@ Two constraints:
 
 * Constraints on a system can be either temporary or permanent.
 
+> “A quantity growing exponentially toward a constraint or limit reaches that limit in a surprisingly short time.” The higher and faster the growth, the faster and more pronounced the fall (when building capital stock against a nonrenewable resource).
+
+* The size of the constraining resource is the key variable in this system.
+
 ### Reference
 
-[Thinking in Systems: A Primer](https://www.goodreads.com/book/show/3828902-thinking-in-systems)
-[Mental Pivot](https://mentalpivot.com/book-notes-thinking-in-systems-a-primer-by-donella-meadows/)
+* [Thinking in Systems: A Primer](https://www.goodreads.com/book/show/3828902-thinking-in-systems)
+* [Mental Pivot](https://mentalpivot.com/book-notes-thinking-in-systems-a-primer-by-donella-meadows/)
 
