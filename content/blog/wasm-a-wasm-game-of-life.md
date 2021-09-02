@@ -86,3 +86,7 @@ To find the array index of the cell at a given row and column in the universe, w
 We have several ways of exposing the universe's cells to JavaScript. To begin, we will implement `std::fmt::Display` for Universe, which we can use to generate a Rust String of the cells rendered as text characters. This Rust String is then copied from the WebAssembly linear memory into a JavaScript String in the JavaScript's garbage-collected heap, and is then displayed by setting HTML textContent.
 
 Another viable design alternative would be for Rust to return a list of every cell that changed states after each tick, instead of exposing the whole universe to JavaScript. This way, JavaScript wouldn't need to iterate over the whole universe when rendering, only the relevant subset. The trade off is that this delta-based design is slightly more difficult to implement.
+
+### Rust Implementation
+
+### Rendering with JavaScript
