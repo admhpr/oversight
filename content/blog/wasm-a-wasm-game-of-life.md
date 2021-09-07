@@ -61,9 +61,9 @@ JavaScript's garbage-collected heap — where Objects, Arrays, and DOM nodes are
 
 When designing an interface between WebAssembly and JavaScript, we want to optimize for the following properties:
 
-1. Minimizing copying into and out of the WebAssembly linear memory. Unnecessary copies impose unnecessary overhead.
+* Minimizing copying into and out of the WebAssembly linear memory. Unnecessary copies impose unnecessary overhead.
 
-2. Minimizing serializing and deserializing. Similar to copies, serializing and deserializing also imposes overhead, and often imposes copying as well. If we can pass opaque handles to a data structure — instead of serializing it on one side, copying it into some known location in the WebAssembly linear memory, and deserializing on the other side — we can often reduce a lot of overhead. `wasm_bindgen` helps us define and work with opaque handles to JavaScript Objects or boxed Rust structures.
+* Minimizing serializing and deserializing. Similar to copies, serializing and deserializing also imposes overhead, and often imposes copying as well. If we can pass opaque handles to a data structure — instead of serializing it on one side, copying it into some known location in the WebAssembly linear memory, and deserializing on the other side — we can often reduce a lot of overhead. `wasm_bindgen` helps us define and work with opaque handles to JavaScript Objects or boxed Rust structures.
 
 As a general rule of thumb, a good JavaScript <--> WebAssembly interface design is often one where large, long-lived data structures are implemented as Rust types that live in the WebAssembly linear memory, and are exposed to JavaScript as opaque handles. JavaScript calls exported WebAssembly functions that take these opaque handles, transform their data, perform heavy computations, query the data, and ultimately return a small, copy-able result. By only returning the small result of the computation, we avoid copying and/or serializing everything back and forth between the JavaScript garbage-collected heap and the WebAssembly linear memory.
 
