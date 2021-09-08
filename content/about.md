@@ -1,11 +1,9 @@
 ## Adam Harpur
 
 Hi, I am Adam Harpur, a programmer / product developer, currently building and maintaining modern web applications with a focus on usability, performance, and accessibility, improving developer experience with modern DevOps approaches and first class dev tooling!
-
 Nothing gives me more satisfaction than creating a tool that solves a problem for someone in the real world.
 
-That's what it's all about. How do we as people make these machines serve a purpose. How we tell our story
-through code and beyond.
+That's what it's all about. How do we as people make these machines serve a purpose. How we tell our story through code and beyond.
 
 ### Work
 
@@ -15,7 +13,7 @@ Working with rapid growth start-ups and fast paced product focused work environm
 
 ### Personal
 
-Outside of programming, I enjoy exercise, travelling and anything that get's me into a flow state of mind.
+Outside of programming, I enjoy exercise, travelling and anything that get's me into a flow state of mind. Currently living and working from Belfast, having previously worked in Australia 🇦🇺 and the U.S.A 🇺🇸.
 
 This blog is minimal reincarnation of my previous works and posts, all of which have been ported over and [archived](https://adam.harpur.io/archive).
 
