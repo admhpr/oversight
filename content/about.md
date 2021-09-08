@@ -19,4 +19,4 @@ Outside of programming, I enjoy exercise, travelling and anything that get's me 
 
 This blog is minimal reincarnation of my previous works and posts, all of which have been ported over and [archived](https://adam.harpur.io/archive).
 
-Keeping things as simple as possible and reducing the noise to help keep a focus on the content.
+Keeping things as simple as possible and reducing the noise to help keep a focus on the content.✌️
