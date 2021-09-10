@@ -259,6 +259,26 @@ Two constraints:
 
 * The size of the constraining resource is the key variable in this system.
 
+#### A Renewable Stock Constrained by a Renewable Stock
+
+e.g: A fishing economy.
+
+* Living vs. nonliving renewable resources:
+
+* Nonliving renewable resources: sunlight, wind, water in a river are regenerated through steady input regardless of the state of that stock.
+
+* Living renewable resources: fish, trees, cattle. These resources can regenerate and regrow. Note that the regeneration rate of these resources are not constant and are constrained by their stock and environment.
+
+The fishing economy is governed by three variables:
+
+* Price (scarcity determines the price).
+* Regeneration rate (scarcer fish stocks are replenished more slowly).
+* Yield per unit of capital (efficiency of the fishing technology and methods).
+
+> “Renewable resources are flow limited. They can support extraction or harvest indefinitely but only at a finite flow rate equal to their regeneration rate.”
+
+* Some over-extracted renewable resources can be driven below a critical threshold and effectively become nonrenewable (e.g. fish stocks).
+
 ### Reference
 
 * [Thinking in Systems: A Primer](https://www.goodreads.com/book/show/3828902-thinking-in-systems)
