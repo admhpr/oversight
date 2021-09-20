@@ -279,6 +279,36 @@ The fishing economy is governed by three variables:
 
 * Some over-extracted renewable resources can be driven below a critical threshold and effectively become nonrenewable (e.g. fish stocks).
 
+### Why Systems Work So Well
+
+* Many systems possess one of the following characteristics: resilience, self-organization, or hierarchy.
+
+__Resilience__: A measure of a system’s ability to adapt and survive in a changing environment. Brittleness and rigidity are the opposite of resilience.
+ * Feedback loops that regulate the balance in a system are essential to system resilience.
+ * e.g: The human body can tolerate different temperatures, variations in food supply, and repair itself and compensate for missing parts.
+ * Resilience is not the same as being static or constant.
+ 
+> “Because resilience may not be obvious without a whole-system view, people often sacrifice resilience for stability, or for productivity, or for some other more immediately recognizable system property.”
+
+__Self-Organization__: The characteristic in which some systems can learn, evolve, self-regulate, and develop complexity on its own.
+
+> “Self-organization produces heterogeneity and unpredictability.”
+
+* Freedom, experimentation, and disorder are necessary conditions for self-organization (many people are uncomfortable with these properties).
+
+__Hierarchy__: Self-organizing systems generate hierarchies of nested systems. Systems with subsystems as you move down and systems aggregated/comprising larger systems as you move up.
+
+e.g: A cell in your heart is a subsystem of the organ. The organ is a subsystem of a larger circulatory system. The circulatory system, along with other physiological systems, comprises a person. In turn, a person is a subsystem of a family or group of people. Groups of people are subsystems of a larger societal organization (neighborhood, city, state, nation, etc.).
+
+* Hierarchies give structure to systems (yielding stability and resilience) and also allow for efficiency and specialization. Certain subsystems are tasked with certain goals and subsystems only need information essential to those goals and behaviors.
+
+* Balance in the hierarchy is necessary for optimal behaviors:
+* Sub-optimization occurs when a subsystem’s goals dominate at the expense of the overall system goals.
+* Central control occurs when the system at the top of the hierarchy prevents subsystems for operating efficiently or freely.
+
+> “Hierarchical systems evolve from the bottom up. The purpose of the upper layers of the hierarchy is to serve the purposes of the lower layers.”
+
+
 ### Reference
 
 * [Thinking in Systems: A Primer](https://www.goodreads.com/book/show/3828902-thinking-in-systems)
