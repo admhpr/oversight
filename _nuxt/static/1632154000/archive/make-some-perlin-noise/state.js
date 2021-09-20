@@ -1,0 +1,1 @@
+window.__NUXT__=(function(a){return {staticAssetsBase:"\u002F_nuxt\u002Fstatic\u002F1632154000",layout:"default",error:a,serverRendered:true,routePath:"\u002Farchive\u002Fmake-some-perlin-noise",config:{apiKey:void 0,_app:{basePath:"\u002F",assetsPath:"\u002F_nuxt\u002F",cdnURL:a},content:{dbHash:"086c1fb6"}}}}(null));
