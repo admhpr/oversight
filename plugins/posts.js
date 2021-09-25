@@ -1,4 +1,4 @@
-function postsFilter(posts) {
+function publishByDateFilter(posts) {
   return posts
     .filter((post) => new Date(post.date) <= new Date())
     .sort((a, b) => new Date(b.date) - new Date(a.date))
@@ -9,7 +9,7 @@ export default async function ({ app }, inject) {
   const archivedPosts = await app.$content('archive').fetch()
   const notesPosts = await app.$content('notes').fetch()
 
-  inject('archivedPosts', postsFilter(archivedPosts))
-  inject('blogPosts', postsFilter(blogPosts))
-  inject('notesPosts', postsFilter(notesPosts))
+  inject('archivedPosts', publishByDateFilter(archivedPosts))
+  inject('blogPosts', publishByDateFilter(blogPosts))
+  inject('notesPosts', publishByDateFilter(notesPosts))
 }
