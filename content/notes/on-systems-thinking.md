@@ -309,6 +309,14 @@ e.g: A cell in your heart is a subsystem of the organ. The organ is a subsystem 
 > “Hierarchical systems evolve from the bottom up. The purpose of the upper layers of the hierarchy is to serve the purposes of the lower layers.”
 
 
+### Why Systems Surprise Us
+
+* Much of our thinking makes use of models to explain and make sense of the world. These models may or may not accurately reflect reality.
+
+> “System structure is the source of system behavior. System behavior reveals itself as a series of events over time.”
+
+__Remember__: many system relationship and interconnections are NOT linear. Moreover, the relative strength or influence of these relationships are dynamic.
+
 ### Reference
 
 * [Thinking in Systems: A Primer](https://www.goodreads.com/book/show/3828902-thinking-in-systems)
