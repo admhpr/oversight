@@ -317,6 +317,13 @@ e.g: A cell in your heart is a subsystem of the organ. The organ is a subsystem 
 
 __Remember__: many system relationship and interconnections are NOT linear. Moreover, the relative strength or influence of these relationships are dynamic.
 
+__Remember__: the language we use to describe a system biases our understanding of the system.
+
+E.g: Labeling an undesirable outcome of a system as a “side effect” suggests that the outcome was unanticipated, poorly considered, and unwanted.
+
+Garrett Hardin (ecologist): 
+> “Side effects no more deserve the adjective ‘side’ than does the ‘principal’ effect. It is hard to think in terms of systems, and we eagerly warp our language to protect ourselves from the necessity of doing so.”
+
 ### Reference
 
 * [Thinking in Systems: A Primer](https://www.goodreads.com/book/show/3828902-thinking-in-systems)
