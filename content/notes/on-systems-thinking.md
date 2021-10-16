@@ -324,6 +324,7 @@ E.g: Labeling an undesirable outcome of a system as a “side effect” suggests
 Garrett Hardin (ecologist): 
 > “Side effects no more deserve the adjective ‘side’ than does the ‘principal’ effect. It is hard to think in terms of systems, and we eagerly warp our language to protect ourselves from the necessity of doing so.”
 
+* Simplified systems models can lead to errors. For instance, with simple, single stock-and-flow diagrams, we make inherent assumptions about the nature and availability of the source for a flow or the sink for an outflow. This may be necessary to examine a system closely for a given task, but it’s worth noting that this activity opens us up to blindspots and assumptions.
 
 ### Reference
 
