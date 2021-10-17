@@ -1,6 +1,6 @@
 ## Adam Harpur
 
-Hi, I am Adam Harpur, a problem solver, currently building and maintaining modern web applications with a focus on usability, performance, and accessibility, improving developer experience with modern DevOps approaches and first class dev tooling!
+Hi, I'm Adam Harpur, a problem solver, currently building and maintaining modern web applications with a focus on usability, performance, and accessibility, improving developer experience with modern DevOps approaches and first class dev tooling!
 
 Nothing gives me more satisfaction than creating a tool that solves a problem for someone in the real world.
 
@@ -14,7 +14,7 @@ Working with rapid growth start-ups and fast paced product focused work environm
 
 ### Personal
 
-Outside of programming, I enjoy exercise, travelling and anything that get's me into a flow state of mind. Currently living and working from Belfast, having previously worked in Australia 🇦🇺 and the U.S.A 🇺🇸.
+Outside of programming, I enjoy exercise, travelling and anything that gets me into a flow state of mind. Currently living and working from Belfast, having previously resided in Australia 🇦🇺 and the U.S.A 🇺🇸.
 
 This blog is minimal reincarnation of my previous works and posts, all of which have been ported over and [archived](https://adam.harpur.io/archive).
 
