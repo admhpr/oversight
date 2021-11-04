@@ -87,6 +87,5 @@ We have several ways of exposing the universe's cells to JavaScript. To begin, w
 
 Another viable design alternative would be for Rust to return a list of every cell that changed states after each tick, instead of exposing the whole universe to JavaScript. This way, JavaScript wouldn't need to iterate over the whole universe when rendering, only the relevant subset. The trade off is that this delta-based design is slightly more difficult to implement.
 
-### Rust Implementation
 
-### Rendering with JavaScript
+[Implementation](https://github.com/admhpr/wasm-way-of-life)
