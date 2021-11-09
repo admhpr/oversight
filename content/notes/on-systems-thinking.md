@@ -79,14 +79,10 @@ e.g: For a population, an inflow might be represented by births (these ADD to th
 
 Stock-and-flow diagram: A visual representation of a system that shows inflows, outflows, reinforcing and balancing loops, stocks and interconnections with other systems.
 
-```
-  xxx              ┌────────┐
- x   xxxx          │        │                xxxx
-xx      xxx        │ stock  │         xxxx x x  xx
-x         x──────► │        │ ──────► xx         x
- xxxxxxxxxx        │        │           xx       x
-                   └────────┘            xxxx    xx
-           inflow             outflow        x xxxx
+```mermaid
+graph LR
+    A[Water] -->|inflow| B(Water in bath)
+    B --> |outflow| C[Water]
 ```
 
 > System diagrams are simplified representations of the real world “The map is not the territory.”
