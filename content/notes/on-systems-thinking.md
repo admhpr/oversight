@@ -322,6 +322,22 @@ Garrett Hardin (ecologist):
 
 * Simplified systems models can lead to errors. For instance, with simple, single stock-and-flow diagrams, we make inherent assumptions about the nature and availability of the source for a flow or the sink for an outflow. This may be necessary to examine a system closely for a given task, but it’s worth noting that this activity opens us up to blindspots and assumptions.
 
+__Remember__: Systems form a continuum. Systems are connected with other systems (on both ends of the model). The boundaries we draw around a system are arbitrary and serve the purposes of our analysis and the questions we want answered.
+
+Limiting factor: 
+
+> “A necessary system input that is the one limiting the activity of the system at a particular moment.”
+
+> “Any physical entity with multiple inputs and outputs is surrounded by layers of limits.”
+
+> “There always will be limits to growth. They can be self-imposed. If they aren’t, they will be system-imposed.”
+
+__Remember__: Do not underestimate the importance of system delays.
+
+Bounded rationality: People make reasonable decisions based on the information available, but they don’t always have complete or correct information available.
+
+> “The bounded rationality of each actor in a system may not lead to decisions that further the welfare of the system as a whole.”
+
 ### Reference
 
 * [Thinking in Systems: A Primer](https://www.goodreads.com/book/show/3828902-thinking-in-systems)
