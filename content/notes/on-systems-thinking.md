@@ -338,6 +338,35 @@ Bounded rationality: People make reasonable decisions based on the information a
 
 > “The bounded rationality of each actor in a system may not lead to decisions that further the welfare of the system as a whole.”
 
+System Traps and Opportunities
+
+Archetypes: System structures that exhibit standard or characteristic behaviors. These include problematic patterns of behavior.
+
+These systemic problems are often blamed on specific actors or events but the problems are more likely to be inherent to the system.
+
+“Blaming, disciplining, firing, twisting policy levers harder, hoping for a more favorable sequence of driving events, tinkering at the margins—these standard responses will not fix structural problems.”
+
+Archetype: Policy Resistance (aka “fixes that fail”)
+
+“Policy resistance comes from the bounded rationalities of the actors in a system, each with his or her own goals.”
+
+Example: Wars on drugs that fail to reduce the use or prevalence of drugs.
+
+Consider a single-system stock of the drug supply in a city.
+
+Consider the divergent goals of different subsystems or actors within the system:
+
+Addicts want to keep the drug stock high.
+Law enforcement wants to keep the drug stock low.
+Pushers want to keep it in the middle so prices are moderate (not too high and not too low).
+Average citizens want to be safe from crime.
+When one actor gains an advantage that moves the system stock (drug supply) to their advantage, the other actors will increase their efforts to move it in the opposite direction. The result is a standoff in which the stock remains constant (which nobody wants).
+
+Two possible resolutions:
+
+Overpower the system with one of the goals: this requires tremendous resources (say from law enforcement) and carries high costs whether it succeeds (resentment from the population, mass incarcerations, etc.).
+Capitulate (counterintuitive): stop spending resources and energy on enforcing or resisting. Example: Ending Prohibition in 1933 in the USA.
+
 ### Reference
 
 * [Thinking in Systems: A Primer](https://www.goodreads.com/book/show/3828902-thinking-in-systems)
