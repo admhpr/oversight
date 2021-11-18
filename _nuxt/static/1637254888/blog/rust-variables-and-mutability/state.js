@@ -1,0 +1,1 @@
+window.__NUXT__=(function(a){return {staticAssetsBase:"\u002F_nuxt\u002Fstatic\u002F1637254888",layout:"default",error:a,serverRendered:true,routePath:"\u002Fblog\u002Frust-variables-and-mutability",config:{apiKey:void 0,_app:{basePath:"\u002F",assetsPath:"\u002F_nuxt\u002F",cdnURL:a},content:{dbHash:"a2f0cf1b"}}}}(null));
