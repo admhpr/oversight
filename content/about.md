@@ -4,7 +4,7 @@ Hi, I'm Adam Harpur, a problem solver, currently building and maintaining modern
 
 Nothing gives me more satisfaction than creating a tool that solves a problem for someone in the real world.
 
-That's what it's all about. How do we as people make these machines serve a purpose. How do we express a solution through code and beyond.
+That's what it's all about, How do we as people make these machines serve a purpose. How do we express a solution through code and beyond.
 
 ### Work
 
