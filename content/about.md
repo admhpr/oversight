@@ -6,6 +6,8 @@ Nothing gives me more satisfaction than creating a tool that solves a problem fo
 
 That's what it's all about, How do we as people make these machines serve a purpose. How do we express a solution through code and beyond.
 
+In reality I know practically nothing, but can figure out how to do almost anything!
+
 ### Work
 
 I have a broad range of experience developing web applications, covering all aspects of the design and development process across the stack from database to UI.
