@@ -6,7 +6,7 @@ Nothing gives me more satisfaction than creating a tool that solves a problem fo
 
 That's what it's all about, How do we as people make these machines serve a purpose. How do we express a solution through code and beyond.
 
-In reality I know practically nothing, but can figure out how to do almost anything!
+I often have moments of great uncertainty and I firmly believe there's tons more I have to learn, I hope that feeling never goes away.
 
 ### Work
 
