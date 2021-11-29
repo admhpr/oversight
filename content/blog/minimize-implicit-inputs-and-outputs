@@ -1,2 +1,10 @@
-### Minimize implicit inputs and outputs
+---
+title:  minimize implicit inputs and outputs
+date: 2021-11-29T06:02
+desc: 
+tags:
+  - simplicity
+  - principles
+---
 
+Implicit inputs are all of the inputs that aren’t arguments. And implicit outputs are all of the outputs that aren’t the return value.
