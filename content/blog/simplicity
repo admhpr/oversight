@@ -1,11 +1,13 @@
 ---
-title: minimise implicit inputs and outputs
+title: simplicity
 date: 2021-11-29T06:02
 desc: thoughts on simplicity
 tags:
   - simplicity
   - principles
 ---
+
+### Minimise implicit inputs and outputs
 
 Implicit inputs are all of the inputs that aren’t arguments. And implicit outputs are all of the outputs that aren’t the return value.
 
