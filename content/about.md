@@ -16,7 +16,7 @@ Working with rapid growth start-ups and fast paced product focused work environm
 
 ### Personal
 
-Outside of programming, I enjoy exercise, travelling and anything that gets me into a flow state of mind 🧘🏃🏋️🏌️🏄‍♂️🪁🪘. Currently living and working from Belfast, having previously resided in Australia 🇦🇺 and the U.S.A 🇺🇸.
+Outside of programming, I enjoy exercise, travelling and anything that gets me into a "[flow](https://en.wikipedia.org/wiki/Flow_(psychology))" state of mind 🧘🏃🏋️🏌️🏄‍♂️🪁🪘. Currently living and working from Belfast, having previously resided in Australia 🇦🇺 and the U.S.A 🇺🇸.
 
 This blog is minimal reincarnation of my previous works and posts, all of which have been ported over and [archived](https://adam.harpur.io/archive).
 
