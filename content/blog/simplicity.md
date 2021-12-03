@@ -19,14 +19,14 @@ of the parts it’s connected to.
 Functions give us a very natural way to separate concerns. Functions separate what value is provided as an argument from how the value is used. Very often, we are tempted to put things together. 
 Bigger, more complex things feel more substantial. But things that are pulled apart can always be composed back together. The hard part is figuring out useful ways to pull them apart.
 
-#### Easier to reuse
+* Easier to reuse
 
 Smaller, simpler functions are easier to reuse. They do less. They make fewer assumptions.
 
-#### Easier to maintain
+* Easier to maintain
 
 Smaller functions are easier to understand and maintain. They have less code. They are often obviously right (or wrong).
 
-#### Easier to test
+* Easier to test
 
 Smaller functions are easier to test. They do one thing, so you just test that one thing. Even if there is no identifiable problem in a function, if you see something you can pull out, it’s worth at least trying to extract it. It might lead to a better design.
