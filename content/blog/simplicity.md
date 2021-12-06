@@ -30,3 +30,12 @@ Smaller functions are easier to understand and maintain. They have less code. Th
 * Easier to test
 
 Smaller functions are easier to test. They do one thing, so you just test that one thing. Even if there is no identifiable problem in a function, if you see something you can pull out, it’s worth at least trying to extract it. It might lead to a better design.
+
+### Use stratified design
+
+Stratified design is a technique for building software in layers. Each layer defines new functions in terms of the functions in the layers below it. By training our sense of design, we can find arrangements of layers that make our software flexible to change, readable, easy to test, and much more reusable.
+
+```
+business rules -> entity operations -> copy-on-write -> built ins
+```
+
