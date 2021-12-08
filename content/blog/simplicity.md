@@ -31,7 +31,7 @@ Smaller functions are easier to understand and maintain. They have less code. Th
 
 Smaller functions are easier to test. They do one thing, so you just test that one thing. Even if there is no identifiable problem in a function, if you see something you can pull out, it’s worth at least trying to extract it. It might lead to a better design.
 
-### Use stratified design
+### Stratify the design when possible
 
 Stratified design is a technique for building software in layers. Each layer defines new functions in terms of the functions in the layers below it. By training our sense of design, we can find arrangements of layers that make our software flexible to change, readable, easy to test, and much more reusable.
 
@@ -39,3 +39,21 @@ Stratified design is a technique for building software in layers. Each layer def
 business rules -> entity operations -> copy-on-write -> built ins
 ```
 
+* Pattern 1: Straightforward implementation 
+
+The layer structure of stratified design should help us build straightforward implementations. When we read a function with a straightforward implementation, the problem the function signature presents should be solved at the right level of detail in the body. Too much detail is a code smell.
+
+* Pattern 2: Abstraction barrier
+
+Some layers provide an interface that lets us hide an important implementation detail. These layers help us write code at a higher level and free our limited mental capacity to think at a higher level.
+
+* Pattern 3: Minimal interface
+
+As our system evolves, we want the interfaces to important business concepts to converge to a small, powerful set of operations.
+Every other operation should be defined in terms of those, either directly or indirectly.
+
+* Pattern 4: Comfortable layers
+
+The patterns and practices of stratified design should serve our needs as programmers, who are in turn serving the business. We
+should invest time in the layers that will help us deliver software faster and with higher quality. We don’t want to add layers for
+sport. The code and its layers of abstraction should feel comfortable to work in.
