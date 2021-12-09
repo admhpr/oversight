@@ -1,0 +1,1 @@
+window.__NUXT__=(function(a){return {staticAssetsBase:"\u002F_nuxt\u002Fstatic\u002F1639055887",layout:"default",error:a,serverRendered:true,routePath:"\u002Fnotes\u002Fon-being-antifragile",config:{apiKey:void 0,_app:{basePath:"\u002F",assetsPath:"\u002F_nuxt\u002F",cdnURL:a},content:{dbHash:"c855b3c7"}}}}(null));
