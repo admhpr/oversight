@@ -1,6 +1,6 @@
 ---
 title: simplicity
-date: 2021-11-29T06:02
+date: 2021-11-29T06:05
 desc: thoughts on simplicity
 tags:
   - simplicity
