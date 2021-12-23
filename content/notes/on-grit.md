@@ -16,12 +16,11 @@ highlight the key points.
 ### Overview
 
 Getting inspired to work hard is where it all starts.
- * We are always told that we should persevere
- * Deep down we know it is talent that creates success
- * This is misguided thinking
- * Talent is overrated the real heros are gritty and determined
 
-#### People have a natural talent bias
+We are always told that we should persevere. Deep down we know it is talent that creates success, this is misguided thinking, talent is overrated the real heros are gritty and determined.
+
+### People have a natural talent bias
+
  * Despite what people say ( 66% of employers surveyed preferred work ethic over
    raw talent ) studies suggest we tend to favour talent
  * 2011 study where experts were played two recordings of a hight level piano player, they are told one was a
@@ -30,7 +29,8 @@ Getting inspired to work hard is where it all starts.
    despite them both being the same.
  * This attitude is shown to be across a number of industries and studies.
 
-#### Effort is worth twice as much as talent ( as the untalented often find out )
+### Effort is worth twice as much as talent (as the untalented often find out)
+ 
  * Equation to determine skill: Talent * Effort = Skill
  * Equation to determine results: Skill * Effort = Achievement
  * Athletics is a good example: Effort is normally the deciding factor in high
@@ -41,12 +41,13 @@ Getting inspired to work hard is where it all starts.
 
 --------------------------------------------------------------------------------
 
-With everything perfect, we do not ask how it came to be. ~ Nietzsche
+> With everything perfect, we do not ask how it came to be. ~ Nietzsche
 
 
 --------------------------------------------------------------------------------
 
-#### By creating low-level goals, you can realise long term ones
+### By creating low-level goals, you can realise long term ones
+ 
  * Conventional wisdom suggest that we should do what we love
  * It is actually more important to be committed to what you love
  * Give yourself small daily duties to keep the dream alive
@@ -56,7 +57,8 @@ With everything perfect, we do not ask how it came to be. ~ Nietzsche
  * Without handling the low-level goals the higher ones can never be achieved
  * Be loyal to your long term goal
 
-#### Choose work that is of interest
+### Choose work that is of interest
+ 
  * 2014 Gallup poll showed 2/3 of American workers felt unmotivated at work
  * Interest is the main ingredient to motivation
  * Play to your strengths and aim for work that is appealing to your natural
@@ -64,7 +66,8 @@ With everything perfect, we do not ask how it came to be. ~ Nietzsche
  * There are many potential opportunities to be successful
  * It is important to stay 'with it' in order to get the most from it
 
-#### Be smart about how you practice to avoid going through the motions
+### Be smart about how you practice to avoid going through the motions
+ 
  * Working hard != working smart
  * Practice intelligently
  * Practice always adds to skill
@@ -72,7 +75,8 @@ With everything perfect, we do not ask how it came to be. ~ Nietzsche
  * Practice with targets that are slightly ahead of current comfort zone
  * Reflect on what needs improvement and start practicing smart
 
-#### Finding purpose is much easier to find than a calling
+### Finding purpose is much easier to find than a calling
+ 
  * Doing things we don't like is inevitable
  * Procastination is natural
  * Find purpose to avoid procastination
@@ -82,7 +86,8 @@ With everything perfect, we do not ask how it came to be. ~ Nietzsche
  * If your current work is not your calling then see it as a facilitator to
    reaching the bigger goal
 
-#### Teachers, parents and leaders can foster grit
+### Teachers, parents and leaders can foster grit
+ 
  * Children often end up getting bad advice,especially when told that are not
    smart enough or that they are wasting their time working at something
  * Encourage hard work
@@ -93,13 +98,14 @@ With everything perfect, we do not ask how it came to be. ~ Nietzsche
 
 --------------------------------------------------------------------------------
 
-Children have never been very good at listening to their elders, but they have
+> Children have never been very good at listening to their elders, but they have
 never failed to imitate them.
 
 
 --------------------------------------------------------------------------------
 
-#### Grit is valued in many sucessful businesses and societies
+### Grit is valued in many sucessful businesses and societies
+ 
  * In Finland grit is a valued attribute
  * `sisu` is the Finnish word for grit, which refers to quality of perseverance
    that has become to Finnish culture
@@ -109,13 +115,13 @@ never failed to imitate them.
 
 --------------------------------------------------------------------------------
 
-Encourage others to stand up and succeed in the face of adversity by providing
+> Encourage others to stand up and succeed in the face of adversity by providing
 them with motivation, a sense of purpose and clearly defined goals.
 
 
 --------------------------------------------------------------------------------
 
-#### Key Takeaway
+### Key Takeaway
 
 Do something you love, there will always be rough patches. Hard work can lead to
 procrastination and doubt, this is where grit plays its most important
