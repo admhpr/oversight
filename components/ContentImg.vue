@@ -18,7 +18,6 @@ const requireFromContent = (contentPath) => {
   switch (ext) {
     case '.svg':
       result = require(`~/content/${path.join(dir, name)}.svg`)
-      console.log(result)
       break
     case '.png':
       result = require(`~/content/${path.join(dir, name)}.png`)
