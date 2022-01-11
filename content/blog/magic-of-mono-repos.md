@@ -13,8 +13,8 @@ The value proposition of a well setup mono-repo, N packages with the maintainenc
 
 ### Prerequisite's
 
-node >[v14.18.2](https://nodejs.org/download/release/v14.18.2/)
-npm  >[v7](https://github.com/npm/cli) `npm i -g npm@7`
+- node >= [v14.18.2](https://nodejs.org/download/release/v14.18.2/)
+- npm  >= [v7](https://github.com/npm/cli) `npm i -g npm@7`
 
 ### Setup
 ### TypeScript Config
