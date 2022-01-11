@@ -31,7 +31,7 @@ add to `package.json`
 add deps to workspace
 
 ```bash
-npm i -D <workspace-dep>
+npm i <workspace-dep>
 ```
 dev
 
