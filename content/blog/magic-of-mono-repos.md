@@ -9,6 +9,8 @@ tags:
 
 ## 1.5 package
 
+The value proposition of a well setup mono-repo, N packages with the maintainence overhead on 1.5. That's it, that's the goal. Below describes one of many approaches to achieve that using typescript as the primary language.
+
 ### Setup
 ### TypeScript Config
 ### Tasks
