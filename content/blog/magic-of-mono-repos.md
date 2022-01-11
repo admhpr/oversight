@@ -11,6 +11,11 @@ tags:
 
 The value proposition of a well setup mono-repo, N packages with the maintainence overhead on 1.5. That's it, that's the goal. Below describes one of many approaches to achieve that using typescript as the primary language.
 
+### Prerequisite's
+
+node >[v14.18.2](https://nodejs.org/download/release/v14.18.2/)
+npm  >[v7](https://github.com/npm/cli) `npm i -g npm@7`
+
 ### Setup
 ### TypeScript Config
 ### Tasks
