@@ -17,6 +17,37 @@ The value proposition of a well setup mono-repo, N packages with the maintainenc
 - npm  >= [v7](https://github.com/npm/cli) `npm i -g npm@7`
 
 ### Setup
+
+add to `package.json`
+
+```json
+{
+  "name": "my-workspaces-powered-project",
+  "workspaces": [
+    "packages/*"
+  ]
+}
+```
+add deps to workspace
+
+```bash
+npm i -D <workspace-dep>
+```
+dev
+
+```bash
+npm i -D <workspace-dev-dep>
+```
+add deps to package
+
+```bash
+npm i <package-dep> -w <folder name>
+```
+dev
+
+```bash
+npm i -D <package-dep> -w <folder name>
+```
 ### TypeScript Config
 ### Tasks
 ### Task Flow
