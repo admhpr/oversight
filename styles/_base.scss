@@ -72,7 +72,7 @@ $ff-serif: 'PT Serif', serif;
     @apply mb-4;
   }
   ul {
-    @apply list-circle;
+    list-style: circle;
     margin-left: 1em;
   }
   ol {
