@@ -41,12 +41,12 @@ npm i -D <workspace-dev-dep>
 add deps to package
 
 ```bash
-npm i <package-dep> -w <folder name>
+npm i <package-dep> -w <workspace-name>
 ```
 dev
 
 ```bash
-npm i -D <package-dep> -w <folder name>
+npm i -D <package-dep> -w <workspace-name>
 ```
 
 ### Folder Structure
@@ -61,6 +61,8 @@ npm i -D <package-dep> -w <folder name>
     ├── packages
     └── workspace
 ```
+
+### Clean Up
 
 ### TypeScript Config
 
