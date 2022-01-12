@@ -14,7 +14,7 @@ The value proposition of a well setup mono-repo, N packages with the maintainenc
 ### Prerequisite's
 
 - node >= [v14.18.2](https://nodejs.org/download/release/v14.18.2/)
-- npm  >= [v7](https://github.com/npm/cli) `npm i -g npm@7`
+- npm  >= [v8](https://github.com/npm/cli)
 
 ### Setup
 
@@ -64,8 +64,63 @@ npm i -D <package-dep> -w <folder name>
 
 ### TypeScript Config
 
-use composite ts projects
+use [composite](https://www.typescriptlang.org/tsconfig#composite) ts projects to speed up build times
 
+base ts config in packages root
+
+`packages/`
+
+```json
+{
+    "compilerOptions": {
+        "allowJs": true,
+        "allowSyntheticDefaultImports": true,
+        "esModuleInterop": true,
+        "inlineSourceMap": false,
+        "listEmittedFiles": false,
+        "listFiles": false,
+        "module": "esnext",
+        "moduleResolution": "node",
+        "noFallthroughCasesInSwitch": true,
+        "noUnusedLocals": false,
+        "noUnusedParameters": false,
+        "pretty": true,
+        "resolveJsonModule": true,
+        "skipLibCheck": true,
+        "strict": true,
+        "target": "es2015",
+        "traceResolution": false,
+        "types": ["node", "jest"],
+    },
+    "compileOnSave": false,
+    "exclude": ["node_modules"]
+}
+```
+reference ts config
+
+```json
+{
+    "files": [],
+    "references": [
+        { "path": "<package-a>" },
+        { "path": "<package-b>" }
+    ]
+}
+```
+ts config per package
+
+`packages/<package-?>`
+
+```json
+{
+  "extends": "../tsconfig.settings.json",
+  "include": ["src"],
+  "compilerOptions": {
+    "composite": true
+    ...
+  }
+}
+```
 
 ### Tasks
 ### Task Flow
