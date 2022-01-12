@@ -1,6 +1,8 @@
 ## Adam Harpur
 
-Hi, I'm Adam Harpur, a problem solver, currently building and maintaining modern web applications with a focus on usability, performance, and accessibility, improving developer experience with modern DevOps approaches and best in class dev tooling!
+> “Trying to define yourself is like trying to bite your own teeth.” ~ Alan Watts
+
+Currently building and maintaining modern web applications with a focus on usability, performance, and accessibility, improving developer experience with modern DevOps approaches and best in class dev tooling!
 
 Nothing gives me more satisfaction than creating a tool that solves a problem for someone in the real world.
 
