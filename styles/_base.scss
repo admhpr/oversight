@@ -72,7 +72,8 @@ $ff-serif: 'PT Serif', serif;
     @apply mb-4;
   }
   ul {
-    @apply list-disc;
+    @apply list-circle;
+    margin-left: 1em;
   }
   ol {
     @apply list-decimal;
