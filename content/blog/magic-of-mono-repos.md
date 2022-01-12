@@ -48,7 +48,25 @@ dev
 ```bash
 npm i -D <package-dep> -w <folder name>
 ```
+
+### Folder Structure
+
+```
+.
+├── packages
+│   ├── <package-a>
+│   |-- <package-b>
+│   └── <package-c>
+└── scripts
+    ├── packages
+    └── workspace
+```
+
 ### TypeScript Config
+
+use composite ts projects
+
+
 ### Tasks
 ### Task Flow
 ### Publishing
