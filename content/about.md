@@ -1,7 +1,3 @@
-## Adam Harpur
-
-> “Trying to define yourself is like trying to bite your own teeth.” ~ Alan Watts
-
 ### Work
 
 Currently building and maintaining modern web applications with a focus on usability, performance, and accessibility, improving developer experience with modern DevOps approaches and best in class dev tooling!
