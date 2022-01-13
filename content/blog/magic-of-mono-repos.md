@@ -131,5 +131,11 @@ ts config per package
 ```
 
 ### Tasks
+#### Lint
+#### Format
+#### Dev
+#### Build
+#### Version
+#### Release
 ### Task Flow
 ### Publishing
