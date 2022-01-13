@@ -64,6 +64,12 @@ npm i -D <package-dep> -w <workspace-name>
 
 ### Clean Up
 
+install [rimraf](https://www.npmjs.com/package/rimraf) at workspace level,
+
+add to scripts for each package:
+
+`rimraf dist *.tsbuildinfo`
+
 ### TypeScript Config
 
 use [composite](https://www.typescriptlang.org/tsconfig#composite) ts projects to speed up build times
