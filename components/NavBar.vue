@@ -15,22 +15,12 @@
     </div>
     <div class="navbar-item-wrapper">
       <nuxt-link
-        to="/blog"
+        v-for="{ name } in menu"
+        :key="name"
+        :to="`/${name}`"
         class="navbar-item"
-        :class="activeRouteClass('blog')"
-        >blog</nuxt-link
-      >
-      <nuxt-link
-        to="/notes"
-        class="navbar-item"
-        :class="activeRouteClass('notes')"
-        >notes</nuxt-link
-      >
-      <nuxt-link
-        to="/archive"
-        class="navbar-item"
-        :class="activeRouteClass('archive')"
-        >archive</nuxt-link
+        :class="activeRouteClass(name)"
+        >{{ name }}</nuxt-link
       >
     </div>
   </nav>
@@ -38,6 +28,12 @@
 
 <script>
 export default {
+  props: {
+    menu: {
+      type: Array,
+      default: () => [{ name: 'blog' }, { name: 'notes' }, { name: 'archive' }],
+    },
+  },
   methods: {
     activeRouteClass(route) {
       return this.$route.path === `/${route}` ? 'current-navbar-item' : ''
