@@ -21,7 +21,9 @@
           :class="activeRouteClass(name)"
           >{{ name }}</nuxt-link
         >
-        {{ delimeter }}
+        <span v-if="delimeter.length" class="mx-1">
+          {{ delimeter }}
+        </span>
       </span>
     </div>
   </nav>
