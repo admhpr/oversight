@@ -2,6 +2,7 @@
   <nav class="navbar">
     <div class="flex items-center">
       <nuxt-link
+        v-if="hasLogo"
         to="/"
         class="navbar-logo"
         exact-active-class="no-active-style"
@@ -32,6 +33,10 @@ export default {
     menu: {
       type: Array,
       default: () => [{ name: 'blog' }, { name: 'notes' }, { name: 'archive' }],
+    },
+    hasLogo: {
+      type: Boolean,
+      default: true,
     },
   },
   methods: {
