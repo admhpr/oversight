@@ -14,14 +14,17 @@
       </nuxt-link>
     </div>
     <div class="navbar-item-wrapper">
-      <nuxt-link
-        v-for="{ name } in menu"
-        :key="name"
-        :to="`/${name}`"
-        class="navbar-item"
-        :class="activeRouteClass(name)"
-        >{{ name }}</nuxt-link
-      >
+      <div v-for="{ name } in menu" :key="name">
+        <nuxt-link
+          :to="`/${name}`"
+          class="navbar-item"
+          :class="activeRouteClass(name)"
+          >{{ name }}</nuxt-link
+        >
+        <span>
+          {{ delimeter }}
+        </span>
+      </div>
     </div>
   </nav>
 </template>
@@ -29,6 +32,10 @@
 <script>
 export default {
   props: {
+    delimeter: {
+      type: String,
+      default: '',
+    },
     menu: {
       type: Array,
       default: () => [{ name: 'blog' }, { name: 'notes' }, { name: 'archive' }],
