@@ -14,17 +14,15 @@
       </nuxt-link>
     </div>
     <div class="navbar-item-wrapper">
-      <div v-for="{ name } in menu" :key="name">
+      <span v-for="{ name } in menu" :key="name" class="mr-5">
         <nuxt-link
           :to="`/${name}`"
           class="navbar-item"
           :class="activeRouteClass(name)"
           >{{ name }}</nuxt-link
         >
-        <span>
-          {{ delimeter }}
-        </span>
-      </div>
+        {{ delimeter }}
+      </span>
     </div>
   </nav>
 </template>
