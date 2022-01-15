@@ -1,8 +1,7 @@
 <template>
   <nav class="navbar">
-    <div class="flex items-center">
+    <div v-if="hasLogo" class="flex items-center">
       <nuxt-link
-        v-if="hasLogo"
         to="/"
         class="navbar-logo"
         exact-active-class="no-active-style"
@@ -58,7 +57,7 @@ export default {
 }
 .navbar-item {
   @apply mr-5;
-  font-size: 0.9rem;
+  font-size: 1.25rem;
   @apply font-medium;
   &:last-child {
     @apply mr-0;
