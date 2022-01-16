@@ -131,6 +131,13 @@ ts config per package
 ```
 
 ### Tasks
+
+Managing task flows with [lerna](https://lerna.js.org/)
+
+install at workspace level
+
+`npm i -WD lerna`
+
 #### Lint
 #### Format
 #### Dev
