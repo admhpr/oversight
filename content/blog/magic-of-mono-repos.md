@@ -138,6 +138,18 @@ install at workspace level
 
 `npm i -WD lerna`
 
+setup a `scripts` folder like so:
+
+```
+scripts
+├── packages
+└── workspace
+```
+`mkdir -p scripts/{packages,workspace}`
+
+* for each workspace task add to `scripts/workspace`
+* for each package task add to `scripts/packages`
+
 #### Lint
 #### Format
 #### Dev
