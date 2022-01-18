@@ -52,14 +52,11 @@ npm i -D <package-dep> -w <workspace-name>
 ### Folder Structure
 
 ```
-.
-├── packages
-│   ├── <package-a>
-│   |-- <package-b>
-│   └── <package-c>
-└── scripts
-    ├── packages
-    └── workspace
+packages
+   ├── <package-a>
+   |-- <package-b>
+   └── <package-c>
+
 ```
 
 ### Clean Up
