@@ -69,6 +69,8 @@ add to scripts for each package:
 
 ### TypeScript Config
 
+install deps:
+
 use [composite](https://www.typescriptlang.org/tsconfig#composite) ts projects to speed up build times
 
 base ts config in packages root
@@ -148,6 +150,9 @@ scripts
 * for each package task add to `scripts/packages`
 
 #### Lint
+
+install deps:
+
 #### Format
 #### Dev
 #### Build
