@@ -153,6 +153,9 @@ scripts
 
 install deps:
 
+`npm i -WD eslint`
+
+
 #### Format
 #### Dev
 #### Build
