@@ -209,6 +209,11 @@ install format deps for project:
 
 `npm i -WD prettier`
 
+touch `.prettierignore`
+
+```
+node_modules
+```
 #### Dev
 #### Build
 #### Lint Staged Files
