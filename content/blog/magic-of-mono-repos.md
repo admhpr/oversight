@@ -18,6 +18,8 @@ The value proposition of a well setup mono-repo, N packages with the maintainenc
 
 ### Setup
 
+use [npm workspaces](https://docs.npmjs.com/cli/v8/using-npm/workspaces)
+
 add to `package.json`
 
 ```json
