@@ -151,9 +151,21 @@ scripts
 * for each workspace task add to `scripts/workspace`
 * for each package task add to `scripts/packages`
 
-#### Appling actions only to staged files
+#### Running tasks based on git hooks
+
+tool: [husky](https://github.com/typicode/husky)
+
+```
+npm i -WD husky
+```
+
+#### Appling lint tasks only to staged files
 
 tool: [lint-staged](https://github.com/okonet/lint-staged)
+
+```
+npm i -WD lint-staged
+```
 
 #### Lint
 
