@@ -155,7 +155,7 @@ scripts
 
 #### Lint
 
-tool: [eslint])(https://eslint.org/)
+tool: [eslint](https://eslint.org/)
 
 install lint deps for TS project:
 
