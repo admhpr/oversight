@@ -157,6 +157,12 @@ install lint deps for TS project:
 
 `npm i -WD eslint @typescript-eslint/parser @typescript-eslint/eslint-plugin`
 
+setup ignores, touch `.eslintignore`
+
+```
+node_modules
+```
+
 add base config to project root __not__ packages root, this helps IDEs like vscode find the lint file
 
 `touch .eslintrc`
@@ -198,8 +204,14 @@ a thin lint config extending from base, additional per package rules can be adde
 ```
 
 #### Format
+
+install format deps for project:
+
+`npm i -WD prettier`
+
 #### Dev
 #### Build
+#### Lint Staged Files
 #### Version
 #### Package
 #### Release
