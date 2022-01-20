@@ -153,6 +153,8 @@ scripts
 
 #### Appling actions only to staged files
 
+tool: [lint-staged](https://github.com/okonet/lint-staged)
+
 #### Lint
 
 tool: [eslint](https://eslint.org/)
