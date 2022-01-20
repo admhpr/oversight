@@ -151,7 +151,11 @@ scripts
 * for each workspace task add to `scripts/workspace`
 * for each package task add to `scripts/packages`
 
+#### Appling actions only to staged files
+
 #### Lint
+
+tool: [eslint])(https://eslint.org/)
 
 install lint deps for TS project:
 
@@ -205,6 +209,8 @@ a thin lint config extending from base, additional per package rules can be adde
 
 #### Format
 
+tool: [prettier](https://prettier.io/)
+
 install format deps for project:
 
 `npm i -WD prettier`
@@ -216,7 +222,6 @@ node_modules
 ```
 #### Dev
 #### Build
-#### Lint Staged Files
 #### Version
 #### Package
 #### Release
