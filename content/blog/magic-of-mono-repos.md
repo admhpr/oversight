@@ -188,7 +188,7 @@ in each package directory `touch .eslintrc`
 
 a thin lint config extending from base, additional per package rules can be added here.
 
-```
+```json
 {
   "extends": "../../.eslintrc",
   "parserOptions": {
