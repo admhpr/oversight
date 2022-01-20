@@ -153,10 +153,49 @@ scripts
 
 #### Lint
 
-install deps:
+install lint deps for TS project:
 
-`npm i -WD eslint`
+`npm i -WD eslint @typescript-eslint/parser @typescript-eslint/eslint-plugin`
 
+add base config to project root __not__ packages root, this helps IDEs like vscode find the lint file
+
+`touch .eslintrc`
+
+```json
+{
+  "env": {
+    "es2021": true
+  },
+  "extends": [
+    "eslint:recommended",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:@typescript-eslint/recommended-requiring-type-checking"
+  ],
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaVersion": 12
+  },
+  "plugins": ["@typescript-eslint"],
+  "rules": {
+    "prefer-const": "error",
+    "@typescript-eslint/no-unsafe-member-access": "off",
+    "@typescript-eslint/no-unsafe-call": "off",
+    "@typescript-eslint/no-unsafe-assignment": "off"
+  }
+```
+
+in each package directory `touch .eslintrc`
+
+a thin lint config extending from base, additional per package rules can be added here.
+
+```
+{
+  "extends": "../../.eslintrc",
+  "parserOptions": {
+    "project": "tsconfig.json"
+  }
+}
+```
 
 #### Format
 #### Dev
