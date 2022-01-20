@@ -135,7 +135,7 @@ ts config per package
 
 Managing task flows with [lerna](https://lerna.js.org/)
 
-install at workspace level
+install:
 
 `npm i -WD lerna`
 
@@ -159,11 +159,13 @@ tool: [lint-staged](https://github.com/okonet/lint-staged)
 
 tool: [eslint](https://eslint.org/)
 
-install lint deps for TS project:
+install (with ts deps):
 
 `npm i -WD eslint @typescript-eslint/parser @typescript-eslint/eslint-plugin`
 
 setup ignores, touch `.eslintignore`
+
+add
 
 ```
 node_modules
@@ -213,11 +215,13 @@ a thin lint config extending from base, additional per package rules can be adde
 
 tool: [prettier](https://prettier.io/)
 
-install format deps for project:
+install:
 
 `npm i -WD prettier`
 
 touch `.prettierignore`
+
+add
 
 ```
 node_modules
