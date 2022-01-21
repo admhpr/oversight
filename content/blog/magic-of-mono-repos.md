@@ -223,6 +223,16 @@ a thin lint config extending from base, additional per package rules can be adde
 }
 ```
 
+create a `lint.sh` script in `scripts/workspace`
+
+```
+```
+
+create a `lint.sh` script in `scripts/package`
+
+```
+```
+
 #### Format
 
 tool: [prettier](https://prettier.io/)
