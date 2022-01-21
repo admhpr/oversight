@@ -170,6 +170,13 @@ tool: [husky](https://github.com/typicode/husky)
 npm i -WD husky
 ```
 
+`npx husky add .husky/pre-commit`
+
+```
+#!/bin/sh
+npx lint-staged
+```
+
 #### Appling lint tasks only to staged files
 
 tool: [lint-staged](https://github.com/okonet/lint-staged)
