@@ -136,7 +136,7 @@ ts config per package
   "extends": "../tsconfig.settings.json",
   "include": ["src"],
   "compilerOptions": {
-    "composite": true
+    "composite": true,
     ...
   }
 }
