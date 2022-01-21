@@ -16,6 +16,17 @@ The value proposition of a well setup mono-repo, N packages with the maintainenc
 - node >= [v14.18.2](https://nodejs.org/download/release/v14.18.2/)
 - npm  >= [v8](https://github.com/npm/cli)
 
+### Optional
+
+use [nvm](https://github.com/nvm-sh/nvm) to manage node versions
+
+touch `.nvmrc`
+
+```
+v14.18.2
+```
+once installed calling `nvm use` from root will enable the correct version if not already enabled
+
 ### Setup
 
 use [npm workspaces](https://docs.npmjs.com/cli/v8/using-npm/workspaces)
