@@ -1,7 +1,7 @@
 ---
 title: magic of mono repos
 date: 2022-01-05T05:02
-desc: why mono repos are magic 🧙
+desc: a setup guide to a magic mono repo 🧙
 tags:
   - recipes
   - typescript
