@@ -244,11 +244,17 @@ a thin lint config extending from base, additional per package rules can be adde
 create a `lint.sh` script in `scripts/workspace`
 
 ```
+#!/usr/bin/env sh
+echo "┏━━━ 🕵️‍♀️ LINT WORKSPACE ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
+npm run lint --workspaces
 ```
 
-create a `lint.sh` script in `scripts/package`
+create a `lint.sh` script in `scripts/packages`
 
 ```
+#!/usr/bin/env sh
+echo "┏━━━ 🕵️‍♀️ LINT $(pwd) ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
+eslint src --ext ts,js
 ```
 
 #### Format
@@ -267,6 +273,8 @@ add
 node_modules
 ```
 #### Dev
+
+
 #### Build
 #### Version
 #### Package
