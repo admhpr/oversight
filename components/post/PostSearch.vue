@@ -13,7 +13,7 @@
         @keydown.enter="enter"
         @input="showSearchItems = true"
       />
-      <span @click="search = ''">∅</span>
+      <span class="p-2" @click="search = ''">∅</span>
     </div>
     <div class="w-full">
       <aside
