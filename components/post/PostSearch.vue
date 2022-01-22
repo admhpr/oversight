@@ -3,7 +3,7 @@
     <div class="mt-1 flex justify-between rounded-md">
       <input
         ref="searchBox"
-        v-model="search"
+        v-model="input"
         class="w-full p-2"
         type="text"
         placeholder="search..."
@@ -28,10 +28,7 @@
             :key="index"
             :class="index === currentIndex ? 'bg-secondary text-white' : ''"
             class="px-2 py-3 space-x-2 hover:bg-secondary hover:text-white focus:bg-gray-600 focus:text-white focus:outline-none"
-            @click="
-              selectSearchItem(item)
-              showSearchItems = false
-            "
+            @click="selectSearchItem(item)((showSearchItems = false))"
           >
             {{ item.title.toLowerCase() }}
           </li>
@@ -56,7 +53,7 @@ export default {
   },
   data() {
     return {
-      search: '',
+      input: '',
       currentIndex: 0,
       showSearchItems: false,
     }
@@ -65,9 +62,12 @@ export default {
     filteredList() {
       return this.list
     },
+    search() {
+      return this.input.toLowerCase()
+    },
   },
   watch: {
-    search(v) {
+    search() {
       this.$emit('selected', this.search)
       if (this.search === '') {
         this.currentIndex = 0
