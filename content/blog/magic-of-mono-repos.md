@@ -241,7 +241,7 @@ a thin lint config extending from base, additional per package rules can be adde
 }
 ```
 
-create a `lint.sh` script in `scripts/workspace`
+`touch scripts/workspace/lint.sh`
 
 ```
 #!/usr/bin/env sh
@@ -249,7 +249,7 @@ echo "┏━━━ 🕵️‍♀️ LINT WORKSPACE ━━━━━━━━━�
 npm run lint --workspaces
 ```
 
-create a `lint.sh` script in `scripts/packages`
+`touch scripts/packages/lint.sh`
 
 ```
 #!/usr/bin/env sh
