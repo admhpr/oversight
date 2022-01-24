@@ -166,13 +166,11 @@ scripts
 
 tool: [husky](https://github.com/typicode/husky)
 
-```
-npm i -WD husky
-```
+`npm i -WD husky`
 
 `npx husky add .husky/pre-commit`
 
-```
+```bash
 #!/bin/sh
 npx lint-staged
 ```
@@ -243,7 +241,7 @@ a thin lint config extending from base, additional per package rules can be adde
 
 `touch scripts/workspace/lint.sh`
 
-```
+```bash
 #!/usr/bin/env sh
 echo "┏━━━ 🕵️‍♀️ LINT WORKSPACE ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
 npm run lint --workspaces
@@ -251,7 +249,7 @@ npm run lint --workspaces
 
 `touch scripts/packages/lint.sh`
 
-```
+```bash
 #!/usr/bin/env sh
 echo "┏━━━ 🕵️‍♀️ LINT $(pwd) ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
 eslint src --ext ts,js
@@ -274,6 +272,15 @@ node_modules
 ```
 #### Dev
 
+`touch scripts/workspace/dev.sh`
+
+add
+
+```bash
+#!/usr/bin/env sh
+echo "┏━━━ 🏗️ DEV WORKSPACE ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
+npx lerna run dev --parallel
+```
 
 #### Build
 #### Version
