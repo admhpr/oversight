@@ -62,6 +62,12 @@ dev
 npm i -D <package-dep> -w <workspace-name>
 ```
 
+add path to script in each "scripts" block in the package.json, for the workspace this is located at the root, for packages there is one in each package.
+
+a tool like [scripty](https://github.com/testdouble/scripty) would be ideal here, but they are currently [working on](https://github.com/testdouble/scripty/issues/93) >= npm 7 support, so add the the path to each corresponding key to call the script directly.
+
+run `chmod +x -R scripts` after adding any additonal scripts to the directory.
+
 ### Folder Structure
 
 ```
