@@ -296,7 +296,18 @@ echo "┏━━━ 🏗️ DEV PACKAGE $(pwd) ━━━━━━━━━━━�
 tsc -w
 ```
 #### Build
+
+`touch scripts/workspace/build.sh`
+
+```bash
+#!/usr/bin/env sh
+echo "┏━━━ 📦 Building Workspace ━━━━━━━━━━━━━━━━━━━"
+npx tsc -b packages
+```bash
+
 #### Version
+
+
 #### Package
 #### Release
 ### Task Flow
