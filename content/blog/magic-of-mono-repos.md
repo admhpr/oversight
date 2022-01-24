@@ -288,6 +288,13 @@ echo "┏━━━ 🏗️ DEV WORKSPACE ━━━━━━━━━━━━━
 npx lerna run dev --parallel
 ```
 
+`touch scripts/packages/dev.sh`
+
+```bash
+#!/usr/bin/env sh
+echo "┏━━━ 🏗️ DEV PACKAGE $(pwd) ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
+tsc -w
+```
 #### Build
 #### Version
 #### Package
