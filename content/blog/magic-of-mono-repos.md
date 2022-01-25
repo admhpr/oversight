@@ -334,7 +334,7 @@ npx lerna version
 }
 ```
 
-key things here, version independant ensure each package has seperate verisons, command.version.allowBranch ensures versions can only be created on the "main" branch, check out more info on that in the [lerna docs](https://github.com/lerna/lerna/tree/main/commands/version).
+key things here, version independant ensures each package has seperate verisons, `command.version.allowBranch` ensures versions can only be created on the "main" branch, check out more info on that in the [lerna docs](https://github.com/lerna/lerna/tree/main/commands/version).
 
 #### Package
 #### Release
