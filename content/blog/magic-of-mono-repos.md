@@ -307,6 +307,34 @@ npx tsc -b packages
 
 #### Version
 
+`touch scripts/workspace/version.sh`
+
+```bash
+#!/usr/bin/env sh
+echo "┏━━━ 📋 CREATING VERSION ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
+npx lerna version
+```
+`lerna.json`
+
+```json
+{
+  "packages": [
+    "packages/*"
+  ],
+  "command": {
+    "version": {
+      "allowBranch": [
+        "main"
+      ],
+      "ignoreChanges": ["**/__fixtures__/**", "**/__tests__/**"],
+      "message": "new version created"
+    }
+  },
+  "version": "independent"
+}
+```
+
+key things here, version independant ensure each package has seperate verisons, command.version.allowBranch ensures versions can only be created on the "main" branch, check out more info on that in the [lerna docs](https://github.com/lerna/lerna/tree/main/commands/version).
 
 #### Package
 #### Release
