@@ -363,4 +363,4 @@ ensure there is an appropriate files section in `package.json`, below covers the
 ```
 #### Publsih
 
-
+locally we can use [verdaccio](https://verdaccio.org/docs/what-is-verdaccio) to allow us to experiment with what out publish prcess will look like without polluting npm.
