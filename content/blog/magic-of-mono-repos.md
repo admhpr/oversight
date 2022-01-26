@@ -338,17 +338,27 @@ key things here, version independant ensures each package has seperate verisons,
 
 #### Package
 
-ensure there is an appropriate files section in `package.json`.
+ensure there is an appropriate files section in `package.json`, below covers the required properties of `name`, `version` as well some other properties that might be useful like `liscence` and `keywords`. 
 
 ```json
 {
   "name": "<package-a>",
   "version": "1.0.0",
+  "description": "does something awesome",
+  "license": "MIT",
+  "repository": "@<my-org>/<package-a>",
+  "keywords": [
+    "language",
+    "other-thing"
+  ],
   "main": "dist/index.js",
   "files": [
     "dist"
   ],
-  "dependencies": {}
+  "dependencies": {},
+  "scripts": {
+    ...
+  }
 }
 ```
 #### Publsih
