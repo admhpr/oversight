@@ -337,4 +337,20 @@ npx lerna version
 key things here, version independant ensures each package has seperate verisons, `command.version.allowBranch` ensures versions can only be created on the "main" branch, check out more info on that in the [lerna docs](https://github.com/lerna/lerna/tree/main/commands/version).
 
 #### Package
-#### Release
+
+ensure there is an appropriate files section in `package.json`.
+
+```json
+{
+  "name": "<package-a>",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "files": [
+    "dist"
+  ],
+  "dependencies": {}
+}
+```
+#### Publsih
+
+
