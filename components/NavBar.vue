@@ -63,9 +63,11 @@ export default {
   }
 }
 .navbar-item {
+  font-style: italic;
+  border-bottom: 2px solid $c-tertiary;
   @apply mr-5;
   font-size: 1.25rem;
-  @apply font-medium;
+  @apply font-semibold;
   &:last-child {
     @apply mr-0;
   }
