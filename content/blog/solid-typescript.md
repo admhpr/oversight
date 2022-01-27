@@ -7,9 +7,9 @@ tags:
   - typescript
 ---
 
-SOLID
+### SOLID, an oldie but a goodie
 
-Single Responsibility Principle (SRP)
+#### Single Responsibility Principle (SRP)
 
 > "There should never be more than one reason for a class to change". 
 
