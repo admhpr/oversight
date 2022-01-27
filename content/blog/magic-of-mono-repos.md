@@ -367,4 +367,6 @@ locally we can use [verdaccio](https://verdaccio.org/docs/what-is-verdaccio) to 
 
 #### Reference
 
+[Mike Norths's Mono Repo Course](https://frontendmasters.com/courses/monorepos/)
+[ts-js monorepo](https://github.com/mike-north/js-ts-monorepos/tree/solution)
 
