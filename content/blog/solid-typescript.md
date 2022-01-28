@@ -15,7 +15,7 @@ tags:
 
 As much as you want to add everything and the kitchen sink to a class, don't, it may be "easier" now, but it certainly won't be later. Having many reasons to change a group of functionality reduces [cohesion](https://en.wikipedia.org/wiki/Cohesion_(computer_science)). Minimizing the amount of time you need to change a class is important. It's important because if too much functionality is in one class and you modify a piece of it, it can be difficult to understand how that will affect other dependent modules in your codebase.
 
-Bad:
+**Bad:**
 
 ```typescript
 class UserSettings {
@@ -34,7 +34,7 @@ class UserSettings {
 }
 ```
 
-Good:
+**Good:**
 
 ```typescript
 class UserAuth {
@@ -67,3 +67,91 @@ class UserSettings {
 > "software entities (classes, modules, functions, etc.) should be open for extension, but closed for modification." 
 
 🤔? Allow users to add new functionalities without changing existing code.
+
+
+**Bad:**
+
+```ts
+class AjaxAdapter extends Adapter {
+  constructor() {
+    super();
+  }
+
+  // ...
+}
+
+class NodeAdapter extends Adapter {
+  constructor() {
+    super();
+  }
+
+  // ...
+}
+
+class HttpRequester {
+  constructor(private readonly adapter: Adapter) {
+  }
+
+  async fetch<T>(url: string): Promise<T> {
+    if (this.adapter instanceof AjaxAdapter) {
+      const response = await makeAjaxCall<T>(url);
+      // transform response and return
+    } else if (this.adapter instanceof NodeAdapter) {
+      const response = await makeHttpCall<T>(url);
+      // transform response and return
+    }
+  }
+}
+
+function makeAjaxCall<T>(url: string): Promise<T> {
+  // request and return promise
+}
+
+function makeHttpCall<T>(url: string): Promise<T> {
+  // request and return promise
+}
+```
+
+**Good:**
+
+```ts
+abstract class Adapter {
+  abstract async request<T>(url: string): Promise<T>;
+
+  // code shared to subclasses ...
+}
+
+class AjaxAdapter extends Adapter {
+  constructor() {
+    super();
+  }
+
+  async request<T>(url: string): Promise<T>{
+    // request and return promise
+  }
+
+  // ...
+}
+
+class NodeAdapter extends Adapter {
+  constructor() {
+    super();
+  }
+
+  async request<T>(url: string): Promise<T>{
+    // request and return promise
+  }
+
+  // ...
+}
+
+class HttpRequester {
+  constructor(private readonly adapter: Adapter) {
+  }
+
+  async fetch<T>(url: string): Promise<T> {
+    const response = await this.adapter.request<T>(url);
+    // transform response and return
+  }
+}
+```
