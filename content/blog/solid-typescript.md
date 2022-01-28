@@ -61,3 +61,9 @@ class UserSettings {
   }
 }
 ```
+
+#### Open/Closed Principle (OCP)
+
+> "software entities (classes, modules, functions, etc.) should be open for extension, but closed for modification." 
+
+🤔? Allow users to add new functionalities without changing existing code.
