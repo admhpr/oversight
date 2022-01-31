@@ -162,5 +162,5 @@ class HttpRequester {
 
 😨🤯 wat?
 
-Ask yourself can you replace a parent class with a child class without changing anything? Here's a classic square rectangle example to make that statment clear.
+Ask yourself can you replace a parent class with a child class without changing anything? Here's a classic square rectangle example...
 
