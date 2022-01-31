@@ -155,3 +155,12 @@ class HttpRequester {
   }
 }
 ```
+
+#### Liskov Substitution Principle (LSP)
+
+> "If S is a subtype of T, then objects of type T may be replaced with objects of type S (i.e., objects of type S may substitute objects of type T) without altering any of the desirable properties of that program (correctness, task performed, etc.)."
+
+😨🤯
+
+Ask yourself can you replace a parent class with a child class without changing anything? Here's a classic square rectangle example to make that statment clear.
+
