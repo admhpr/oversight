@@ -200,13 +200,13 @@ class Rectangle {
 class Square extends Rectangle {
   setWidth(width: number): this {
     this.width = width;
-    this.height = width;
+    this.height = width; // Breaking LSP
     return this;
   }
 
   setHeight(height: number): this {
-    this.width = height;
-    this.height = height; // Breaking LSP
+    this.width = height; // Breaking LSP
+    this.height = height;
     return this;
   }
 }
