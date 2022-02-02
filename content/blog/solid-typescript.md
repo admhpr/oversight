@@ -353,3 +353,11 @@ class EconomicPrinter implements Printer {
   }
 }
 ```
+
+#### Dependency Inversion Principle (DIP)
+
+> "High-level modules should not depend on low-level modules. Both should depend on abstractions."
+
+> "Abstractions should not depend upon details. Details should depend on abstractions."
+
+Typically takes the form of Dependency Injection (DI). While they are not identical concepts, DIP keeps high-level modules from knowing the details of its low-level modules and setting them up. It can accomplish this through DI. A huge benefit of this is that it reduces the coupling between modules. Coupling can make code hard to refactor.
