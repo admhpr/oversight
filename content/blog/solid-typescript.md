@@ -273,3 +273,11 @@ const shapes = [new Rectangle(4, 5), new Rectangle(4, 5), new Square(5)];
 renderLargeShapes(shapes);
 
 ```
+
+#### Interface Segregation Principle (ISP)
+
+> "Clients should not be forced to depend upon interfaces that they do not use." 
+
+Similar to the [Single Responsibility Principle ](#Single Responsibility Principle ).The main idea, don't impose clients with the burden of implementing methods that they don’t actually need.
+
+
