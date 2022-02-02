@@ -280,4 +280,76 @@ renderLargeShapes(shapes);
 
 Similar to the [Single Responsibility Principle](#single-responsibility-principle-srp).The main idea, don't impose clients with the burden of implementing methods that they don’t actually need.
 
+**Bad:**
 
+```typescript
+interface SmartPrinter {
+  print();
+  fax();
+  scan();
+}
+
+class AllInOnePrinter implements SmartPrinter {
+  print() {
+    // ...
+  }  
+  
+  fax() {
+    // ...
+  }
+
+  scan() {
+    // ...
+  }
+}
+
+class EconomicPrinter implements SmartPrinter {
+  print() {
+    // ...
+  }  
+  
+  fax() {
+    throw new Error('Fax not supported.');
+  }
+
+  scan() {
+    throw new Error('Scan not supported.');
+  }
+}
+```
+
+**Good:**
+
+```typescript
+interface Printer {
+  print();
+}
+
+interface Fax {
+  fax();
+}
+
+interface Scanner {
+  scan();
+}
+
+class AllInOnePrinter implements Printer, Fax, Scanner {
+  print() {
+    // ...
+  }  
+  
+  fax() {
+    // ...
+  }
+
+  scan() {
+    // ...
+  }
+}
+
+class EconomicPrinter implements Printer {
+  print() {
+    // ...
+  }
+}
+```
