@@ -15,7 +15,7 @@ tags:
 
 As much as you want to add everything and the kitchen sink to a class, don't, it may be "easier" now, but it certainly won't be later. Having many reasons to change a group of functionality reduces [cohesion](https://en.wikipedia.org/wiki/Cohesion_(computer_science)). Minimizing the amount of time you need to change a class is important. It's important because if too much functionality is in one class and you modify a piece of it, it can be difficult to understand how that will affect other dependent modules in your codebase.
 
-**Not so great:**
+**Could be better:**
 
 ```typescript
 class UserSettings {
@@ -69,7 +69,7 @@ class UserSettings {
 🤔? Allow users to add new functionalities without changing existing code.
 
 
-**Not so great:**
+**Could be better:**
 
 ```ts
 class AjaxAdapter extends Adapter {
@@ -164,7 +164,7 @@ class HttpRequester {
 
 Ask yourself can you replace a parent class with a child class without changing anything? Here's a classic square rectangle example...
 
-**Not so great:**
+**Could be better:**
 
 ```typescript
 class Rectangle {
@@ -216,7 +216,7 @@ function renderLargeRectangles(rectangles: Rectangle[]) {
     const area = rectangle
       .setWidth(4)
       .setHeight(5)
-      .getArea(); // Not so great: Returns 25 for Square. Should be 20.
+      .getArea(); // Could be better: Returns 25 for Square. Should be 20.
     rectangle.render(area);
   });
 }
@@ -280,7 +280,7 @@ renderLargeShapes(shapes);
 
 Similar to the [Single Responsibility Principle](#single-responsibility-principle-srp).The main idea, don't impose clients with the burden of implementing methods that they don’t actually need.
 
-**Not so great:**
+**Could be better:**
 
 ```typescript
 interface SmartPrinter {
