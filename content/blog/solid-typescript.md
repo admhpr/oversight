@@ -361,3 +361,89 @@ class EconomicPrinter implements Printer {
 > "Abstractions should not depend upon details. Details should depend on abstractions."
 
 Typically takes the form of Dependency Injection (DI). While they are not identical concepts, DIP keeps high-level modules from knowing the details of its low-level modules and setting them up. It can accomplish this through DI. A huge benefit of this is that it reduces the coupling between modules. Coupling can make code hard to refactor.
+
+
+**Could be better:**
+
+```typescript
+import { readFile as readFileCb } from 'fs';
+import { promisify } from 'util';
+
+const readFile = promisify(readFileCb);
+
+type ReportData = {
+  // ..
+}
+
+class XmlFormatter {
+  parse<T>(content: string): T {
+    // Converts an XML string to an object T
+  }
+}
+
+class ReportReader {
+
+  // Could be better: We have created a dependency on a specific request implementation.
+  // We should just have ReportReader depend on a parse method: `parse`
+  private readonly formatter = new XmlFormatter();
+
+  async read(path: string): Promise<ReportData> {
+    const text = await readFile(path, 'UTF8');
+    return this.formatter.parse<ReportData>(text);
+  }
+}
+...
+```
+
+**Better:**
+
+```typescript
+const reader = new ReportReader();
+const report = await reader.read('report.xml');
+
+Good:
+
+import { readFile as readFileCb } from 'fs';
+import { promisify } from 'util';
+
+const readFile = promisify(readFileCb);
+
+type ReportData = {
+  // ..
+}
+
+interface Formatter {
+  parse<T>(content: string): T;
+}
+
+class XmlFormatter implements Formatter {
+  parse<T>(content: string): T {
+    // Converts an XML string to an object T
+  }
+}
+
+
+class JsonFormatter implements Formatter {
+  parse<T>(content: string): T {
+    // Converts a JSON string to an object T
+  }
+}
+
+class ReportReader {
+  constructor(private readonly formatter: Formatter) {
+  }
+
+  async read(path: string): Promise<ReportData> {
+    const text = await readFile(path, 'UTF8');
+    return this.formatter.parse<ReportData>(text);
+  }
+}
+
+// ...
+const reader = new ReportReader(new XmlFormatter());
+const report = await reader.read('report.xml');
+
+// or if we had to read a json report
+const reader = new ReportReader(new JsonFormatter());
+const report = await reader.read('report.json');
+```
