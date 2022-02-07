@@ -18,8 +18,20 @@ The threads of complexity...
 
 [Out of the Tarpit - Ben Mosely, Peter Marks](http://curtclifton.net/papers/MoseleyMarks06a.pdf)
 
-### Balance and harmony
+#### Balance and harmony
 
 A key idea is ensure that state, flow of control, and code volume are in balance and harmony. What is the application modelling (state), how does the application interact with that model (flow control) and how much logic is needed to achieve the desired outcome (code volume).
 
 Any application with a shared mutable state can be difficult to test or share code across multiple components.
+
+#### Micro complexity
+
+Micro complexity is addressed at the component level. In order for component code to be testable, it should avoid hidden state and adhere to the single responsibility principle. The first step to fixing issues with hidden state is utilizing dependency injection.
+
+#### Meso complexity
+
+Meso complexity is addressed at the inter component level.
+
+#### Macro complexity
+
+Macro complexity is addressed at the application or applications level.
