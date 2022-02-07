@@ -18,3 +18,6 @@ The threads of complexity...
 
 [Out of the Tarpit - Ben Mosely, Peter Marks](http://curtclifton.net/papers/MoseleyMarks06a.pdf)
 
+### Balance and harmony
+
+A key idea is ensure that state, flow control, and code volume are in balance and harmony. What is the application modelling (state), how does the application interact with that model (flow control) and how much logic is needed to achieve the desired outcome (code volume)
