@@ -52,7 +52,7 @@ Meso complexity is addressed at the inter component level.
 * Model Objects as nouns
 * Methods as verbs
 * Making decisions
-* Iterating over things
+* Iterating over collections
 
 #### Macro complexity
 
