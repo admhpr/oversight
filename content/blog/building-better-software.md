@@ -51,7 +51,7 @@ Meso complexity is addressed at the inter component level.
 How to work across components...
 
 * Modelling state as nouns
-* Defining methods as verbs <select,create,update,delete>__ing__
+* Defining methods as verbs <select,create,update,delete,combine,compute>__ing__
 * Handling conditions
 * Iterating over collections
 
