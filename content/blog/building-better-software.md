@@ -48,11 +48,16 @@ How?...
 
 Meso complexity is addressed at the inter component level.
 
-* Define state
-* Model Objects as nouns
+How to work across components...
+
+* Model state as nouns
 * Methods as verbs
-* Making decisions
+* Conditions
 * Iterating over collections
+
+Creating a store:
+
+
 
 #### Macro complexity
 
