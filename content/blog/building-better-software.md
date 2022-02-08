@@ -20,7 +20,7 @@ The threads of complexity...
 
 #### Balance and harmony
 
-A key idea is ensure that state, flow of control, and code volume are in balance and harmony. What is the application modelling (state), how does the application interact with that model (flow control) and how much logic is needed to achieve the desired outcome (code volume).
+A key idea is ensure that state, flow of control, and code volume are in balance and harmony. What is the application modelling (state), how does the application interact with that model (flow of control) and how much logic is needed to achieve the desired outcome (code volume).
 
 Any application with a shared mutable state can be difficult to test or share code across multiple components.
 
@@ -47,6 +47,10 @@ How?...
 #### Meso complexity
 
 Meso complexity is addressed at the inter component level.
+
+* Define state
+* Model Objects
+* Methods as verbs
 
 #### Macro complexity
 
