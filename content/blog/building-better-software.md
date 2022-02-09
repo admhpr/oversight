@@ -348,11 +348,15 @@ const appState: AppState = {
 #### Immutible operations on state
 
 ```typescript
-const addEntity = (collection, entity) => [...collection, entity];
-const updateEntity = (collection, entity) =>
-  collection.map(e => e.id === entity.id ? Object.assign({}, entity) : e);
-const deleteEntity = (collection, entity) =>
-  collection.filter(e => e.id !== entity.id);
+function addEntity(collection, entity){
+  return [...collection, entity];
+}
+function updateEntity(collection, entity){
+  return collection.map(e => e.id === entity.id ? Object.assign({}, entity) : e);
+}
+function deleteEntity(collection, entity){
+  return collection.filter(e => e.id !== entity.id);
+}
 ```
 
 #### Macro complexity
