@@ -63,3 +63,6 @@ Creating a store:
 
 Macro complexity is addressed at the application or applications level.
 
+#### The importance of types
+#### Time and asynchronous programming
+
