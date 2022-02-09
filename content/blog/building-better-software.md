@@ -57,6 +57,21 @@ How to work across components...
 
 
 #### The importance of types
+//TODO
+
+#### Immutible operations on state
+
+```typescript
+function addEntity(collection, entity){
+  return [...collection, entity];
+}
+function updateEntity(collection, entity){
+  return collection.map(e => e.id === entity.id ? Object.assign({}, entity) : e);
+}
+function deleteEntity(collection, entity){
+  return collection.filter(e => e.id !== entity.id);
+}
+```
 
 Creating a store:
 
@@ -343,20 +358,6 @@ const appState: AppState = {
   clientsState: initialClientsState,
   projectsState: initialProjectsState,
 };
-```
-
-#### Immutible operations on state
-
-```typescript
-function addEntity(collection, entity){
-  return [...collection, entity];
-}
-function updateEntity(collection, entity){
-  return collection.map(e => e.id === entity.id ? Object.assign({}, entity) : e);
-}
-function deleteEntity(collection, entity){
-  return collection.filter(e => e.id !== entity.id);
-}
 ```
 
 #### Macro complexity
