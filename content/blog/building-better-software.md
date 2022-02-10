@@ -179,10 +179,10 @@ function deleteClient(state, client): ClientsState {
     }
 };
 
-const clientsReducer = (
+function clientsReducer(
     state: ClientsState = initialClientsState,
     action: Action
-) => {
+) {
     switch (action.type) {
         case CLIENT_LOAD:
             return loadClients(state, action.payload);
@@ -235,124 +235,6 @@ const aClient = clientsStore.select('currentClient');
 clientsStore.dispatch({ type: CLIENT_CREATE, payload: jane });
 const allClients = clientsStore.select('clients');
 
-interface Project extends BaseEntity {
-    title: string;
-    description: string;
-    completed: boolean;
-}
-
-interface ProjectsState {
-    projects: Project[];
-    currentProject: Project;
-}
-
-const superProject: Project = {
-    id: '1',
-    title: 'Super Project',
-    description: 'This is awesome!',
-    completed: false,
-};
-
-const hellProject: Project = {
-    id: '2',
-    title: 'Hell Project on Earth',
-    description: 'Just make it stop',
-    completed: true,
-};
-
-const newProject: Project = {
-    id: null,
-    title: '',
-    description: '',
-    completed: false,
-};
-
-const PROJECT_LOAD = '[Project] Load';
-const PROJECT_CREATE = '[Project] Create';
-const PROJECT_UPDATE = '[Project] Update';
-const PROJECT_DELETE = '[Project] Delete';
-const PROJECT_SELECT = '[Project] Select';
-const PROJECT_CLEAR = '[Project] Clear';
-
-const loadProjects = (state, projects) => {
-    console.log('LOAD PROJECTS!', projects);
-    return state;
-};
-
-const selectProject = (state, project) => {
-    console.log('SELECT PROJECT!', project);
-    return state;
-};
-
-const clearProject = (state, project) => {
-    console.log('CLEAR PROJECT!', project);
-    return state;
-};
-
-const createProject = (state, project) => {
-    console.log('CREATE PROJECT!', project);
-    return state;
-};
-
-const updateProject = (state, project) => {
-    console.log('UPDATE PROJECT!', project);
-    return state;
-};
-
-const deleteProject = (state, project) => {
-    console.log('DELETE PROJECT!', project);
-    return state;
-};
-
-const projectsReducer = (
-    state: ProjectsState = initialProjectsState,
-    action: Action
-) => {
-    switch (action.type) {
-        case PROJECT_LOAD:
-            return loadProjects(state, action.payload);
-        case PROJECT_SELECT:
-            return selectProject(state, action.payload);
-        case PROJECT_CLEAR:
-            return clearProject(state, action.payload);
-        case PROJECT_CREATE:
-            return createProject(state, action.payload);
-        case PROJECT_UPDATE:
-            return updateProject(state, action.payload);
-        case PROJECT_DELETE:
-            return deleteProject(state, action.payload);
-        default:
-            return state;
-    }
-};
-
-
-const projects: Project[] = [superProject, hellProject];
-
-const initialProjectsState: ProjectsState = {
-    projects,
-    currentProject: newProject,
-};
-
-class ProjectsStore {
-    state: ProjectsState;
-
-    constructor(state: ProjectsState) {
-        this.state = state;
-    }
-
-    getState(): ProjectsState {
-        return this.state;
-    }
-
-    select(key: string) {
-        return this.state[key];
-    }
-}
-
-const projectsStore = new ProjectsStore(initialProjectsState);
-const currentProjects = projectsStore.select('projects');
-
 interface AppState {
     clientsState: ClientsState;
 }
@@ -360,7 +242,6 @@ interface AppState {
 const appState: AppState = {
     clientsState: initialClientsState,
 };
-
 ```
 
 #### Macro complexity
