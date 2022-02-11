@@ -77,7 +77,7 @@ function deleteEntity(collection, entity){
 }
 ```
 
-Creating a store:
+#### Creating a store:
 
 ```typescript
 interface BaseEntity {
