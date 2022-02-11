@@ -79,6 +79,11 @@ function deleteEntity(collection, entity){
 
 #### Creating a store:
 
+* Define state
+* Use reducers
+* Higher order functions
+* Immutability
+
 ```typescript
 interface BaseEntity {
     id: string | null;
