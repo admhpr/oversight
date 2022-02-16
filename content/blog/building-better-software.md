@@ -256,3 +256,6 @@ Macro complexity is addressed at the application or applications level.
 #### Time and asynchronous programming
 
 Dealing with time, the fifth element of programming.A promise is effective when managing a single asynchronous event. Observables coordinate multiple asynchronous events since streaming values are emitted over time.
+
+* stream of data
+* flip to initial output and input (subscriber)
