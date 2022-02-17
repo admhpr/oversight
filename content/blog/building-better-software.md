@@ -251,7 +251,11 @@ const appState: AppState = {
 
 #### Macro complexity
 
-Macro complexity is addressed at the application or applications level.
+Macro complexity is addressed at the application or applications level. How applications communicate across application boundaries.
+
+* RESTful API's
+* Events
+* Hooks
 
 #### Time and asynchronous programming
 
