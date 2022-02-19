@@ -1,7 +1,7 @@
 ---
 title: building better software
 date: 2022-02-05T07:02
-desc: Ideas on building software 🏗️
+desc: ideas on building software 🏗️
 tags:
   - recipes
   - meta
