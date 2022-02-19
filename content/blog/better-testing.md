@@ -7,5 +7,6 @@ tags:
   - testing
 ---
 
+> "You can't write good tests for bad code"
 
 * separate UI and business logic
