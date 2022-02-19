@@ -6,3 +6,6 @@ tags:
   - recipes
   - testing
 ---
+
+
+* separate UI and business logic
