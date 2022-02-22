@@ -1,7 +1,7 @@
 ---
-title: better testing
+title: better ui testing
 date: 2022-02-18T06:23
-desc: patterns for better testing 🧪
+desc: patterns for better UI testing 🧪
 tags:
   - recipes
   - testing
@@ -9,5 +9,26 @@ tags:
 
 > "You can't write good tests for bad code"
 
-* separate UI and business logic
+### Separation of Concerns
+
+* Avoid mixing UI logic with business logic
 * UI components should render data, avoid adding logic to UI
+
+An example...
+
+A wiget costs $0.60. If you buy over 50, you get a 20% discount. Imagine we had a tightly coupled piece that looked like this: 
+
+```js
+const $widgetCount = $('#widget-count')
+$widget.change((event) => {
+  const amount = parseInt (event.target.value)
+  const totalCost = 0.6 * amount
+  const $price = $("#price")
+  if (amount > 50) {
+    $price.value(totalCost * 0.8)
+  } else {
+    $price.value(totalCost)
+  }
+})
+```
+
