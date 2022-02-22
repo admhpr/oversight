@@ -33,3 +33,20 @@ $widget.change((event) => {
 })
 ```
 
+It is hard to tell where the UI ends and the business logic starts, let's look at a possible refactor:
+
+```js
+const widgetPrice = 0.6
+function widgetCost(price, amount) {
+    if (amount > 50) {
+    return price * amount * 0.8
+    } else {
+    return price * amount
+    }
+}
+
+$widgetCount.change((event) => {
+  const amount = parseInt (event.target.value)
+  $("#price").value = widgetCost(widgetPrice, amount)
+})
+```
