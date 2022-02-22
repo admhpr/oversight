@@ -20,11 +20,11 @@ The spec:
 
 > A wiget costs $0.60. If you buy over 50, you get a 20% discount. 
 
-Imagine we had a tightly coupled piece that looked like this: 
+Imagine we had a tightly coupled piece of code that looked like this: 
 
 ```js
 const $widgetCount = $('#widget-count')
-$widget.change((event) => {
+$widgetCount.change((event) => {
   const amount = parseInt (event.target.value)
   const totalCost = 0.6 * amount
   const $price = $("#price")
@@ -39,6 +39,7 @@ $widget.change((event) => {
 It is hard to tell where the UI ends and the business logic starts, let's look at a possible refactor:
 
 ```js
+const $widgetCount = $('#resistors-count')
 const widgetPrice = 0.6
 
 funcrion applyDiscount(sum){
