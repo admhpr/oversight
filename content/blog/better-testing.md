@@ -37,12 +37,14 @@ It is hard to tell where the UI ends and the business logic starts, let's look a
 
 ```js
 const widgetPrice = 0.6
+
+funcrion applyDiscount(sum){
+  return sum * 0.8
+}
+
 function widgetCost(price, amount) {
-    if (amount > 50) {
-    return price * amount * 0.8
-    } else {
-    return price * amount
-    }
+  const sum = price * amount
+  return amount > 50 ? applyDiscount(sum) : sum
 }
 
 $widgetCount.change((event) => {
