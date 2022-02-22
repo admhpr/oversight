@@ -16,6 +16,7 @@ tags:
 
 An example...
 
+The spec:
 A wiget costs $0.60. If you buy over 50, you get a 20% discount. Imagine we had a tightly coupled piece that looked like this: 
 
 ```js
