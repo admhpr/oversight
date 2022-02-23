@@ -263,3 +263,7 @@ Dealing with time, the fifth element of programming.A promise is effective when 
 
 * stream of data
 * flip to initial output and input (subscriber)
+
+#### Reference
+
+[Enterprise Architecture Patterns](https://frontendmasters.com/courses/enterprise-patterns/)
