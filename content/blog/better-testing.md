@@ -56,3 +56,4 @@ $widgetCount.change((event) => {
   $("#price").value = widgetCost(widgetPrice, amount)
 })
 ```
+Now, you can You can see where the business logic ends and the UI begins - they are literally separated in two different functions.
