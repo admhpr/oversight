@@ -57,3 +57,9 @@ $widgetCount.change((event) => {
 })
 ```
 Now, you can see where the business logic ends and the UI begins - they are literally separated in two different functions.
+
+### Know what to test
+
+Write tests that assert your component's public interface, and treat its internals as a black box. A single test case would assert that some input (user interaction or change of props) provided to the component results in the expected output (render result or emitted custom events).
+
+
