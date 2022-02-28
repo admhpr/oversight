@@ -11,7 +11,12 @@ tags:
 
 ### Why Test?
 
-Why bother writing so much more good, sometimes more than the code that is being tested.
+Why bother writing so much more code? sometimes more than the code that is being tested
+
+* Provides confidence, no fear to change code
+* Increases code quality
+* You are forced to aske yourself "What is this component really doing?"
+* Encourages modular code development
 
 ### Separation of Concerns
 
