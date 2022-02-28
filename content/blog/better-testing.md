@@ -9,6 +9,10 @@ tags:
 
 > "You can't write good tests for bad code"
 
+### Why Test?
+
+Why bother writing so much more good, sometimes more than the code that is being tested.
+
 ### Separation of Concerns
 
 * Avoid mixing UI logic with business logic
