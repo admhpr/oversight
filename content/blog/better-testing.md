@@ -17,6 +17,7 @@ Why bother writing so much more code? sometimes more than the code that is being
 * Increases code quality
 * You are forced to aske yourself "What is this component really doing?"
 * Encourages modular code development
+* Living documentation of the code
 
 ### Separation of Concerns
 
@@ -72,3 +73,8 @@ Now, you can see where the business logic ends and the UI begins - they are lite
 Write tests that assert your component's public interface, and treat its internals as a black box. A single test case would assert that some input (user interaction or change of props) provided to the component results in the expected output (render result or emitted custom events).
 
 
+### Know what NOT to test
+
+* Impletation details
+* Derived data
+* Frameworks and libraries
