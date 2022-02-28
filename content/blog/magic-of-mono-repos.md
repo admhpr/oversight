@@ -150,7 +150,7 @@ ts config per package
 
 ### Tasks
 
-Managing task flows with [lerna](https://lerna.js.org/)
+Managing task flows with [lerna](https://lerna.js.org/) and npm
 
 install:
 
@@ -158,9 +158,16 @@ install:
 
 `npx lerna init`
 
-run commands:
+run commands with lerna:
 
-`npx lerna run <command> --scope <package-name>`
+`npx lerna run <script> --scope <package-name>`
+
+run commands with npm:
+
+`npm run <script> -w ./packages/<package-directory>`
+
+`npm run <script> -w <package-name>`
+
 
 Optional setup a `scripts` folder like so:
 
