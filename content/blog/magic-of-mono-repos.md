@@ -162,7 +162,7 @@ run commands:
 
 `npx lerna run <command> --scope <package-name>`
 
-setup a `scripts` folder like so:
+Optional setup a `scripts` folder like so:
 
 ```
 scripts
