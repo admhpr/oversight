@@ -156,6 +156,12 @@ install:
 
 `npm i -WD lerna`
 
+`npx lerna init`
+
+run commands:
+
+`npx lerna run <command> --scope <package-name>`
+
 setup a `scripts` folder like so:
 
 ```
