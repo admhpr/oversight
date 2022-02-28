@@ -382,4 +382,6 @@ locally we can use [verdaccio](https://verdaccio.org/docs/what-is-verdaccio) to 
 
 * [Mike Norths's monorepo course](https://frontendmasters.com/courses/monorepos/)
 * [ts-js monorepo](https://github.com/mike-north/js-ts-monorepos/tree/solution)
+* [npm docs](https://docs.npmjs.com/cli/v8/using-npm/workspaces)
+* [lerna docs](https://lerna.js.org/)
 
