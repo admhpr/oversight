@@ -72,6 +72,8 @@ Now, you can see where the business logic ends and the UI begins - they are lite
 
 Write tests that assert your component's public interface, and treat its internals as a black box. A single test case would assert that some input (user interaction or change of props) provided to the component results in the expected output (render result or emitted custom events).
 
+The benefit of this approach is that as long as your component's public interface remains the same, your tests will pass no matter how the component's internal implementation changes over time.
+
 
 ### Know what NOT to test
 
