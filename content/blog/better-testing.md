@@ -74,6 +74,10 @@ Write tests that assert your component's public interface, and treat its interna
 
 The benefit of this approach is that as long as your component's public interface remains the same, your tests will pass no matter how the component's internal implementation changes over time.
 
+* Props render relationship
+* Event reactions
+* Given input what is the expected output
+
 
 ### Know what NOT to test
 
