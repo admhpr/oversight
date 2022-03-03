@@ -84,3 +84,7 @@ The benefit of this approach is that as long as your component's public interfac
 * Impletation details
 * Derived data
 * Frameworks and libraries
+
+#### References
+
+[Vue test utils](https://v1.test-utils.vuejs.org/)
