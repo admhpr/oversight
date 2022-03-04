@@ -92,6 +92,6 @@ The benefit of this approach is that as long as your component's public interfac
 
 ### References
 
-[Design patterns for vue](https://madewithvuejs.com/design-patterns-for-vuejs)
-[Jutin Searls - Please don't mock me](https://www.youtube.com/watch?v=Af4M8GMoxi4)
-[Vue test utils](https://v1.test-utils.vuejs.org/)
+- [Design patterns for vue](https://madewithvuejs.com/design-patterns-for-vuejs)
+- [Jutin Searls - Please don't mock me](https://www.youtube.com/watch?v=Af4M8GMoxi4)
+- [Vue test utils](https://v1.test-utils.vuejs.org/)
