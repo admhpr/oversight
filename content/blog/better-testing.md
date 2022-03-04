@@ -85,6 +85,11 @@ The benefit of this approach is that as long as your component's public interfac
 * Derived data
 * Frameworks and libraries
 
+### Don't mock me
+
+> Instead of treating "realness" as a virtue to be maximized, we should clarify what our test is trying to prove and then use all of our tools - mocks included - to ensure we have sufficient experimental control
+
+
 #### References
 
 [Vue test utils](https://v1.test-utils.vuejs.org/)
