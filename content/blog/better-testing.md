@@ -89,6 +89,10 @@ The benefit of this approach is that as long as your component's public interfac
 
 > Instead of treating "realness" as a virtue to be maximized, we should clarify what our test is trying to prove and then use all of our tools - mocks included - to ensure we have sufficient experimental control
 
+* Avoid partial mocks, mock the entire library, don't mock parts of the library
+* Don't mock out the subject
+* Don't replace some - but not all of your dependencies
+
 
 ### References
 
