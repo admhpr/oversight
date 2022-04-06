@@ -29,5 +29,5 @@ HTTP/2 was ratified as an offical standard of HTTP. It added many new features i
 
 * Better compression strategies. Finer grain access to the underlying data frames. 
 
-* Request prioritization. You can now request images last and css first.
+* Request prioritisation. You can now request images last and css first.
 
