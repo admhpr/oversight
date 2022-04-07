@@ -11,7 +11,7 @@ tags:
 
 HTTP in a normal request, the client makes a call to an endpoint and it waits for a single response. 
 
-It's a one-to-one exchange, you request a thing and het back a thing.
+It's a one-to-one exchange, you request a thing and get back a thing.
 
 The premise behind HTTP/2 (or H2 as it is sometimes referred to) is that the initial request is not closed after getting back the thing that was requested.
 
