@@ -44,4 +44,4 @@ We can take that one step further and use that mechanism to deliver little small
 Whereas 1.1 and 2 used TCP to send data which has the fundamental problem that if you drop data, you have to wait for the packet to be sent again, 
 making those stalls painful. QUIC is based upon UDP which has a better recovery strategy and can accept packets out of order
 
-
+[Demo](https://github.com/admhpr/http-2-push)
