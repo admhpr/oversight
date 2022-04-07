@@ -21,7 +21,7 @@ HTTP 1.1 which is common across many websites, using the thing for thing model h
 
 It is still completely valid and a legitimite option, and for most sites it will get the job done.
 
-[SPDY](https://en.wikipedia.org/wiki/SPDY), a protocol (now obsolete) protocol developed by Google, made HTTP faster in many ways. 
+[SPDY](https://en.wikipedia.org/wiki/SPDY), a protocol (now obsolete) developed by Google, made HTTP faster in many ways. 
 
 Slowly the major browsers began to ship SPDY until it became the natural succcesor to HTTP 1.1 after nearly 20 years (2015).
 
