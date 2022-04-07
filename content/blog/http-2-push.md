@@ -23,7 +23,7 @@ It is still completely valid and a legitimite option, and for most sites it will
 
 [SPDY](https://en.wikipedia.org/wiki/SPDY), a protocol (now obsolete) developed by Google, made HTTP faster in many ways. 
 
-Slowly the major browsers began to ship SPDY until it became the natural succcesor to HTTP 1.1 after nearly 20 years (2015).
+Slowly the major browsers began to ship SPDY, HTTP/2 built upon many of the ideas of SPDY and it became the natural succcesor to HTTP 1.1 after nearly 20 years (2015). SPDY is no longer shipped in modern browsers since 2021.
 
 #### HTTP/2 Overview
 
