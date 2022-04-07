@@ -7,6 +7,8 @@ tags:
   - real-time
 ---
 
+#### HTTP Overview
+
 HTTP in a normal request, the client makes a call to an endpoint and it waits for a single response. 
 
 It's a one-to-one exchange, you request a thing and het back a thing.
@@ -22,6 +24,8 @@ It is still completely valid and a legitimite option, and for most sites it will
 [SPDY](https://en.wikipedia.org/wiki/SPDY), a protocol (now obsolete) protocol developed by Google, made HTTP faster in many ways. 
 
 Slowly the major browsers began to ship SPDY until it became the natural succcesor to HTTP 1.1 after nearly 20 years (2015).
+
+#### HTTP/2 Overview
 
 HTTP/2 was ratified as an offical standard of HTTP. It added many new features including:
 
@@ -39,6 +43,8 @@ sending it when it is ready. Assuming the head is relatively immutable and the b
 looking into if there any sort of lag in the rendering of the main content.
 
 We can take that one step further and use that mechanism to deliver little small chunks of JSON.
+
+#### HTTP/3
 
 > A note on HTTP/3 (aka QUIC) It messes less with the semantics of HTTP like 2 did and more with the transport of it. 
 Whereas 1.1 and 2 used TCP to send data which has the fundamental problem that if you drop data, you have to wait for the packet to be sent again, 
