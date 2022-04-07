@@ -53,3 +53,7 @@ making those stalls painful. QUIC is based upon UDP which has a better recovery 
 #### Check the demo below
 
 [Demo](https://github.com/admhpr/http-2-push)
+
+#### Reference
+
+[Complete Intro to Realtime: HTTP/2 push](https://btholt.github.io/complete-intro-to-realtime/intro-to-http2-push)
