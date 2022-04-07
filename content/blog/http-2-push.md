@@ -1,7 +1,7 @@
 ---
 title: HTTP 2 and you!
 date: 2022-04-06T08:23
-desc: scribbles on http 2 🙆‍♂️
+desc: scribbles on http 2 push 🙌
 tags:
   - recipes
   - real-time
