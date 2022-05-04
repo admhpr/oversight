@@ -7,7 +7,7 @@ tags:
   - meta
 ---
 
-### Make your code as readable as a book. Code is for humans!
+### Make your code as readable, code is for humans!
 
 * Use long, descriptive names
 * Divide the code into logical subroutines
