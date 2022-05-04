@@ -1,6 +1,6 @@
 ---
 title: cleaner code
-date: 2022-02-05T07:02
+date: 2022-05-04T07:02
 desc: ideas on cleaner code 🧼🧴🧽✨
 tags:
   - recipes
