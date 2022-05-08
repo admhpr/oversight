@@ -8,8 +8,7 @@ tags:
 ---
 
 ### Straightforward implementation
-The layer structure of stratified design should help us build straightforward implementations. When we read a function with a straightforward implementation, the problem the function signa-
-ture presents should be solved at the right level of detail in the body. Too much detail is a code smell.
+The layer structure of stratified design should help us build straightforward implementations. When we read a function with a straightforward implementation, the problem the function signature presents should be solved at the right level of detail in the body. Too much detail is a code smell.
 
 ### Abstraction barrier
 Some layers in the graph provide an interface that lets us hide an important implementation detail. These layers help us write code at a higher level and free our limited mental capacity to think at a
