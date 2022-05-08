@@ -1,3 +1,4 @@
+---
 title: stratified design
 date: 2022-05-06T06:01
 desc: ideas on stratified design 🥮
