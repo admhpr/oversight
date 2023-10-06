@@ -15,7 +15,7 @@ These are my notes:
 
 Working together makes the world go round, Even the best and brightest amongst us need help now and again.
 
-It can be tough to get everyone who is working with eachother to aim at a common goal. Regardless of the environment a dysfunctional group can cause a bad atmosphhere and lead to a number of problems.
+It can be tough to get everyone who is working with each other to aim at a common goal. Regardless of the environment a dysfunctional group can cause a bad atmosphhere and lead to a number of problems.
 
 This book asks the question,
 
@@ -47,7 +47,7 @@ The book gave a number of valuable lessons such as:
 * groups perform better if group members feel safe
 * familiarity and connection creates safety
 * study took different teams and gave them a diffcult task
-* they placed a negative person there who would try to bring the project to a stand stilll
+* they placed a negative person there who would try to bring the project to a stand still
 * in most cases the behavior was contagious
 * one group evaded the `bad apple` by being positive and warm
 * shows that we perform best if we are given belonging cues that bolster our perceptions of safety
@@ -62,17 +62,17 @@ The book gave a number of valuable lessons such as:
 * make eye contact, pay attention to what the person is actually saying
 * do not interrupt the flow of the conversation
 * let people see your wekness
-* admit that you make mistakes (this is especially effectice from leaders).
+* admit that you make mistakes (this is especially effective from leaders).
 * ask for input and feedback on work
 
 ### Share vulnerabilities
 
-* sharing vulnerbilities actually boosts group perfromance
+* sharing vulnerbilities actually boosts group performance
 * it builds trust
 * generates a sense of closeness "vulnerability loop"
 * 1989 plane crash where pilot asked for help
 * this action ending up saving the majority of the passengers as three people worked together to land the plane with no engines
-* there is a close connection between admitting vulnerbility and cooperation
+* there is a close connection between admitting vulnerability and cooperation
 * experiment was done that made participants lose their work after a long computer task
 * those that received help where way more productive later and they had been rescued from a moment of vulnerabiliy
 
@@ -102,7 +102,7 @@ The book gave a number of valuable lessons such as:
 * repeating the mission statement ensures that everyone knows what it is
 * just because a leader knows it doesn't mean everyone else does
 * managers thought 64% of employees knew their the companies top priorities the actual number was 2%.
-* _overcommunicate_ the companies message at regular meetings
+* _over-communicate_ the companies message at regular meetings
 * short snappy catchphrases that get to the point are good at establishing purpose
 *  e.g Zappos: "Create fun and a little wierdness", IDEO: "Talk less, do more"
 *  Although cheesy they are useful reminders, embrace them!
@@ -111,7 +111,7 @@ The book gave a number of valuable lessons such as:
 
 * group dynamics determine outcomes
 * when a team focuses its attention on the wrong thing, it loses sight of what's important to performance
-* the best way to achieve sucessful teams is to create a safe environment in which everyone can share their vulnerabilities
+* the best way to achieve successful teams is to create a safe environment in which everyone can share their vulnerabilities
 * add a common sense of purpose and this can be equally as powerful
 
 ### Key takeaway
