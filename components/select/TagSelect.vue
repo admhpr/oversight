@@ -14,7 +14,7 @@
       <span v-if="selectedTags.includes(name)">∅</span>
       <span
         v-else
-        class="bg-gray-700 text-gray-100 rounded-full bg-white px-2"
+        class="bg-gray-500 text-gray-100 rounded-full bg-white px-2"
         >{{ count }}</span
       >
     </a>
