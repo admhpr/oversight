@@ -12,11 +12,7 @@
       "
       ><span> #{{ name }} </span>
       <span v-if="selectedTags.includes(name)">∅</span>
-      <span
-        v-else
-        class="bg-gray-500 text-gray-100 rounded-full bg-white px-2"
-        >{{ count }}</span
-      >
+      <span v-else class="rounded-full bg-white px-2">{{ count }}</span>
     </a>
   </div>
 </template>
